@@ -75,7 +75,7 @@ def updated_entry(entry: dict, version: dict) -> dict:
 
 def changelog_summary(text: str | None, limit: int = 600) -> str:
     if not text:
-        return "No changelog supplied."
+        return "⚠️ No changelog supplied. Manual release-page review required."
     compact = " ".join(text.split())
     return compact if len(compact) <= limit else compact[: limit - 1] + "…"
 
@@ -83,6 +83,79 @@ def changelog_summary(text: str | None, limit: int = 600) -> str:
 def current_versions(version_ids: list[str]) -> dict[str, dict]:
     versions = request_json("versions", {"ids": json.dumps(version_ids)})
     return {version["id"]: version for version in versions}
+
+
+def dependency_key(dependency: dict) -> tuple[str, str, str]:
+    target = dependency.get("project_id") or dependency.get("file_name") or "unknown"
+    return target, dependency.get("version_id") or "any", dependency["dependency_type"]
+
+
+def dependency_changes(current: dict, latest: dict) -> tuple[list[tuple], list[tuple]]:
+    before = {dependency_key(item) for item in current.get("dependencies", [])}
+    after = {dependency_key(item) for item in latest.get("dependencies", [])}
+    return sorted(after - before), sorted(before - after)
+
+
+def format_dependency(dependency: tuple[str, str, str]) -> str:
+    target, version, kind = dependency
+    return f"`{target}` (`{kind}`, version `{version}`)"
+
+
+def render_report(changes: list[tuple], game_version: str) -> str:
+    report = [
+        "## Modrinth updates",
+        "",
+        f"Compatibility target: Minecraft `{game_version}` with each artifact's current loader set.",
+        "",
+        "| Project | Current | Proposed | Published | Channel |",
+        "| --- | --- | --- | --- | --- |",
+    ]
+    for project, current, latest in changes:
+        published = latest.get("date_published", "unknown").replace("T", " ").replace("Z", " UTC")
+        report.append(
+            f"| [{project['title']}](https://modrinth.com/{project['project_type']}/{project['slug']}) "
+            f"| `{current['version_number']}` (`{current['id']}`) "
+            f"| `{latest['version_number']}` (`{latest['id']}`) "
+            f"| {published} | `{current['version_type']}` → `{latest['version_type']}` |"
+        )
+    report.extend(["", "## Changelogs and dependency changes", ""])
+    for project, current, latest in changes:
+        added, removed = dependency_changes(current, latest)
+        dependency_lines = ["Dependencies: unchanged."]
+        if added or removed:
+            dependency_lines = []
+            if added:
+                dependency_lines.append(
+                    "Dependencies added: " + ", ".join(map(format_dependency, added)) + "."
+                )
+            if removed:
+                dependency_lines.append(
+                    "Dependencies removed: " + ", ".join(map(format_dependency, removed)) + "."
+                )
+        report.extend(
+            [
+                f"### {project['title']}",
+                "",
+                f"[{current['version_number']} → {latest['version_number']}]"
+                f"(https://modrinth.com/{project['project_type']}/{project['slug']}/version/{latest['id']})",
+                "",
+                *dependency_lines,
+                "",
+                changelog_summary(latest.get("changelog")),
+                "",
+            ]
+        )
+    report.extend(
+        [
+            "## Review requirements",
+            "",
+            "- Review dependency, environment, license, and release-channel changes.",
+            "- Inspect experimental Oritech and Oracle Index updates manually.",
+            "- Merge only after CI passes; gameplay testing remains separate.",
+            "",
+        ]
+    )
+    return "\n".join(report)
 
 
 def main() -> int:
@@ -129,44 +202,7 @@ def main() -> int:
         return 0
 
     args.manifest.write_text(json.dumps(manifest, indent=2) + "\n")
-    report = [
-        "## Modrinth updates",
-        "",
-        f"Compatibility target: Minecraft `{game_version}` with each artifact's current loader set.",
-        "",
-        "| Project | Current | Proposed | Channel |",
-        "| --- | --- | --- | --- |",
-    ]
-    for project, current, latest in changes:
-        report.append(
-            f"| [{project['title']}](https://modrinth.com/{project['project_type']}/{project['slug']}) "
-            f"| `{current['version_number']}` | `{latest['version_number']}` "
-            f"| `{current['version_type']}` → `{latest['version_type']}` |"
-        )
-    report.extend(["", "## Changelogs", ""])
-    for project, current, latest in changes:
-        report.extend(
-            [
-                f"### {project['title']}",
-                "",
-                f"[{current['version_number']} → {latest['version_number']}]"
-                f"(https://modrinth.com/{project['project_type']}/{project['slug']}/version/{latest['id']})",
-                "",
-                changelog_summary(latest.get("changelog")),
-                "",
-            ]
-        )
-    report.extend(
-        [
-            "## Review requirements",
-            "",
-            "- Review dependency, environment, license, and release-channel changes.",
-            "- Inspect experimental Oritech and Oracle Index updates manually.",
-            "- Merge only after CI passes; gameplay testing remains separate.",
-            "",
-        ]
-    )
-    args.report.write_text("\n".join(report))
+    args.report.write_text(render_report(changes, game_version))
     print(f"Prepared {len(changes)} update(s).")
     return 0
 
