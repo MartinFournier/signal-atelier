@@ -76,6 +76,11 @@
 - Keep NeoForge's experimental warning visible and include no hosting
   advertisements or custom external-link buttons.
 - Ship a small built-in resource pack with curated Signal Atelier splash text.
+- Build Signal Atelier 0.3.0 as one complete candidate containing every
+  accepted mod and its enforcement configuration before the first gameplay
+  test.
+- Test the complete intended experience first. If it fails, bisect by the
+  documented functional groups without publishing partial integration builds.
 
 ## Deferred
 
@@ -103,8 +108,9 @@
   configuration; otherwise enforce the restriction with the pack layer.
 - Confirm exact NeoForge 26.1.2 artifacts for the selected quality-of-life
   mods and whether player-only markers are available in World Map alone.
-- Ship the performance, visual, building, audio, recovery, mapping, quest, and
-  chunk-loading groups in small tested batches rather than one unverified jump.
+- Resolve and package the performance, visual, building, audio, recovery,
+  mapping, quest, storage, backpack, branding, and chunk-loading groups in the
+  same 0.3.0 candidate.
 - Disable Dynamic FPS battery integration before adding it to the manifest.
 - Verify LambDynamicLights' NeoForge dependency metadata before adding it; its
   current Modrinth version declares Fabric API despite documenting standalone

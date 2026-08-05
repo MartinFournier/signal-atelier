@@ -36,12 +36,14 @@ Version 0.2 adds only the bounded XP and enchanting-information layer to the
 original Oritech test baseline. Tax Free Levels retains the vanilla anvil limit,
 and the XP Tome retains its default 1,395 XP capacity.
 
-Later integration batches will add restricted Refined Storage and Resource
-Backpacks only after their balance rules can be enforced and tested. Recovery,
-mapping, quality-of-life, performance, optional graphics and audio, Rechiseled,
-Simply Quests, and a single-chunk physical loader will also arrive in small
-testable groups. See [docs/decisions.md](docs/decisions.md) for the accepted
-scope and remaining enforcement work.
+Version 0.3 will be built as one complete candidate containing every accepted
+mod and its balance configuration: restricted storage and backpacks, recovery,
+mapping, quality of life, performance, optional graphics and audio, Rechiseled,
+Simply Quests, branding, and a single-chunk physical loader. The first gameplay
+test will exercise that full experience. Failures will be bisected by
+functional group without publishing partial integration builds. See
+[docs/decisions.md](docs/decisions.md) for the accepted scope and remaining
+enforcement work.
 
 ## Branding
 

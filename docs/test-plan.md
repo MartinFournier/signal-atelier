@@ -1,7 +1,14 @@
 # Progression test plan
 
-Use a fresh world for the first complete pass. Record crashes, broken recipes,
-missing documentation, and progression blockers before adding more mods.
+Build the complete 0.3.0 candidate before the first gameplay pass. Use a fresh
+world and record crashes, broken recipes, missing documentation, and
+progression blockers against the intended full experience.
+
+Do not remove mods pre-emptively. If the complete candidate fails, reproduce
+the failure and bisect by functional group: storage and backpacks, recovery and
+quality of life, performance, graphics and audio, building, quests and
+branding, then chunk loading. Preserve the failing logs and exact manifest for
+each comparison.
 
 ## Smoke test
 
@@ -69,7 +76,7 @@ missing documentation, and progression blockers before adding more mods.
 - Confirm no installed feature extracts, selects, rerolls, or duplicates
   enchantments.
 
-## Planned integration tests
+## Full-pack integration tests
 
 - Benchmark Lithium and ImmediatelyFast separately before combining them with
   the existing performance stack.
