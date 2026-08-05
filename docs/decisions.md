@@ -9,13 +9,33 @@
 - Support solo play and a small private server.
 - Aim for moderate progression without expert recipe changes.
 - Avoid overlapping machine, power, pipe, and ore-processing systems.
+- Add Refined Storage for centralized storage and request-based autocrafting.
+- Allow Refined Storage to store, request, and route resources while keeping
+  world interaction and remote logistics in Oritech.
+- Recipe lock Refined Storage wireless access, Constructors, Destructors,
+  Network Transmitters and Receivers, and equivalent remote or direct-world
+  features.
+- Keep Refined Storage Controllers, cables, disks, drives, Grids, Pattern
+  Grids, Autocrafters, Monitors, Importers, Exporters, Interfaces, External
+  Storage, Detectors, and required upgrades.
+- Add Resource Backpacks for modest expedition storage.
+- Limit backpacks to leather, copper, and iron progression with 18–27 slots.
+- Disable higher-tier and ender backpacks, backpack nesting, and filled
+  shulker storage inside backpacks.
 
 ## Deferred
 
-- Digital storage and autocrafting.
 - Maps, shaders, voice chat, claims, and server administration.
-- Recipe or progression customization.
 - A permanent world and release designation.
+
+## Pending implementation
+
+- Select a 26.1.2-compatible recipe-locking mechanism that does not require
+  unregistering content from existing worlds.
+- Pin Refined Storage, Resource Backpacks, and all required dependencies only
+  after the restrictions can ship in the same test build.
+- Verify whether Resource Backpacks can reject filled shulker boxes through
+  configuration; otherwise enforce the restriction with the pack layer.
 
 ## Experimental policy
 

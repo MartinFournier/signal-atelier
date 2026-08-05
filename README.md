@@ -29,9 +29,21 @@ stabilize. Back up a world before every mod or loader update.
 - JEI for recipes
 - Sodium, ModernFix, and FerriteCore for performance
 
-The pack intentionally omits digital storage, additional technology systems,
-world-generation mods, and convenience mods until Oritech's progression has
-been exercised by itself.
+The first build intentionally contains only the Oritech test baseline. The
+next integration batch will add a restricted Refined Storage installation and
+Resource Backpacks after their balance rules can be enforced and tested.
+
+## Integration policy
+
+Refined Storage will store, request, and route resources without replacing
+Oritech's world interaction or long-distance logistics. Wireless access,
+Constructors, Destructors, and equivalent direct-world features will be recipe
+locked. Oritech remains responsible for power, machines, processing, pipes,
+and drones.
+
+Resource Backpacks will provide modest expedition storage rather than a
+portable base. Progression stops at iron tier with 18–27 slots; higher and
+ender tiers, backpack nesting, and filled shulker storage are disallowed.
 
 Downloaded mod files are untrusted artifacts. The build references them by
 verified Modrinth URL and hash; it does not extract or execute them. Files that
