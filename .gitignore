@@ -1,0 +1,29 @@
+# Build output
+dist/
+*.mrpack
+
+# Local launcher and game state
+.prism/
+instance/
+run/
+logs/
+crash-reports/
+saves/
+screenshots/
+resourcepacks/
+shaderpacks/
+options.txt
+servers.dat
+usercache.json
+usernamecache.json
+
+# Local configuration generated during testing
+config/
+defaultconfigs/
+kubejs/
+
+# Editor and OS files
+.idea/
+.vscode/
+*.swp
+.DS_Store

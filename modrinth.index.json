@@ -1,0 +1,121 @@
+{
+  "formatVersion": 1,
+  "game": "minecraft",
+  "versionId": "0.1.0",
+  "name": "Oritech 2 Test Pack",
+  "summary": "A minimal disposable-world test pack for Oritech 2 experimental.",
+  "files": [
+    {
+      "path": "mods/oritech-2.0.0-exp3.jar",
+      "hashes": {
+        "sha512": "3ee6edaa27634e4a4a37a34767aeb4809d9cb32e87c935d2b35640980a86bc961403747269e47644366cd54389930343ee917b9b08b53097648452cb9f8261ab",
+        "sha1": "9d9b5fd4d4169749fbbddfec9f77285f93224c15"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/4sYI62kA/versions/72WSQzeC/oritech-2.0.0-exp3.jar"
+      ],
+      "fileSize": 10695398
+    },
+    {
+      "path": "mods/geckolib-neoforge-26.1.2-5.5.2.jar",
+      "hashes": {
+        "sha512": "d634390ad63372324220b14be3a70b0befca2a753fc8c0561f4162d31341182b08c102bd44432e59d884cb18d2906c1d0b36344f72c2d6e07c9b109a57c693f3",
+        "sha1": "2108a1175f8edb52f30a9b3d6dd42eccf045623f"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/8BmcQJ2H/versions/xfVfPcoC/geckolib-neoforge-26.1.2-5.5.2.jar"
+      ],
+      "fileSize": 664146
+    },
+    {
+      "path": "mods/athena-4.7.3.jar",
+      "hashes": {
+        "sha512": "e6ef87c4eb09d36ee95584ddd94c003921fb70b7c8990b7ccbba53f7fe5a0a71ed54ed81ac857676358cbbe0639065ee7e2633cdef0ddf54ec2b8c2e7ca870bf",
+        "sha1": "2583e9a557cca800efb356a4ca17f5dce96f762a"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/8KRMFzZ7/athena-4.7.3.jar"
+      ],
+      "fileSize": 105020
+    },
+    {
+      "path": "mods/oracle_index-neoforge-2.0.0-exp1.jar",
+      "hashes": {
+        "sha512": "26290566c94966c4b03c3e338fd19e56d5c11c619ecdf3c4ffc12e19d3705c852876f7ec6f89742dfbece03f4052daf325181c104d6c1ed1ecf60a26127af554",
+        "sha1": "b72e0b58e016ae39d486ec5b509247bc2760ad0a"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/J8MMsNrL/versions/jNWL0rAJ/oracle_index-neoforge-2.0.0-exp1.jar"
+      ],
+      "fileSize": 29599774
+    },
+    {
+      "path": "mods/architectury-neoforge-20.0.12.jar",
+      "hashes": {
+        "sha512": "6adf083ec6dc4185eca97f920097885f1a14daa313c6f7b5679183f6d03c76c85ba38b0619a6b2c72303938d59f5c839f6d8e2e2b7ca0522af4d9f4519447ad9",
+        "sha1": "c903a72e5d416fff8a7e37986bfd3826215f90f6"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/lhGA9TYQ/versions/uNG0WqnM/architectury-neoforge-20.0.12.jar"
+      ],
+      "fileSize": 578394
+    },
+    {
+      "path": "mods/jei-26.1.2-neoforge-29.21.0.66.jar",
+      "hashes": {
+        "sha512": "47dc4c1d5697870a570c8eccf8f8654db8b5cab3bd1264a8e8a7514217aca913de1ea33431544a9806fb033a2f346d0700222412265f880ffd3247fde914e615",
+        "sha1": "eac61d7c36c5c6f9d5d1a6a8c1105fb551f7f842"
+      },
+      "env": { "client": "required", "server": "optional" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/u6dRKJwZ/versions/9G0iRx9i/jei-26.1.2-neoforge-29.21.0.66.jar"
+      ],
+      "fileSize": 1649745
+    },
+    {
+      "path": "mods/sodium-neoforge-0.9.1+mc26.1.2.jar",
+      "hashes": {
+        "sha512": "f7f39fc069d91873b952a95ee778032b5b9793fdc70bec732275919f1844a858fbba38e536cfc2132524b814e87f9fe000847c5bd251f1b9d7d655d818afb4a5",
+        "sha1": "f369407251bdeb3b91d3e67fbbc133263b0c9078"
+      },
+      "env": { "client": "required", "server": "unsupported" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/AANobbMI/versions/UETw0GTI/sodium-neoforge-0.9.1%2Bmc26.1.2.jar"
+      ],
+      "fileSize": 1185970
+    },
+    {
+      "path": "mods/modernfix-neoforge-5.27.20+mc26.1.2.jar",
+      "hashes": {
+        "sha512": "617245848fc4f5b7c7f43da304a922e815605724f4bdd8219c68c74c097d43fb59d3f9caea5d0861edf625eedd1a265f64d839d60a846a043146c5b00bcc34e1",
+        "sha1": "f21c7a93d549f0e1f66f20b2392a2e6971bd6478"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/nmDcB62a/versions/oG75RchZ/modernfix-neoforge-5.27.20%2Bmc26.1.2.jar"
+      ],
+      "fileSize": 503221
+    },
+    {
+      "path": "mods/ferritecore-9.0.0-neoforge.jar",
+      "hashes": {
+        "sha512": "e96a99ac5539f56a1f4cd109d62b668ebd5283f0068491ede956f52e67023beba7abe2e40021499352ffc41ead950bebcabce7792352249a1b45c5dccb3cf99c",
+        "sha1": "b8bfb14ba6ce7068aae08c3a132ca40bda6bd143"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/uXXizFIs/versions/LtVvw4uS/ferritecore-9.0.0-neoforge.jar"
+      ],
+      "fileSize": 71947
+    }
+  ],
+  "dependencies": {
+    "minecraft": "26.1.2",
+    "neoforge": "26.1.2.47-beta"
+  }
+}
