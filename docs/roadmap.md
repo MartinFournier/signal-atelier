@@ -2,10 +2,10 @@
 
 ## Continuous integration
 
-- Add pull-request and main-branch CI that runs `scripts/check.sh` on a clean
-  checkout and retains the generated `.mrpack` as a short-lived artifact.
-- Keep CI independent from local Prism state, Minecraft accounts, and launcher
-  credentials.
+- The baseline pull-request and main-branch workflow runs `scripts/check.sh`,
+  builds MkDocs in strict mode, and retains the generated `.mrpack` for seven
+  days. Keep it independent from local Prism state, Minecraft accounts, and
+  launcher credentials.
 - Add a scheduled Modrinth update workflow that resolves newer compatible
   versions for every pinned project and dependency.
 - Have the scheduled workflow open a pull request rather than committing to

@@ -2,6 +2,8 @@
 
 **A focused automation workshop.**
 
+[![CI](https://github.com/MartinFournier/signal-atelier/actions/workflows/ci.yml/badge.svg)](https://github.com/MartinFournier/signal-atelier/actions/workflows/ci.yml)
+
 Signal Atelier is a small, technology-focused Minecraft modpack built around
 Oritech. It favors one coherent factory system over a kitchen sink of machines
 that solve the same problems in slightly different ways.
