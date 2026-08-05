@@ -111,6 +111,14 @@
 - Resolve and package the performance, visual, building, audio, recovery,
   mapping, quest, storage, backpack, branding, and chunk-loading groups in the
   same 0.3.0 candidate.
+- Apply global recipe locks through Universal Data Pack. The curated data pack
+  is required at highest priority for every world; empty overrides disable the
+  exact upstream recipes for restricted Refined Storage devices, higher
+  backpacks, and multi-chunk loaders.
+- Treat recipe removal as the initial enforcement layer. Confirm creative-tab
+  visibility and every alternate acquisition path during the first launch,
+  then add item hiding or stronger removal only where the running mods require
+  it.
 - Disable Dynamic FPS battery integration before adding it to the manifest.
 - Verify LambDynamicLights' NeoForge dependency metadata before adding it; its
   current Modrinth version declares Fabric API despite documenting standalone

@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "description": "Signal Atelier balance overrides",
+    "pack_format": [101, 1]
+  }
+}
