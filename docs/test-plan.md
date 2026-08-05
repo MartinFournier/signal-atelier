@@ -62,6 +62,11 @@ each comparison.
 - Confirm Xaero's World Map reveals only explored terrain.
 - Verify entity tracking and map teleportation are disabled; test player
   markers separately if World Map supports them without the Minimap.
+- Review the complete Controls screen for duplicate bindings. Confirm `M`
+  opens the world map, `B` opens the equipped backpack, and `J` opens Simply
+  Quests when those actions are supported, with no vanilla control displaced.
+- Change one curated binding, restart, and update the test instance to verify
+  that player customization is preserved.
 
 ## XP and enchanting test
 

@@ -63,6 +63,13 @@
 - Pin every mod version and update in tested batches without grind multipliers.
 - Keep balance and server configuration pack-controlled while leaving cosmetic
   client settings user-controlled.
+- Ship a small, conflict-free default keybind layout for major pack interfaces
+  without replacing movement, inventory, combat, hotbar, screenshot, or debug
+  controls. Target `M` for the world map, `B` for the equipped backpack, and
+  `J` for the engineering notebook if those exact actions exist.
+- Preserve player keybind changes across pack updates. Do not distribute a
+  complete `options.txt` that resets unrelated video, audio, accessibility, or
+  control preferences.
 - Keep backups outside the instance and Git. Prefer host or filesystem
   snapshots over the immature 26.1 backup-mod ecosystem.
 - Add Simple Menu as the lightweight client-side branding layer.
@@ -120,6 +127,10 @@
   establishes realistic production rates.
 - Add and enable the curated splash-text resource pack after verifying the
   title logo and icons in-game.
+- Capture every registered key translation and conflict from the first launch,
+  then choose an update-safe first-install mechanism for the curated defaults.
+  Leave optional shader, sound, overlay, and diagnostic toggles unbound unless
+  testing shows a strong reason to expose them.
 
 ## Experimental policy
 

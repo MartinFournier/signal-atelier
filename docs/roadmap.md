@@ -31,4 +31,7 @@
 - Capture runtime-generated Resource Backpacks, Xaero World Map, and Simply
   Quests configuration from the first clean graphical Prism launch, sanitize
   it, and add only the reviewed settings to `overrides/`.
+- Inventory all registered controls and implement first-install-only defaults
+  for the world map, backpack, and engineering notebook without overwriting the
+  rest of `options.txt` or later player changes.
 - Verify recipe locks and branding in-game before publishing 0.3.0.
