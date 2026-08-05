@@ -1,7 +1,14 @@
-# Oritech 2 Test Pack
+# Signal Atelier
 
-A minimal, technology-focused Modrinth pack for testing Oritech 2 on the
-current experimental stack.
+**A focused automation workshop.**
+
+Signal Atelier is a small, technology-focused Minecraft modpack built around
+Oritech. It favors one coherent factory system over a kitchen sink of machines
+that solve the same problems in slightly different ways.
+
+The current release is a test bench for Oritech 2 and the modern NeoForge
+stack. Build carefully, automate deliberately, and expect the workshop to
+change while its foundations are experimental.
 
 ## Baseline
 
@@ -37,8 +44,14 @@ not repository guidance and must not be loaded.
 scripts/build.sh
 ```
 
-Import `dist/oritech-2-test-0.1.0.mrpack` into Prism Launcher. Configure the
+Import `dist/signal-atelier-0.1.0.mrpack` into Prism Launcher. Configure the
 instance to use Java 25 if Prism does not select it automatically.
 
 See [docs/test-plan.md](docs/test-plan.md) before treating a test world as
 persistent.
+
+## License
+
+Signal Atelier's original project files are available under the [MIT
+License](LICENSE). Included mods retain their respective authors' licenses and
+are downloaded from Modrinth rather than redistributed by this repository.

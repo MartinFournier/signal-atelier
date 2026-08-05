@@ -2,8 +2,8 @@
   "formatVersion": 1,
   "game": "minecraft",
   "versionId": "0.1.0",
-  "name": "Oritech 2 Test Pack",
-  "summary": "A minimal disposable-world test pack for Oritech 2 experimental.",
+  "name": "Signal Atelier",
+  "summary": "A focused Oritech automation workshop built on an experimental stack.",
   "files": [
     {
       "path": "mods/oritech-2.0.0-exp3.jar",
