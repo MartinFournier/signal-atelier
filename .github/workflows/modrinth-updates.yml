@@ -1,0 +1,73 @@
+name: Modrinth updates
+
+on:
+  schedule:
+    - cron: "17 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: modrinth-updates
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Check pinned artifacts
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Resolve compatible updates
+        run: scripts/update_modrinth.py --report "$RUNNER_TEMP/modrinth-updates.md"
+
+      - name: Detect changes
+        id: changes
+        run: |
+          if git diff --quiet -- modrinth.index.json; then
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate proposed pack
+        if: steps.changes.outputs.found == 'true'
+        run: scripts/check.sh
+
+      - name: Open or refresh update pull request
+        if: steps.changes.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch=automation/modrinth-updates
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git switch -C "$branch"
+          git add modrinth.index.json
+          git commit -m "chore: update Modrinth artifacts"
+          git fetch origin "$branch:refs/remotes/origin/$branch" || true
+          git push --force-with-lease origin "HEAD:refs/heads/$branch"
+
+          existing_pr=$(gh pr list \
+            --head "$branch" \
+            --state open \
+            --json number \
+            --jq '.[0].number')
+          if [ -n "$existing_pr" ]; then
+            gh pr edit "$existing_pr" \
+              --title "chore: update Modrinth artifacts" \
+              --body-file "$RUNNER_TEMP/modrinth-updates.md"
+          else
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "chore: update Modrinth artifacts" \
+              --body-file "$RUNNER_TEMP/modrinth-updates.md"
+          fi

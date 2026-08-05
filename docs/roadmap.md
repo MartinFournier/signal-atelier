@@ -6,12 +6,10 @@
   builds MkDocs in strict mode, and retains the generated `.mrpack` for seven
   days. Keep it independent from local Prism state, Minecraft accounts, and
   launcher credentials.
-- Add a scheduled Modrinth update workflow that resolves newer compatible
-  versions for every pinned project and dependency.
-- Have the scheduled workflow open a pull request rather than committing to
-  `main`. Include old and new project/version IDs, release channel, publication
-  date, dependency changes, and upstream changelog text or links for every
-  update.
+- The scheduled Modrinth workflow checks every Monday and can also be run
+  manually. It preserves compatibility and release-channel policy, refreshes a
+  dedicated pull request, and includes old/new versions plus upstream
+  changelogs.
 - Never auto-merge mod updates. Experimental Oritech/Oracle Index releases,
   loader changes, missing changelogs, dependency removals, and environment or
   license changes require explicit review.
