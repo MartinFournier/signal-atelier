@@ -8,6 +8,10 @@ Signal Atelier is a small, technology-focused Minecraft modpack built around
 Oritech. It favors one coherent factory system over a kitchen sink of machines
 that solve the same problems in slightly different ways.
 
+This pack is vibe-coded with AI assistance. Mod selection and balance remain
+intentional, artifacts are pinned and checked, and no generated change is
+treated as gameplay-tested until it passes the documented validation plan.
+
 The current release is a test bench for Oritech 2 and the modern NeoForge
 stack. Build carefully, automate deliberately, and expect the workshop to
 change while its foundations are experimental.
