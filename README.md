@@ -43,6 +43,23 @@ Simply Quests, and a single-chunk physical loader will also arrive in small
 testable groups. See [docs/decisions.md](docs/decisions.md) for the accepted
 scope and remaining enforcement work.
 
+## Branding
+
+Signal Atelier will use Simple Menu for restrained client-side branding. The
+window title will include the project name, pack version, and Minecraft
+version. A compact copper signal-wave glyph in a dark workshop frame will serve
+as the application icon and title logo.
+
+The title screen keeps Minecraft's vanilla panorama and normal navigation.
+Realms is hidden, while Singleplayer, Multiplayer, Mods, Options, Quit, and the
+NeoForge experimental warning remain visible. The pack will not add hosting
+promotions, external-link buttons, animated menus, or a custom loading screen.
+
+A small built-in resource pack will provide Signal Atelier splash text such as
+“Tune the signal,” “Measure twice, automate forever,” and “Back up before
+upgrading.” Simple Menu and these assets will ship together in a later branding
+integration batch after their exact 26.1.2 artifacts and layouts are tested.
+
 ## Integration policy
 
 Refined Storage will store, request, and route resources without replacing

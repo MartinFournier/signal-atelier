@@ -65,6 +65,17 @@
   client settings user-controlled.
 - Keep backups outside the instance and Git. Prefer host or filesystem
   snapshots over the immature 26.1 backup-mod ecosystem.
+- Add Simple Menu as the lightweight client-side branding layer.
+- Set the window title to identify Signal Atelier, its pack version, and the
+  Minecraft version.
+- Use a custom Signal Atelier icon and title logo built around a compact copper
+  signal-wave glyph in a dark workshop frame.
+- Keep the vanilla panorama and loading screen initially.
+- Hide Realms, but retain the standard Singleplayer, Multiplayer, Mods,
+  Options, and Quit controls.
+- Keep NeoForge's experimental warning visible and include no hosting
+  advertisements or custom external-link buttons.
+- Ship a small built-in resource pack with curated Signal Atelier splash text.
 
 ## Deferred
 
@@ -77,6 +88,8 @@
   optimizers until profiling justifies their compatibility risk.
 - FramedBlocks, Effortless Building, broad furniture packs, and extra particle
   or foliage systems.
+- FancyMenu and custom loading-screen mods unless the lightweight branding
+  proves insufficient.
 - A permanent world and release designation while Oritech 2 remains
   experimental.
 
@@ -102,6 +115,10 @@
   format and upgrade behavior pass testing.
 - Design the exact Signal Core recipe only after a complete Oritech playthrough
   establishes realistic production rates.
+- Create icon and title-logo assets that remain legible at 16x16 and do not
+  depend on shader or high-resolution resource-pack support.
+- Pin Simple Menu and package its configuration and splash resource pack in a
+  dedicated branding integration batch.
 
 ## Experimental policy
 

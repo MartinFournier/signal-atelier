@@ -90,6 +90,15 @@ missing documentation, and progression blockers before adding more mods.
   team changes, and restoration from backup; quests must never gate recipes.
 - Complete the provisional Signal Core production chain without relying on
   locked Refined Storage or chunk-loader features.
+- Verify Simple Menu shows the Signal Atelier name and pack version in the
+  window title and renders the custom icon correctly at 16x16 and 32x32.
+- Confirm the title logo scales cleanly across GUI scales and window sizes.
+- Confirm Realms is hidden while Singleplayer, Multiplayer, Mods, Options, and
+  Quit remain accessible.
+- Verify the NeoForge experimental warning remains visible and no promotional
+  or external-link buttons appear.
+- Confirm custom splash text loads while the vanilla panorama and loading
+  screen remain unchanged.
 
 ## Upgrade test
 
