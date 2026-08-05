@@ -31,7 +31,9 @@ stabilize. Back up a world before every mod or loader update.
 
 The first build intentionally contains only the Oritech test baseline. The
 next integration batch will add a restricted Refined Storage installation and
-Resource Backpacks after their balance rules can be enforced and tested.
+Resource Backpacks after their balance rules can be enforced and tested. It
+will also add GraveStone Mod, Xaero's World Map, Jade, AppleSkin, Mouse Tweaks,
+and Better Advancements as the initial recovery and quality-of-life layer.
 
 ## Integration policy
 
@@ -44,6 +46,11 @@ and drones.
 Resource Backpacks will provide modest expedition storage rather than a
 portable base. Progression stops at iron tier with 18–27 slots; higher and
 ender tiers, backpack nesting, and filled shulker storage are disallowed.
+
+Xaero's World Map will record explored terrain for infrastructure planning.
+Entity tracking is disabled; player markers may remain enabled if World Map
+supports them independently without requiring Xaero's Minimap. Map-based
+teleportation is not allowed.
 
 Downloaded mod files are untrusted artifacts. The build references them by
 verified Modrinth URL and hash; it does not extract or execute them. Files that

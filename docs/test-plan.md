@@ -40,6 +40,22 @@ missing documentation, and progression blockers before adding more mods.
 - Test backpack contents across death, logout, server restart, placement, and
   break-and-pickup cycles.
 
+## Recovery and quality-of-life test
+
+- Verify GraveStone recovery in lava, the void, Nether, End, and around
+  Oritech machines.
+- Confirm only the owner can initially open a grave and that ownership remains
+  correct after a server restart.
+- Confirm equipped backpacks and their contents move into and out of graves
+  without duplication or loss.
+- Verify Jade identifies Oritech machines without exposing unintended hidden
+  information.
+- Confirm AppleSkin, Mouse Tweaks, and Better Advancements remain client-side
+  conveniences and do not alter progression.
+- Confirm Xaero's World Map reveals only explored terrain.
+- Verify entity tracking and map teleportation are disabled; test player
+  markers separately if World Map supports them without the Minimap.
+
 ## Upgrade test
 
 - Copy the world before changing Oritech or NeoForge.

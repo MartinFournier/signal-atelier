@@ -22,10 +22,22 @@
 - Limit backpacks to leather, copper, and iron progression with 18–27 slots.
 - Disable higher-tier and ender backpacks, backpack nesting, and filled
   shulker storage inside backpacks.
+- Add GraveStone Mod as the sole death-recovery system with no grave expiry or
+  teleport-to-grave feature.
+- Keep graves owner-restricted initially and verify multiplayer ownership,
+  backpack preservation, and persistence after server restarts.
+- Add Jade, AppleSkin, Mouse Tweaks, and Better Advancements as the initial
+  quality-of-life set.
+- Add Xaero's World Map without Xaero's Minimap.
+- Limit mapping to explored terrain and ordinary waypoints. Disable entity
+  tracking and map teleportation; allow player markers only if World Map
+  supports them independently.
 
 ## Deferred
 
-- Maps, shaders, voice chat, claims, and server administration.
+- Shaders, voice chat, claims, and server administration.
+- Xaero's Minimap and live entity radar.
+- Polymorph unless an actual recipe conflict is found.
 - A permanent world and release designation.
 
 ## Pending implementation
@@ -36,6 +48,8 @@
   after the restrictions can ship in the same test build.
 - Verify whether Resource Backpacks can reject filled shulker boxes through
   configuration; otherwise enforce the restriction with the pack layer.
+- Confirm exact NeoForge 26.1.2 artifacts for the selected quality-of-life
+  mods and whether player-only markers are available in World Map alone.
 
 ## Experimental policy
 
