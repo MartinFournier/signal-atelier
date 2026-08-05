@@ -1,0 +1,12 @@
+[Limitations]
+maxLoadedChunksPerPlayer = 4
+inactivityTimeout = 10080
+allowLegacyLoadedChunks = false
+canPlayersUseMap = false
+
+[General]
+singleChunkLoaderRadius = 1
+basicChunkLoaderRadius = 1
+advancedChunkLoaderRadius = 1
+ultimateChunkLoaderRadius = 1
+doRandomTicks = true

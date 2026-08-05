@@ -23,7 +23,9 @@ defaultconfigs/
 kubejs/
 !overrides/
 !overrides/config/
-!overrides/config/taxfreelevels.json
+!overrides/config/**
+!overrides/defaultconfigs/
+!overrides/defaultconfigs/**
 
 # Editor and OS files
 .idea/
