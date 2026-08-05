@@ -56,6 +56,41 @@ missing documentation, and progression blockers before adding more mods.
 - Verify entity tracking and map teleportation are disabled; test player
   markers separately if World Map supports them without the Minimap.
 
+## XP and enchanting test
+
+- Confirm an XP Tome stores no more than 1,395 XP and cannot duplicate XP
+  through death, graves, logout, or server restart.
+- Verify Tax Free Levels charges the same raw XP for an operation regardless
+  of the player's starting level.
+- Confirm the vanilla anvil ceiling remains enabled and item renaming costs one
+  level.
+- Verify Enchantment Descriptions works without requiring Prickle on a
+  dedicated server.
+- Confirm no installed feature extracts, selects, rerolls, or duplicates
+  enchantments.
+
+## Planned integration tests
+
+- Benchmark Lithium and ImmediatelyFast separately before combining them with
+  the existing performance stack.
+- Confirm Dynamic FPS performs no runtime dependency download and resumes
+  cleanly after the game regains focus.
+- Test Iris and Complementary Reimagined around Oritech animations, emissive
+  textures, transparent blocks, portals, and Xaero's map; shaders must remain
+  disabled by default.
+- Test LambDynamicLights with Oritech items and Sodium after resolving its
+  NeoForge dependency metadata.
+- Verify Rechiseled connected textures, stairs, slabs, recipes, and restart
+  persistence without adding unintended storage or progression features.
+- Test Sound Physics Remastered in factories and tunnels and confirm it can be
+  disabled without affecting a world or server connection.
+- Confirm only the single-chunk loader is craftable, respects placement limits,
+  and behaves safely while owners are offline.
+- Verify Simply Quests progress survives logout, server restart, pack update,
+  team changes, and restoration from backup; quests must never gate recipes.
+- Complete the provisional Signal Core production chain without relying on
+  locked Refined Storage or chunk-loader features.
+
 ## Upgrade test
 
 - Copy the world before changing Oritech or NeoForge.

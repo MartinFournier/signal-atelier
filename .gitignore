@@ -21,6 +21,9 @@ usernamecache.json
 config/
 defaultconfigs/
 kubejs/
+!overrides/
+!overrides/config/
+!overrides/config/taxfreelevels.json
 
 # Editor and OS files
 .idea/

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "game": "minecraft",
-  "versionId": "0.1.0",
+  "versionId": "0.2.0",
   "name": "Signal Atelier",
   "summary": "A focused Oritech automation workshop built on an experimental stack.",
   "files": [
@@ -112,6 +112,66 @@
         "https://cdn.modrinth.com/data/uXXizFIs/versions/LtVvw4uS/ferritecore-9.0.0-neoforge.jar"
       ],
       "fileSize": 71947
+    },
+    {
+      "path": "mods/xptome-neoforge-26.1.2-2.5.1.jar",
+      "hashes": {
+        "sha512": "b09b611084ea58e9c94f59c0e0cf20472b412d2de5536b0de2349febd723b9d9dd1f6833343ab031e5b6ce37d750ab4baca376ee29b4704e0ef6aa87c15fe7c0",
+        "sha1": "c0a079fca74baed7bb5c3a1429548d864f47826a"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/AnpW69o3/versions/wM2OXCPi/xptome-neoforge-26.1.2-2.5.1.jar"
+      ],
+      "fileSize": 35912
+    },
+    {
+      "path": "mods/TaxFreeLevels-1.5.4-neoforge-26.1.jar",
+      "hashes": {
+        "sha512": "9bf88415b6053a42472399917fa0f83399419eb64bac2f72b8a27dfad8d2dadfdeba0a2c05da5d59e0a47d0138a4d415dbaecdb60b3d12406e0f48247784867c",
+        "sha1": "58a61531d6f1b9a1264e7ca0500c4527c153b714"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/jCBrrLTs/versions/ppHJgCG9/TaxFreeLevels-1.5.4-neoforge-26.1.jar"
+      ],
+      "fileSize": 35343
+    },
+    {
+      "path": "mods/cloth-config-26.1.154.jar",
+      "hashes": {
+        "sha512": "b3084e992459c211617bf5247a94b93c06823277932341e7cec98602a6c6e21ca599aae5e552868ae7a60aac6ec33f3a9cee11615667470483948b3e349d3caf",
+        "sha1": "1700599980477b0ea72608bfdadee7bdde8b9b75"
+      },
+      "env": { "client": "required", "server": "required" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/9s6osm5g/versions/TimoYzse/cloth-config-26.1.154.jar"
+      ],
+      "fileSize": 1135993
+    },
+    {
+      "path": "mods/EnchantmentDescriptions-neoforge-MC26.1.2-26.1.2.5.jar",
+      "hashes": {
+        "sha512": "a9df886c7969781b593a7faa57a759b1e655b04294c79ebc333621ac7aefa87c8e29af50b47aaef6d23c0a7c8c2401e1c738af9e88e9055a0dbcc2702884934f",
+        "sha1": "eef58146d2ec7fc1cd8b2ccb8c29938a11acdfc3"
+      },
+      "env": { "client": "required", "server": "unsupported" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/UVtY3ZAC/versions/hzRdhkRf/EnchantmentDescriptions-neoforge-MC26.1.2-26.1.2.5.jar"
+      ],
+      "fileSize": 80666
+    },
+    {
+      "path": "mods/PrickleMC-neoforge-MC26.1.2-26.1.2.6.jar",
+      "hashes": {
+        "sha512": "b6c04d8dfe7541aac9fbe78555a253dbbeac9e560fffc851bce65c2b980910c855824315612e47b316cb279d0405d3f67a775f8b239432f13bd50b16cdd9a6de",
+        "sha1": "de90da5cefea67e6781e0bc3f3908752368e1dcf"
+      },
+      "env": { "client": "required", "server": "unsupported" },
+      "downloads": [
+        "https://cdn.modrinth.com/data/aaRl8GiW/versions/FzfKD3xX/PrickleMC-neoforge-MC26.1.2-26.1.2.6.jar"
+      ],
+      "fileSize": 82327
     }
   ],
   "dependencies": {

@@ -32,13 +32,53 @@
 - Limit mapping to explored terrain and ordinary waypoints. Disable entity
   tracking and map teleportation; allow player markers only if World Map
   supports them independently.
+- Use Lithium on both client and server, and ImmediatelyFast on the client.
+- Add Dynamic FPS for background resource savings with optional runtime
+  battery-library downloads disabled.
+- Add Iris and bundle Complementary Reimagined as an optional shader that is
+  disabled by default.
+- Add LambDynamicLights with conservative update quality.
+- Add Rechiseled as the sole general-purpose decorative block expansion.
+- Add Sound Physics Remastered as an independently disableable client feature.
+- Keep world generation, structures, food, and farming otherwise close to
+  vanilla; Oritech supplies the industrial building identity.
+- Use a physical single-chunk loader from Chunk Loaders instead of map-based
+  force loading. Disable the 3x3, 5x5, and 7x7 loader recipes and gate the
+  single loader behind late-game Oritech materials.
+- Use Simply Quests as a non-gating engineering notebook. Quests provide
+  direction and documentation, not essential rewards or recipe permissions.
+- Organize quests around orientation, power, industry, distributed works,
+  storage, supertech, and the optional Signal Core megaproject.
+- Add XP Tome with its default 1,395 XP capacity, equivalent to level 30.
+- Add Tax Free Levels for level-independent XP accounting while retaining the
+  vanilla anvil limit.
+- Add Enchantment Descriptions for client-side tooltip documentation.
+- Keep vanilla enchantment acquisition: no extraction tables, arbitrary
+  selection, cheap rerolls, or additional enchantment families.
+- Treat the Signal Core as a provisional post-supertech objective requiring
+  renewable remote resources, nuclear-scale power, particle-accelerator
+  products, autocrafting, and interdimensional logistics.
+- Target solo play and small cooperative servers at 4 GiB minimum and 6 GiB
+  recommended memory allocation. Shaders are never part of the minimum target.
+- Pin every mod version and update in tested batches without grind multipliers.
+- Keep balance and server configuration pack-controlled while leaving cosmetic
+  client settings user-controlled.
+- Keep backups outside the instance and Git. Prefer host or filesystem
+  snapshots over the immature 26.1 backup-mod ecosystem.
 
 ## Deferred
 
-- Shaders, voice chat, claims, and server administration.
+- Voice chat, land claims, and public-server administration.
 - Xaero's Minimap and live entity radar.
 - Polymorph unless an actual recipe conflict is found.
-- A permanent world and release designation.
+- Entity Culling unless profiling finds a remaining entity-render bottleneck
+  after Sodium's asynchronous occlusion culling.
+- Aggressive asynchronous chunk, world-threading, redstone, and entity-ticking
+  optimizers until profiling justifies their compatibility risk.
+- FramedBlocks, Effortless Building, broad furniture packs, and extra particle
+  or foliage systems.
+- A permanent world and release designation while Oritech 2 remains
+  experimental.
 
 ## Pending implementation
 
@@ -50,6 +90,18 @@
   configuration; otherwise enforce the restriction with the pack layer.
 - Confirm exact NeoForge 26.1.2 artifacts for the selected quality-of-life
   mods and whether player-only markers are available in World Map alone.
+- Ship the performance, visual, building, audio, recovery, mapping, quest, and
+  chunk-loading groups in small tested batches rather than one unverified jump.
+- Disable Dynamic FPS battery integration before adding it to the manifest.
+- Verify LambDynamicLights' NeoForge dependency metadata before adding it; its
+  current Modrinth version declares Fabric API despite documenting standalone
+  NeoForge installation.
+- Create a recipe enforcement layer before adding Chunk Loaders, then confirm
+  offline behavior, random ticking, ownership, and placement limits.
+- Build only a small Simply Quests orientation chapter until its beta storage
+  format and upgrade behavior pass testing.
+- Design the exact Signal Core recipe only after a complete Oritech playthrough
+  establishes realistic production rates.
 
 ## Experimental policy
 

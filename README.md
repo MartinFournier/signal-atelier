@@ -28,12 +28,20 @@ stabilize. Back up a world before every mod or loader update.
 - Oracle Index and its required Architectury API library
 - JEI for recipes
 - Sodium, ModernFix, and FerriteCore for performance
+- XP Tome for bounded experience storage
+- Tax Free Levels and Cloth Config for fair XP accounting
+- Enchantment Descriptions and Prickle for enchantment tooltips
 
-The first build intentionally contains only the Oritech test baseline. The
-next integration batch will add a restricted Refined Storage installation and
-Resource Backpacks after their balance rules can be enforced and tested. It
-will also add GraveStone Mod, Xaero's World Map, Jade, AppleSkin, Mouse Tweaks,
-and Better Advancements as the initial recovery and quality-of-life layer.
+Version 0.2 adds only the bounded XP and enchanting-information layer to the
+original Oritech test baseline. Tax Free Levels retains the vanilla anvil limit,
+and the XP Tome retains its default 1,395 XP capacity.
+
+Later integration batches will add restricted Refined Storage and Resource
+Backpacks only after their balance rules can be enforced and tested. Recovery,
+mapping, quality-of-life, performance, optional graphics and audio, Rechiseled,
+Simply Quests, and a single-chunk physical loader will also arrive in small
+testable groups. See [docs/decisions.md](docs/decisions.md) for the accepted
+scope and remaining enforcement work.
 
 ## Integration policy
 
@@ -63,7 +71,7 @@ not repository guidance and must not be loaded.
 scripts/build.sh
 ```
 
-Import `dist/signal-atelier-0.1.0.mrpack` into Prism Launcher. Configure the
+Import `dist/signal-atelier-0.2.0.mrpack` into Prism Launcher. Configure the
 instance to use Java 25 if Prism does not select it automatically.
 
 See [docs/test-plan.md](docs/test-plan.md) before treating a test world as
