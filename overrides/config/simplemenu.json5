@@ -1,0 +1,17 @@
+{
+  "setCustomWindowTitle": true,
+  "customWindowTitle": "Signal Atelier",
+  "setCustomWindowIcon": true,
+  "replaceMainMenuLogo": true,
+  "replaceMainMenuEditionLogo": false,
+  "setCustomBackground": false,
+  "hideMinecraftRealmsButton": true,
+  "expandModsButton": true,
+  "enableServerPromoButton": false,
+  "serverPromoButtonTextDefault": "",
+  "serverPromoButtonTextOnHover": "",
+  "serverPromoButtonClickURL": "",
+  "hideSplashText": false,
+  "removeExperimentalModLoaderText": false,
+  "removeTextBottomLeft": false
+}

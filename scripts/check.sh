@@ -8,6 +8,7 @@ jq empty modrinth.index.json
 jq empty overrides/config/dynamic_fps.json
 jq empty overrides/config/taxfreelevels.json
 jq empty overrides/config/universaldatapack/pack.mcmeta
+jq empty overrides/config/simplemenu.json5
 
 python3 -c 'import pathlib,tomllib; [tomllib.loads(p.read_text()) for p in pathlib.Path("overrides").rglob("*.toml")]'
 
@@ -36,4 +37,5 @@ done
 bash -n scripts/build.sh scripts/check.sh
 scripts/build.sh >/dev/null
 unzip -t dist/signal-atelier-0.3.0.mrpack >/dev/null
+python3 -c 'import pathlib,struct; expected={"overrides/config/simplemenu/logo/logo.png":(1024,256),"overrides/config/simplemenu/icon/icon_32x32.png":(32,32),"overrides/config/simplemenu/icon/icon_16x16.png":(16,16)}; assert all(struct.unpack(">II",pathlib.Path(p).read_bytes()[16:24]) == size for p,size in expected.items())'
 git diff --check

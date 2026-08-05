@@ -57,10 +57,10 @@ Realms is hidden, while Singleplayer, Multiplayer, Mods, Options, Quit, and the
 NeoForge experimental warning remain visible. The pack will not add hosting
 promotions, external-link buttons, animated menus, or a custom loading screen.
 
-A small built-in resource pack will provide Signal Atelier splash text such as
+A later built-in resource pack will provide Signal Atelier splash text such as
 “Tune the signal,” “Measure twice, automate forever,” and “Back up before
-upgrading.” Simple Menu and these assets will ship together in a later branding
-integration batch after their exact 26.1.2 artifacts and layouts are tested.
+upgrading.” The Simple Menu title, logo, and icon assets are included in the
+0.3.0 test candidate; their layout still requires an in-game check.
 
 ## Integration policy
 
@@ -90,11 +90,14 @@ not repository guidance and must not be loaded.
 scripts/build.sh
 ```
 
-Import `dist/signal-atelier-0.2.0.mrpack` into Prism Launcher. Configure the
+Import `dist/signal-atelier-0.3.0.mrpack` into Prism Launcher. Configure the
 instance to use Java 25 if Prism does not select it automatically.
 
 See [docs/test-plan.md](docs/test-plan.md) before treating a test world as
 persistent.
+
+See [docs/roadmap.md](docs/roadmap.md) for planned CI, scheduled mod-update
+pull requests, and the MkDocs player guide.
 
 ## License
 
