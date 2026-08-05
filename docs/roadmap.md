@@ -20,11 +20,11 @@
 
 ## Documentation site
 
-- Add an MkDocs site with a player installation guide, first-launch checklist,
+- Expand the initial MkDocs installation and first-launch pages with a
   progression and engineering guide, configuration rationale,
   troubleshooting, server setup, upgrade procedure, and release notes.
-- Publish the site through CI only after the pack's first clean launch fixes
-  the runtime-derived config filenames and screenshots.
+- Add sanitized screenshots and publish the site through CI after the pack's
+  first clean graphical launch.
 
 ## Packaging follow-up
 

@@ -97,6 +97,18 @@ persistent.
 See [docs/roadmap.md](docs/roadmap.md) for planned CI, scheduled mod-update
 pull requests, and the MkDocs player guide.
 
+## Documentation
+
+The player guide is authored with MkDocs. Install its isolated dependency and
+build the site with:
+
+```sh
+python -m pip install -r requirements-docs.txt
+mkdocs build --strict
+```
+
+The generated `site/` directory is local build output and is not committed.
+
 ## License
 
 Signal Atelier's original project files are available under the [MIT

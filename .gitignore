@@ -1,6 +1,7 @@
 # Build output
 dist/
 *.mrpack
+site/
 
 # Local launcher and game state
 .prism/
