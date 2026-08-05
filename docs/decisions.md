@@ -66,8 +66,8 @@
 - Keep backups outside the instance and Git. Prefer host or filesystem
   snapshots over the immature 26.1 backup-mod ecosystem.
 - Add Simple Menu as the lightweight client-side branding layer.
-- Set the window title to identify Signal Atelier, its pack version, and the
-  Minecraft version.
+- Set the window title to `Signal Atelier`; keep version details in the
+  manifest and launcher instance rather than crowding the title bar.
 - Use a custom Signal Atelier icon and title logo built around a compact copper
   signal-wave glyph in a dark workshop frame.
 - Keep the vanilla panorama and loading screen initially.
@@ -98,41 +98,28 @@
 - A permanent world and release designation while Oritech 2 remains
   experimental.
 
-## Pending implementation
+## Pending validation and implementation
 
-- Select a 26.1.2-compatible recipe-locking mechanism that does not require
-  unregistering content from existing worlds.
-- Pin Refined Storage, Resource Backpacks, and all required dependencies only
-  after the restrictions can ship in the same test build.
 - Verify whether Resource Backpacks can reject filled shulker boxes through
   configuration; otherwise enforce the restriction with the pack layer.
-- Confirm exact NeoForge 26.1.2 artifacts for the selected quality-of-life
-  mods and whether player-only markers are available in World Map alone.
-- Resolve and package the performance, visual, building, audio, recovery,
-  mapping, quest, storage, backpack, branding, and chunk-loading groups in the
-  same 0.3.0 candidate.
-- Apply global recipe locks through Universal Data Pack. The curated data pack
-  is required at highest priority for every world; empty overrides disable the
-  exact upstream recipes for restricted Refined Storage devices, higher
-  backpacks, and multi-chunk loaders.
+- Capture Resource Backpacks' generated config and set leather to 18 slots,
+  copper to 27 slots, iron to 27 slots, and nesting off.
+- Capture Xaero's generated config and disable entity tracking and teleport;
+  retain player markers only if independently supported.
+- Create the initial non-gating Simply Quests engineering-notebook content
+  after its generated storage format is available.
 - Treat recipe removal as the initial enforcement layer. Confirm creative-tab
   visibility and every alternate acquisition path during the first launch,
   then add item hiding or stronger removal only where the running mods require
   it.
-- Disable Dynamic FPS battery integration before adding it to the manifest.
-- Verify LambDynamicLights' NeoForge dependency metadata before adding it; its
-  current Modrinth version declares Fabric API despite documenting standalone
-  NeoForge installation.
-- Create a recipe enforcement layer before adding Chunk Loaders, then confirm
-  offline behavior, random ticking, ownership, and placement limits.
-- Build only a small Simply Quests orientation chapter until its beta storage
-  format and upgrade behavior pass testing.
+- Verify LambDynamicLights starts standalone on NeoForge despite its Modrinth
+  version metadata declaring Fabric API as required.
+- Confirm the configured Chunk Loaders ownership, offline timeout, random
+  ticking, and per-player limits at runtime.
 - Design the exact Signal Core recipe only after a complete Oritech playthrough
   establishes realistic production rates.
-- Create icon and title-logo assets that remain legible at 16x16 and do not
-  depend on shader or high-resolution resource-pack support.
-- Pin Simple Menu and package its configuration and splash resource pack in a
-  dedicated branding integration batch.
+- Add and enable the curated splash-text resource pack after verifying the
+  title logo and icons in-game.
 
 ## Experimental policy
 

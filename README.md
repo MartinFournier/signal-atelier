@@ -22,35 +22,33 @@ change while its foundations are experimental.
 Worlds made with this pack are disposable until Oritech 2 and NeoForge 26.1
 stabilize. Back up a world before every mod or loader update.
 
-## Included mods
+## 0.3.0 test candidate
 
-- Oritech and its required libraries: Athena and Geckolib
-- Oracle Index and its required Architectury API library
-- JEI for recipes
-- Sodium, ModernFix, and FerriteCore for performance
-- XP Tome for bounded experience storage
-- Tax Free Levels and Cloth Config for fair XP accounting
-- Enchantment Descriptions and Prickle for enchantment tooltips
+The current manifest contains the complete intended first-test experience:
 
-Version 0.2 adds only the bounded XP and enchanting-information layer to the
-original Oritech test baseline. Tax Free Levels retains the vanilla anvil limit,
-and the XP Tome retains its default 1,395 XP capacity.
+- Oritech 2 and Oracle Index as the technology and documentation foundation
+- Refined Storage with wireless, direct-world, and remote-network recipes
+  locked
+- Resource Backpacks limited by recipe to leather, copper, and iron tiers
+- GraveStone, Jade, AppleSkin, Mouse Tweaks, Better Advancements, XP Tome,
+  Tax Free Levels, and Enchantment Descriptions
+- Xaero's World Map without the minimap
+- Sodium, ModernFix, FerriteCore, Lithium, ImmediatelyFast, and Dynamic FPS
+- Iris with optional Complementary Reimagined, LambDynamicLights, and optional
+  Sound Physics Remastered
+- Rechiseled, Simply Quests, and a physical single-chunk loader
+- Simple Menu with Signal Atelier title, logo, and window icons
 
-Version 0.3 will be built as one complete candidate containing every accepted
-mod and its balance configuration: restricted storage and backpacks, recovery,
-mapping, quality of life, performance, optional graphics and audio, Rechiseled,
-Simply Quests, branding, and a single-chunk physical loader. The first gameplay
-test will exercise that full experience. Failures will be bisected by
-functional group without publishing partial integration builds. See
-[docs/decisions.md](docs/decisions.md) for the accepted scope and remaining
-enforcement work.
+Every artifact is pinned by Modrinth URL and hashes. Static packaging passes;
+the candidate has not yet completed a graphical launch or gameplay test. See
+[docs/decisions.md](docs/decisions.md) for balance policy and
+[docs/test-plan.md](docs/test-plan.md) for the remaining validation.
 
 ## Branding
 
-Signal Atelier will use Simple Menu for restrained client-side branding. The
-window title will include the project name, pack version, and Minecraft
-version. A compact copper signal-wave glyph in a dark workshop frame will serve
-as the application icon and title logo.
+Signal Atelier uses Simple Menu for restrained client-side branding. The
+window title is `Signal Atelier`; a compact copper signal-wave glyph serves as
+the application icon and title logo.
 
 The title screen keeps Minecraft's vanilla panorama and normal navigation.
 Realms is hidden, while Singleplayer, Multiplayer, Mods, Options, Quit, and the

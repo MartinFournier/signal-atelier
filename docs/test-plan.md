@@ -1,6 +1,6 @@
 # Progression test plan
 
-Build the complete 0.3.0 candidate before the first gameplay pass. Use a fresh
+Use the complete 0.3.0 candidate for the first gameplay pass. Start a fresh
 world and record crashes, broken recipes, missing documentation, and
 progression blockers against the intended full experience.
 
@@ -97,8 +97,8 @@ each comparison.
   team changes, and restoration from backup; quests must never gate recipes.
 - Complete the provisional Signal Core production chain without relying on
   locked Refined Storage or chunk-loader features.
-- Verify Simple Menu shows the Signal Atelier name and pack version in the
-  window title and renders the custom icon correctly at 16x16 and 32x32.
+- Verify Simple Menu shows `Signal Atelier` in the window title and renders the
+  custom icon correctly at 16x16 and 32x32.
 - Confirm the title logo scales cleanly across GUI scales and window sizes.
 - Confirm Realms is hidden while Singleplayer, Multiplayer, Mods, Options, and
   Quit remain accessible.
