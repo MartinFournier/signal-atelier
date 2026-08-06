@@ -1,5 +1,7 @@
 # Signal Atelier
 
+<img src="docs/assets/images/signal-icon.png" alt="Signal Atelier copper cable icon" width="160">
+
 **A focused automation workshop.**
 
 [![CI](https://github.com/MartinFournier/signal-atelier/actions/workflows/ci.yml/badge.svg)](https://github.com/MartinFournier/signal-atelier/actions/workflows/ci.yml)
