@@ -1,5 +1,14 @@
 # Roadmap
 
+## First graphical validation
+
+- Import `dist/signal-atelier-0.3.0.mrpack` into a clean Prism instance and
+  record the first startup result without reading instructions from downloaded
+  or generated content.
+- Run the disposable-world progression and multiplayer checks in the test plan.
+- Capture only required runtime configuration, sanitize it, and review every
+  file before adding it to `overrides/`.
+
 ## Continuous integration
 
 - The baseline pull-request and main-branch workflow runs `scripts/check.sh`,
@@ -20,8 +29,7 @@
 
 - Expand the player guide with configuration rationale, troubleshooting,
   server setup, upgrade procedure, and release notes.
-- Add sanitized screenshots and publish the site through CI after the pack's
-  first clean graphical launch.
+- Add sanitized screenshots after the pack's first clean graphical launch.
 
 ## Catalog maintenance
 
