@@ -54,6 +54,19 @@ mods or mix incompatible loaders.
 - Run `scripts/check.sh` as the repository gate. It validates manifests,
   curated JSON/TOML, required recipe locks, branding dimensions, shell syntax,
   the built archive, and whitespace.
+- Run `scripts/check-docs.sh` after changing documentation or MkDocs
+  configuration. Run `actionlint` after changing GitHub Actions workflows.
+- Before committing, run `scripts/gate.sh`; it combines the pack and strict
+  documentation checks with `actionlint`, `gitleaks`, and whitespace checks.
+  Local maintainer validation therefore requires `uv`, `actionlint`, and
+  `gitleaks` in addition to the pack build tools.
+- The player guide deploys from `main` to
+  `https://dev.mfournier.com/signal-atelier/` through GitHub Pages.
+- Treat the dedicated-server smoke workflow as the runtime compatibility gate
+  for manifest, override, loader, and smoke-runner changes. Its cache may hold
+  only content-addressed downloads, and every restored artifact must be hashed
+  again before execution. Never cache worlds, installed servers, generated
+  runtime state, or logs.
 - Keep shell command lines short, assign long paths or URLs to variables, and
   never wrap inside a shell token or quoted value.
 - Never initiate SSH to another machine without explicit permission for the
