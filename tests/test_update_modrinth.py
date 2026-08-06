@@ -147,6 +147,47 @@ class UpdateModrinthTests(unittest.TestCase):
             self.assertIn("new-id", report_path.read_text())
             self.assertEqual('["neoforge"]', seen_query["loaders"])
 
+    def test_main_writes_report_without_version_changes(self):
+        current = version("same-id", "1.0.0")
+        manifest = {
+            "dependencies": {"minecraft": "26.1.2"},
+            "files": [
+                {
+                    "path": "mods/example.jar",
+                    "downloads": [
+                        "https://cdn.modrinth.com/data/project/versions/same-id/example.jar"
+                    ],
+                }
+            ],
+        }
+
+        def fake_request(path, query=None):
+            if path in {"versions", "project/project/version"}:
+                return [current]
+            raise AssertionError(path)
+
+        original_request = UPDATER.request_json
+        original_argv = sys.argv
+        with tempfile.TemporaryDirectory() as directory:
+            manifest_path = Path(directory) / "manifest.json"
+            report_path = Path(directory) / "report.md"
+            manifest_path.write_text(json.dumps(manifest))
+            UPDATER.request_json = fake_request
+            sys.argv = [
+                "update_modrinth.py",
+                "--manifest",
+                str(manifest_path),
+                "--report",
+                str(report_path),
+            ]
+            try:
+                self.assertEqual(0, UPDATER.main())
+            finally:
+                UPDATER.request_json = original_request
+                sys.argv = original_argv
+
+            self.assertIn("No compatible artifact", report_path.read_text())
+
 
 if __name__ == "__main__":
     unittest.main()

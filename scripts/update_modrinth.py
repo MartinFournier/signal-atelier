@@ -198,6 +198,11 @@ def main() -> int:
         changes.append((project, current, latest))
 
     if not changes:
+        args.report.write_text(
+            "## Modrinth metadata refresh\n\n"
+            "No compatible artifact version changes were found. The generated "
+            "catalog may still include upstream category or license metadata changes.\n"
+        )
         print("All pinned Modrinth artifacts are current.")
         return 0
 

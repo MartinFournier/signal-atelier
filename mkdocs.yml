@@ -19,6 +19,7 @@ nav:
       - Engineering notebook: guide/progression.md
   - Project reference:
       - Current status: status.md
+      - Mod catalog: reference/mods.md
       - Generated pack reference: reference/pack.md
       - Pack decisions: decisions.md
       - Test plan: test-plan.md
