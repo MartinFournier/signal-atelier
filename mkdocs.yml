@@ -24,9 +24,14 @@ nav:
   - Player guide:
       - Install: guide/install.md
       - First launch: guide/first-launch.md
+      - Quick reference: guide/quick-reference.md
       - Engineering notebook: guide/progression.md
+      - Troubleshooting: guide/troubleshooting.md
+      - Server guide: guide/server.md
+      - Updating safely: guide/updating.md
   - Project reference:
       - Current status: status.md
+      - Release notes: releases.md
       - Mod catalog: reference/mods.md
       - Generated pack reference: reference/pack.md
       - Pack decisions: decisions.md
