@@ -1,20 +1,19 @@
 name: Server smoke test
 
 on:
-  pull_request:
-    paths:
-      - .github/workflows/server-smoke.yml
-      - modrinth.index.json
-      - overrides/**
-      - scripts/smoke_server.py
-      - tests/test_smoke_server.py
+  # This job executes downloaded mods. Keep it out of untrusted PR contexts.
   push:
     branches:
       - main
     paths:
       - .github/workflows/server-smoke.yml
       - modrinth.index.json
-      - overrides/**
+      - overrides/config/chunkloaders.toml
+      - overrides/config/simplyquests/**
+      - overrides/config/taxfreelevels.json
+      - overrides/config/travelersbackpack-*.toml
+      - overrides/config/universaldatapack/**
+      - overrides/defaultconfigs/**
       - scripts/smoke_server.py
       - tests/test_smoke_server.py
   workflow_dispatch:
@@ -35,6 +34,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Set up Java
         uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5
