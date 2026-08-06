@@ -1,0 +1,206 @@
+{
+  "group": "signal_atelier",
+  "groupOrder": 0,
+  "groupColor": -3704262,
+  "name": "storage",
+  "title": "Storage and Requests",
+  "chapterOrder": 4,
+  "icon": "minecraft:chest",
+  "quests": [
+    {
+      "id": "simplyquests:signal_atelier/storage/storage_core",
+      "chapterName": "storage",
+      "title": "Storage Core",
+      "subTitle": "Centralize without replacing the factory",
+      "description": "Build a Refined Storage Controller, Grid, Drive, and initial disk. Power the network from Oritech.",
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/pipes_first"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/storage/storage_core/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Storage Core",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/storage/external_boundaries",
+      "chapterName": "storage",
+      "title": "External Boundaries",
+      "subTitle": "Interfaces are contracts",
+      "description": "Connect an existing inventory through External Storage or an Interface. Keep Oritech pipes responsible for machine-side movement.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/storage/storage_core"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/storage/external_boundaries/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: External Boundaries",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/storage/first_pattern",
+      "chapterName": "storage",
+      "title": "First Pattern",
+      "subTitle": "Request, do not handcraft",
+      "description": "Encode and successfully request a simple crafting pattern through an Autocrafter.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/storage/external_boundaries"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/storage/first_pattern/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: First Pattern",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/storage/factory_request",
+      "chapterName": "storage",
+      "title": "Factory Request",
+      "subTitle": "Let Oritech do the processing",
+      "description": "Request a component whose production passes through an Oritech machine and returns through a deliberate interface boundary.",
+      "x": 384.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/storage/first_pattern"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/storage/factory_request/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Factory Request",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/storage/respect_the_locks",
+      "chapterName": "storage",
+      "title": "Respect the Locks",
+      "subTitle": "Convenience has edges",
+      "description": "Confirm that wireless access, Constructors, Destructors, and remote network links remain unavailable in survival.",
+      "x": 512.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/storage/factory_request"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/storage/respect_the_locks/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Respect the Locks",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    }
+  ],
+  "canvasTexts": [],
+  "canvasImages": [],
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "zoom": 0.85
+}

@@ -18,17 +18,17 @@
 
 ## Documentation site
 
-- Expand the initial MkDocs installation and first-launch pages with a
-  progression and engineering guide, configuration rationale,
-  troubleshooting, server setup, upgrade procedure, and release notes.
+- Expand the player guide with configuration rationale, troubleshooting,
+  server setup, upgrade procedure, and release notes.
 - Add sanitized screenshots and publish the site through CI after the pack's
   first clean graphical launch.
 
 ## Packaging follow-up
 
-- Capture runtime-generated Resource Backpacks, Xaero World Map, and Simply
-  Quests configuration from the first clean graphical Prism launch, sanitize
-  it, and add only the reviewed settings to `overrides/`.
+- Capture runtime-generated Resource Backpacks and Xaero World Map
+  configuration from the first clean graphical Prism launch, sanitize it, and
+  add only the reviewed settings to `overrides/`. Validate the source-derived
+  Simply Quests files against the running mod before release.
 - Inventory all registered controls and implement first-install-only defaults
   for the world map, backpack, and engineering notebook without overwriting the
   rest of `options.txt` or later player changes.

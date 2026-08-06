@@ -1,0 +1,168 @@
+{
+  "group": "signal_atelier",
+  "groupOrder": 0,
+  "groupColor": -3704262,
+  "name": "industry",
+  "title": "Industry",
+  "chapterOrder": 2,
+  "icon": "minecraft:blast_furnace",
+  "quests": [
+    {
+      "id": "simplyquests:signal_atelier/industry/processing_line",
+      "chapterName": "industry",
+      "title": "Processing Line",
+      "subTitle": "From input to product",
+      "description": "Build a repeatable Oritech processing line with explicit inputs, outputs, and overflow handling.",
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/power/renewable_baseline"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/processing_line/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Processing Line",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/principal_alloys",
+      "chapterName": "industry",
+      "title": "Principal Alloys",
+      "subTitle": "Stock the intermediates",
+      "description": "Automate the important alloys and components used throughout Oritech instead of crafting each machine ad hoc.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/processing_line"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/principal_alloys/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Principal Alloys",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/fluids_and_oil",
+      "chapterName": "industry",
+      "title": "Fluids and Oil",
+      "subTitle": "Separate the networks",
+      "description": "Process fluids through dedicated, labeled routes. Confirm that shutdown and restart do not strand or mix contents.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/principal_alloys"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/fluids_and_oil/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Fluids and Oil",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/rebuild_after_restart",
+      "chapterName": "industry",
+      "title": "Rebuild After Restart",
+      "subTitle": "Persistence is part of the machine",
+      "description": "Restart the game or server and verify that multiblocks, inventories, fluids, and energy reconnect correctly.",
+      "x": 384.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/fluids_and_oil"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/rebuild_after_restart/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Rebuild After Restart",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    }
+  ],
+  "canvasTexts": [],
+  "canvasImages": [],
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "zoom": 0.85
+}

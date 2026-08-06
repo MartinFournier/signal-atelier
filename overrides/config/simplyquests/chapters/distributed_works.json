@@ -1,0 +1,168 @@
+{
+  "group": "signal_atelier",
+  "groupOrder": 0,
+  "groupColor": -3704262,
+  "name": "distributed_works",
+  "title": "Distributed Works",
+  "chapterOrder": 3,
+  "icon": "minecraft:rail",
+  "quests": [
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/pipes_first",
+      "chapterName": "distributed_works",
+      "title": "Pipes First",
+      "subTitle": "Local logistics belong to Oritech",
+      "description": "Move items, fluids, and energy with Oritech infrastructure before introducing centralized storage.",
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/rebuild_after_restart"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/pipes_first/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Pipes First",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/remote_site",
+      "chapterName": "distributed_works",
+      "title": "Remote Site",
+      "subTitle": "Build beyond the workshop",
+      "description": "Create a remote extraction or processing site with a clear supply route and safe failure behavior.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/pipes_first"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/remote_site/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Remote Site",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/drone_route",
+      "chapterName": "distributed_works",
+      "title": "Drone Route",
+      "subTitle": "Cross the difficult gap",
+      "description": "Use Oritech drones or another Oritech-native solution for world interaction and long-distance logistics.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/remote_site"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/drone_route/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Drone Route",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/one_loaded_chunk",
+      "chapterName": "distributed_works",
+      "title": "One Loaded Chunk",
+      "subTitle": "Spend persistence carefully",
+      "description": "Place only the single-chunk loader. Confirm ownership, the offline timeout, and the four-chunk-per-player limit before relying on it.",
+      "x": 384.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/drone_route"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/one_loaded_chunk/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: One Loaded Chunk",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    }
+  ],
+  "canvasTexts": [],
+  "canvasImages": [],
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "zoom": 0.85
+}

@@ -16,6 +16,7 @@ nav:
   - Player guide:
       - Install: guide/install.md
       - First launch: guide/first-launch.md
+      - Engineering notebook: guide/progression.md
   - Project reference:
       - Pack decisions: decisions.md
       - Test plan: test-plan.md

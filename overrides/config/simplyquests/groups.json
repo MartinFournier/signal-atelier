@@ -1,0 +1,21 @@
+{
+  "groups": [
+    {
+      "name": "signal_atelier",
+      "title": "Signal Atelier",
+      "color": -3704262,
+      "order": 0,
+      "expanded": true,
+      "chapters": [
+        "orientation",
+        "power",
+        "industry",
+        "distributed_works",
+        "storage",
+        "supertech",
+        "signal_core"
+      ]
+    }
+  ],
+  "rootChapters": []
+}

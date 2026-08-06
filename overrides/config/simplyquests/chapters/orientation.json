@@ -1,0 +1,128 @@
+{
+  "group": "signal_atelier",
+  "groupOrder": 0,
+  "groupColor": -3704262,
+  "name": "orientation",
+  "title": "Orientation",
+  "chapterOrder": 0,
+  "icon": "minecraft:compass",
+  "quests": [
+    {
+      "id": "simplyquests:signal_atelier/orientation/read_the_brief",
+      "chapterName": "orientation",
+      "title": "Read the Brief",
+      "subTitle": "Know the workshop",
+      "description": "Read this notebook and the Oracle Index. Signal Atelier is built around Oritech; Refined Storage is intentionally limited to storage and autocrafting.",
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/orientation/read_the_brief/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Read the Brief",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/orientation/survey_a_site",
+      "chapterName": "orientation",
+      "title": "Survey a Site",
+      "subTitle": "Leave room to grow",
+      "description": "Choose a workshop site with expansion space, safe cable routes, and room for noisy or hazardous late-game machinery.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/orientation/read_the_brief"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/orientation/survey_a_site/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Survey a Site",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/orientation/mark_the_baseline",
+      "chapterName": "orientation",
+      "title": "Mark the Baseline",
+      "subTitle": "Protect the experiment",
+      "description": "Treat this world as disposable while Oritech 2 and NeoForge remain experimental. Confirm that a recoverable backup exists outside the instance.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/orientation/survey_a_site"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/orientation/mark_the_baseline/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Mark the Baseline",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    }
+  ],
+  "canvasTexts": [],
+  "canvasImages": [],
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "zoom": 0.85
+}

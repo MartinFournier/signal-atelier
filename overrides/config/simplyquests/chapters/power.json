@@ -1,0 +1,130 @@
+{
+  "group": "signal_atelier",
+  "groupOrder": 0,
+  "groupColor": -3704262,
+  "name": "power",
+  "title": "Power",
+  "chapterOrder": 1,
+  "icon": "minecraft:redstone",
+  "quests": [
+    {
+      "id": "simplyquests:signal_atelier/power/first_generation",
+      "chapterName": "power",
+      "title": "First Generation",
+      "subTitle": "Make power visible",
+      "description": "Build an Oritech generator and verify that energy reaches a machine. Prefer a measured, expandable layout over a temporary cable tangle.",
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/orientation/mark_the_baseline"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/power/first_generation/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: First Generation",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/power/buffer_and_measure",
+      "chapterName": "power",
+      "title": "Buffer and Measure",
+      "subTitle": "Understand demand",
+      "description": "Add energy storage or monitoring, then observe idle and working demand. Leave capacity for the next processing line.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/power/first_generation"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/power/buffer_and_measure/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Buffer and Measure",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/power/renewable_baseline",
+      "chapterName": "power",
+      "title": "Renewable Baseline",
+      "subTitle": "Keep the workshop alive",
+      "description": "Establish a renewable or continuously supplied generation path before scaling automation.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/power/buffer_and_measure"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/power/renewable_baseline/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Renewable Baseline",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    }
+  ],
+  "canvasTexts": [],
+  "canvasImages": [],
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "zoom": 0.85
+}

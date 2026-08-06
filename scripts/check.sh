@@ -35,7 +35,7 @@ for lock in "${expected_locks[@]}"; do
 done
 
 bash -n scripts/build.sh scripts/check.sh
-python3 -c 'import ast,pathlib; ast.parse(pathlib.Path("scripts/update_modrinth.py").read_text())'
+python3 -c 'import ast,pathlib; [ast.parse(path.read_text()) for path in pathlib.Path("scripts").glob("*.py")]'
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
 scripts/build.sh >/dev/null
 unzip -t dist/signal-atelier-0.3.0.mrpack >/dev/null

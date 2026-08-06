@@ -1,0 +1,168 @@
+{
+  "group": "signal_atelier",
+  "groupOrder": 0,
+  "groupColor": -3704262,
+  "name": "signal_core",
+  "title": "The Signal Core",
+  "chapterOrder": 6,
+  "icon": "minecraft:beacon",
+  "quests": [
+    {
+      "id": "simplyquests:signal_atelier/signal_core/project_charter",
+      "chapterName": "signal_core",
+      "title": "Project Charter",
+      "subTitle": "Define the megaproject",
+      "description": "Choose a visible site and define the Signal Core as a permanent demonstration of renewable supply, nuclear-scale power, particle products, autocrafting, and interdimensional logistics.",
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/supertech/survive_a_restart"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/project_charter/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Project Charter",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/signal_core/production_cells",
+      "chapterName": "signal_core",
+      "title": "Production Cells",
+      "subTitle": "Build for continuous operation",
+      "description": "Dedicate production cells to the Core's major material families. Give each cell monitoring, buffers, and a safe stopped state.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/signal_core/project_charter"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/production_cells/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Production Cells",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/signal_core/interdimensional_supply",
+      "chapterName": "signal_core",
+      "title": "Interdimensional Supply",
+      "subTitle": "Tune every signal",
+      "description": "Supply the project from more than one dimension without Refined Storage wireless or remote-network devices.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/signal_core/production_cells"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/interdimensional_supply/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Interdimensional Supply",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/signal_core/continuous_run",
+      "chapterName": "signal_core",
+      "title": "Continuous Run",
+      "subTitle": "The atelier answers",
+      "description": "Run the complete Signal Core supply chain through a full operating cycle and restart. Record bottlenecks before calling the workshop complete.",
+      "x": 384.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/signal_core/interdimensional_supply"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/continuous_run/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Continuous Run",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    }
+  ],
+  "canvasTexts": [],
+  "canvasImages": [],
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "zoom": 0.85
+}

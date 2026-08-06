@@ -1,0 +1,168 @@
+{
+  "group": "signal_atelier",
+  "groupOrder": 0,
+  "groupColor": -3704262,
+  "name": "supertech",
+  "title": "Supertech",
+  "chapterOrder": 5,
+  "icon": "minecraft:nether_star",
+  "quests": [
+    {
+      "id": "simplyquests:signal_atelier/supertech/nuclear_scale",
+      "chapterName": "supertech",
+      "title": "Nuclear Scale",
+      "subTitle": "Power for the final workshop",
+      "description": "Bring Oritech's reactor-scale generation online with safe inputs, outputs, shutdown behavior, and restart recovery.",
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/storage/respect_the_locks"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/nuclear_scale/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Nuclear Scale",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/supertech/particle_products",
+      "chapterName": "supertech",
+      "title": "Particle Products",
+      "subTitle": "Make the rare repeatable",
+      "description": "Operate the particle accelerator and turn its products into a documented, repeatable production chain.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/supertech/nuclear_scale"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/particle_products/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Particle Products",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/supertech/renewable_supertech",
+      "chapterName": "supertech",
+      "title": "Renewable Supertech",
+      "subTitle": "Remove the heroic hand-feed",
+      "description": "Make the critical supertech inputs renewable or sustainably supplied from distributed works.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/supertech/particle_products"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/renewable_supertech/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Renewable Supertech",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/supertech/survive_a_restart",
+      "chapterName": "supertech",
+      "title": "Survive a Restart",
+      "subTitle": "Prove the whole factory",
+      "description": "Restart at full scale and verify power, processing, storage requests, drones, and remote sites without duplication or loss.",
+      "x": 384.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": true
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/supertech/renewable_supertech"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/survive_a_restart/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Survive a Restart",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:paper"
+    }
+  ],
+  "canvasTexts": [],
+  "canvasImages": [],
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "zoom": 0.85
+}

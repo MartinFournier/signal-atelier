@@ -42,7 +42,8 @@ The current manifest contains the complete intended first-test experience:
 - Sodium, ModernFix, FerriteCore, Lithium, ImmediatelyFast, and Dynamic FPS
 - Iris with optional Complementary Reimagined, LambDynamicLights, and optional
   Sound Physics Remastered
-- Rechiseled, Simply Quests, and a physical single-chunk loader
+- Rechiseled, a 27-milestone Simply Quests engineering notebook, and a
+  physical single-chunk loader
 - Simple Menu with Signal Atelier title, logo, and window icons
 
 Every artifact is pinned by Modrinth URL and hashes. Static packaging passes;

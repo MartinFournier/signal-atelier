@@ -49,6 +49,9 @@
   direction and documentation, not essential rewards or recipe permissions.
 - Organize quests around orientation, power, industry, distributed works,
   storage, supertech, and the optional Signal Core megaproject.
+- Ship 27 manual checklist milestones across those seven chapters. Keep the
+  notebook reward-free and independent of recipes so experimental registry
+  changes cannot block a world.
 - Add XP Tome with its default 1,395 XP capacity, equivalent to level 30.
 - Add Tax Free Levels for level-independent XP accounting while retaining the
   vanilla anvil limit.
@@ -113,8 +116,8 @@
   copper to 27 slots, iron to 27 slots, and nesting off.
 - Capture Xaero's generated config and disable entity tracking and teleport;
   retain player markers only if independently supported.
-- Create the initial non-gating Simply Quests engineering-notebook content
-  after its generated storage format is available.
+- Validate the shipped Simply Quests chapter format and all cross-chapter
+  dependencies in the first clean client and dedicated-server launches.
 - Treat recipe removal as the initial enforcement layer. Confirm creative-tab
   visibility and every alternate acquisition path during the first launch,
   then add item hiding or stronger removal only where the running mods require

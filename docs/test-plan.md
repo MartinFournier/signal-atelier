@@ -100,6 +100,9 @@ each comparison.
   and behaves safely while owners are offline.
 - Verify Simply Quests progress survives logout, server restart, pack update,
   team changes, and restoration from backup; quests must never gate recipes.
+- Confirm the Signal Atelier group contains seven ordered chapters and 27
+  milestones, every dependency unlocks in sequence, and manual checkboxes
+  synchronize between clients without granting items, XP, or commands.
 - Complete the provisional Signal Core production chain without relying on
   locked Refined Storage or chunk-loader features.
 - Verify Simple Menu shows `Signal Atelier` in the window title and renders the
