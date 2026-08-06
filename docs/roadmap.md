@@ -23,6 +23,12 @@
 - Add sanitized screenshots and publish the site through CI after the pack's
   first clean graphical launch.
 
+## Catalog maintenance
+
+- Generate a tracked TSV from authoritative manifest and Modrinth metadata with
+  each mod's name, category, checksum, project URL, and license when available.
+  Keep it generated rather than maintaining duplicate metadata by hand.
+
 ## Packaging follow-up
 
 - Capture runtime-generated Traveler's Backpack and Xaero World Map
