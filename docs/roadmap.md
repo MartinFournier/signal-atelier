@@ -9,33 +9,11 @@
 - Capture only required runtime configuration, sanitize it, and review every
   file before adding it to `overrides/`.
 
-## Continuous integration
-
-- The baseline pull-request and main-branch workflow runs `scripts/check.sh`,
-  builds MkDocs in strict mode, and retains the generated `.mrpack` for seven
-  days. Keep it independent from local Prism state, Minecraft accounts, and
-  launcher credentials.
-- The scheduled Modrinth workflow checks every Monday and can also be run
-  manually. It preserves compatibility and release-channel policy, refreshes a
-  dedicated pull request, and includes old/new versions plus upstream
-  changelogs.
-- Never auto-merge mod updates. Experimental Oritech/Oracle Index releases,
-  loader changes, missing changelogs, dependency removals, and environment or
-  license changes require explicit review.
-- Run the same manifest, override, archive, and secret checks on generated
-  update pull requests before they are opened.
-
 ## Documentation site
 
 - Expand the player guide with configuration rationale, troubleshooting,
   server setup, upgrade procedure, and release notes.
 - Add sanitized screenshots after the pack's first clean graphical launch.
-
-## Catalog maintenance
-
-- Generate a tracked TSV from authoritative manifest and Modrinth metadata with
-  each mod's name, category, checksum, project URL, and license when available.
-  Keep it generated rather than maintaining duplicate metadata by hand.
 
 ## Packaging follow-up
 
@@ -47,3 +25,15 @@
   for the world map, backpack, and engineering notebook without overwriting the
   rest of `options.txt` or later player changes.
 - Verify recipe locks and branding in-game before publishing 0.3.0.
+- Design the exact Signal Core recipe after a complete Oritech playthrough
+  establishes realistic production rates.
+- Add and enable the curated splash-text resource pack after verifying the
+  existing title logo and icons in-game.
+
+## Release readiness
+
+- Keep scheduled Modrinth update pull requests review-only. Manually review
+  experimental releases, loader changes, missing changelogs, dependency
+  changes, environments, and licenses.
+- Export the final `.mrpack`, import it into a clean Prism instance, and repeat
+  the dedicated-server and multiplayer checks before publishing 0.3.0.
