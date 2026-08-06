@@ -3,6 +3,18 @@
 Signal Atelier has not reached a stable release. Test candidates may require a
 new disposable world and should never be applied to the only copy of a save.
 
+## Manual candidate artifacts
+
+Maintainers can manually dispatch the **Candidate artifact** workflow for a
+specific trusted commit. It runs static pack and documentation validation,
+builds the reproducible `.mrpack`, verifies its companion SHA-256 file, and
+uploads both as a temporary GitHub Actions artifact.
+
+The workflow has read-only repository permissions and no publishing
+credentials. It does not create a GitHub release, upload to Modrinth, run the
+pack, or establish release readiness. Record the workflow commit and checksum
+when using its output for the graphical validation tasklist.
+
 ## 0.3.0 test candidate
 
 Target: Minecraft 26.1.2, NeoForge 26.1.2.81, Java 25, and Oritech
