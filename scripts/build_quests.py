@@ -11,6 +11,13 @@ GROUP = "signal_atelier"
 GROUP_COLOR = -3704262  # ARGB FFC77A3A, stored as a signed Java integer.
 ROOT = Path(__file__).parents[1]
 OUTPUT = ROOT / "overrides/config/simplyquests"
+OPTIONAL_QUESTS = {
+    "distributed_works/one_loaded_chunk",
+    "signal_core/project_charter",
+    "signal_core/production_cells",
+    "signal_core/interdimensional_supply",
+    "signal_core/continuous_run",
+}
 
 CHAPTERS = [
     (
@@ -72,7 +79,7 @@ CHAPTERS = [
         "Supertech",
         "minecraft:nether_star",
         [
-            ("nuclear_scale", "Nuclear Scale", "Power for the final workshop", "Bring Oritech's reactor-scale generation online with safe inputs, outputs, shutdown behavior, and restart recovery.", "storage/respect_the_locks"),
+            ("nuclear_scale", "Nuclear Scale", "Power for the final workshop", "Bring Oritech's reactor-scale generation online with safe inputs, outputs, shutdown behavior, and restart recovery.", ("storage/respect_the_locks", "distributed_works/drone_route")),
             ("particle_products", "Particle Products", "Make the rare repeatable", "Operate the particle accelerator and turn its products into a documented, repeatable production chain.", "nuclear_scale"),
             ("renewable_supertech", "Renewable Supertech", "Remove the heroic hand-feed", "Make the critical supertech inputs renewable or sustainably supplied from distributed works.", "particle_products"),
             ("survive_a_restart", "Survive a Restart", "Prove the whole factory", "Restart at full scale and verify power, processing, storage requests, drones, and remote sites without duplication or loss.", "renewable_supertech"),
@@ -96,14 +103,20 @@ def quest_id(chapter: str, slug: str) -> str:
     return f"simplyquests:{GROUP}/{chapter}/{slug}"
 
 
-def dependency_id(chapter: str, dependency: str | None) -> list[str]:
-    if dependency is None:
-        return []
+def dependency_id(chapter: str, dependency: str) -> str:
     if "/" in dependency:
         dependency_chapter, dependency_slug = dependency.split("/", 1)
     else:
         dependency_chapter, dependency_slug = chapter, dependency
-    return [quest_id(dependency_chapter, dependency_slug)]
+    return quest_id(dependency_chapter, dependency_slug)
+
+
+def dependency_ids(chapter: str, dependencies: str | tuple[str, ...] | None) -> list[str]:
+    if dependencies is None:
+        return []
+    if isinstance(dependencies, str):
+        dependencies = (dependencies,)
+    return [dependency_id(chapter, dependency) for dependency in dependencies]
 
 
 def make_quest(chapter: str, index: int, data: tuple) -> dict:
@@ -120,11 +133,11 @@ def make_quest(chapter: str, index: int, data: tuple) -> dict:
         "shape": "GEAR",
         "size": 24.0,
         "settings": {
-            "isOptional": False,
+            "isOptional": f"{chapter}/{slug}" in OPTIONAL_QUESTS,
             "isRepeatable": False,
             "useTaskIcon": True,
         },
-        "dependencies": dependency_id(chapter, dependency),
+        "dependencies": dependency_ids(chapter, dependency),
         "tasks": [
             {
                 "id": f"{identifier}/acknowledge",

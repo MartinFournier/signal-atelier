@@ -18,7 +18,7 @@
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
-        "isOptional": false,
+        "isOptional": true,
         "isRepeatable": false,
         "useTaskIcon": true
       },
@@ -56,7 +56,7 @@
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
-        "isOptional": false,
+        "isOptional": true,
         "isRepeatable": false,
         "useTaskIcon": true
       },
@@ -94,7 +94,7 @@
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
-        "isOptional": false,
+        "isOptional": true,
         "isRepeatable": false,
         "useTaskIcon": true
       },
@@ -132,7 +132,7 @@
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
-        "isOptional": false,
+        "isOptional": true,
         "isRepeatable": false,
         "useTaskIcon": true
       },
