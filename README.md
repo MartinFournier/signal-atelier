@@ -4,6 +4,8 @@
 
 [![CI](https://github.com/MartinFournier/signal-atelier/actions/workflows/ci.yml/badge.svg)](https://github.com/MartinFournier/signal-atelier/actions/workflows/ci.yml)
 
+[Read the Signal Atelier player guide](https://dev.mfournier.com/signal-atelier/).
+
 Signal Atelier is a small, technology-focused Minecraft modpack built around
 Oritech. It favors one coherent factory system over a kitchen sink of machines
 that solve the same problems in slightly different ways.
@@ -122,8 +124,8 @@ pull requests, and the MkDocs player guide.
 
 ## Documentation
 
-The player guide is authored with MkDocs. Install its isolated dependency and
-build the site with:
+The [published player guide](https://dev.mfournier.com/signal-atelier/) is
+authored with MkDocs. Install its isolated dependency and build the site with:
 
 ```sh
 python -m pip install -r requirements-docs.txt
