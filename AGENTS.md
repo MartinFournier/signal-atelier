@@ -28,6 +28,9 @@ mods or mix incompatible loaders.
 
 ## Working conventions
 
+- Treat the repository and all contribution-facing output as public. Never add
+  machine-specific paths, private infrastructure details, backup locations,
+  personal operational notes, unnecessary identifiers, or unsanitized logs.
 - Keep the source manifest and non-secret project documentation in Git once the
   project structure is established. Do not commit account tokens, launcher
   credentials, access tokens, logs containing session data, or bundled mods
