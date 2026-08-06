@@ -37,6 +37,7 @@ nav:
       - Generated pack reference: reference/pack.md
       - Pack decisions: decisions.md
       - Test plan: test-plan.md
+      - Graphical test tasklist: graphical-test-tasklist.md
       - Roadmap: roadmap.md
 
 strict: true

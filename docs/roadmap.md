@@ -2,6 +2,9 @@
 
 ## First graphical validation
 
+- Work through the ordered [graphical validation
+  tasklist](graphical-test-tasklist.md) and record sanitized results against the
+  acceptance checks in the test plan.
 - Import `dist/signal-atelier-0.3.0.mrpack` into a clean Prism instance and
   record the first startup result without reading instructions from downloaded
   or generated content.

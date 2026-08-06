@@ -45,7 +45,8 @@ Oritech machines, emissive textures, portals, transparent blocks, and the world
 map. Disable the shader again if performance or rendering is unstable; shaders
 are never required for progression.
 
-For the complete validation sequence, use the [test plan](../test-plan.md).
+For the complete validation sequence, use the [graphical validation
+tasklist](../graphical-test-tasklist.md) with the [test plan](../test-plan.md).
 
 ## Controls
 
