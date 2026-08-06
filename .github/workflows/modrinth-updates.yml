@@ -28,10 +28,13 @@ jobs:
       - name: Resolve compatible updates
         run: scripts/update_modrinth.py --report "$RUNNER_TEMP/modrinth-updates.md"
 
+      - name: Refresh mod catalog
+        run: scripts/generate_mod_catalog.py --refresh
+
       - name: Detect changes
         id: changes
         run: |
-          if git diff --quiet -- modrinth.index.json; then
+          if git diff --quiet -- modrinth.index.json data/modrinth-metadata.json docs/reference/mods.md docs/reference/mods.tsv; then
             echo "found=false" >> "$GITHUB_OUTPUT"
           else
             echo "found=true" >> "$GITHUB_OUTPUT"
@@ -50,7 +53,7 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git switch -C "$branch"
-          git add modrinth.index.json
+          git add modrinth.index.json data/modrinth-metadata.json docs/reference/mods.md docs/reference/mods.tsv
           git commit -m "chore: update Modrinth artifacts"
           git fetch origin "$branch:refs/remotes/origin/$branch" || true
           git push --force-with-lease origin "HEAD:refs/heads/$branch"

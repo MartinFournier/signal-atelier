@@ -1,0 +1,970 @@
+{
+  "schema": 1,
+  "projects": {
+    "4sYI62kA": {
+      "title": "Oritech",
+      "slug": "oritech",
+      "project_type": "mod",
+      "categories": [
+        "technology"
+      ],
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://github.com/Rearth/Oritech?tab=CC0-1.0-1-ov-file"
+      }
+    },
+    "5ZwdcRci": {
+      "title": "ImmediatelyFast",
+      "slug": "immediatelyfast",
+      "project_type": "mod",
+      "categories": [
+        "optimization"
+      ],
+      "license": {
+        "id": "LGPL-3.0-or-later",
+        "name": "GNU Lesser General Public License v3.0 or later",
+        "url": ""
+      }
+    },
+    "6pdhya1q": {
+      "title": "Simple Menu",
+      "slug": "simple-menu",
+      "project_type": "mod",
+      "categories": [
+        "decoration",
+        "management",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "8BmcQJ2H": {
+      "title": "Geckolib",
+      "slug": "geckolib",
+      "project_type": "mod",
+      "categories": [
+        "game-mechanics",
+        "library",
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "9s6osm5g": {
+      "title": "Cloth Config API",
+      "slug": "cloth-config",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LGPL-3.0-only",
+        "name": "GNU Lesser General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "AANobbMI": {
+      "title": "Sodium",
+      "slug": "sodium",
+      "project_type": "mod",
+      "categories": [
+        "optimization"
+      ],
+      "license": {
+        "id": "LicenseRef-Polyform-Shield-1.0.0",
+        "name": "",
+        "url": "https://github.com/CaffeineMC/sodium/blob/dev/LICENSE.md"
+      }
+    },
+    "AnpW69o3": {
+      "title": "XP Tome",
+      "slug": "xp-tome",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "storage",
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "B0g2vT6l": {
+      "title": "Rechiseled",
+      "slug": "rechiseled",
+      "project_type": "mod",
+      "categories": [
+        "decoration"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "EsAfCjCV": {
+      "title": "AppleSkin",
+      "slug": "appleskin",
+      "project_type": "mod",
+      "categories": [
+        "food",
+        "utility"
+      ],
+      "license": {
+        "id": "Unlicense",
+        "name": "The Unlicense",
+        "url": ""
+      }
+    },
+    "HVnmMxH1": {
+      "title": "Complementary Shaders - Reimagined",
+      "slug": "complementary-reimagined",
+      "project_type": "shader",
+      "categories": [
+        "colored-lighting",
+        "vanilla-like"
+      ],
+      "license": {
+        "id": "LicenseRef-Custom",
+        "name": "",
+        "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt"
+      }
+    },
+    "J8MMsNrL": {
+      "title": "Oracle Index",
+      "slug": "oracle-index",
+      "project_type": "mod",
+      "categories": [
+        "library",
+        "utility"
+      ],
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": ""
+      }
+    },
+    "KDvYkUg3": {
+      "title": "Refined Storage",
+      "slug": "refined-storage",
+      "project_type": "mod",
+      "categories": [
+        "storage",
+        "technology",
+        "transportation"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "LN9BxssP": {
+      "title": "SuperMartijn642's Config Lib",
+      "slug": "supermartijn642s-config-lib",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "LQ3K71Q1": {
+      "title": "Dynamic FPS",
+      "slug": "dynamic-fps",
+      "project_type": "mod",
+      "categories": [
+        "management",
+        "optimization",
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "NcUtCpym": {
+      "title": "Xaero's World Map",
+      "slug": "xaeros-world-map",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "transportation",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "Q2OqKxDG": {
+      "title": "Better Advancements",
+      "slug": "better-advancements",
+      "project_type": "mod",
+      "categories": [
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-Dont-Be-a-Jerk",
+        "name": "",
+        "url": "https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md"
+      }
+    },
+    "RYtXKJPr": {
+      "title": "GraveStone Mod",
+      "slug": "gravestone-mod",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "technology",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "TPKaNwWP": {
+      "title": "Universal Data Pack",
+      "slug": "universal-data-pack",
+      "project_type": "mod",
+      "categories": [
+        "game-mechanics",
+        "management",
+        "utility"
+      ],
+      "license": {
+        "id": "GPL-3.0-or-later",
+        "name": "GNU General Public License v3.0 or later",
+        "url": ""
+      }
+    },
+    "UVtY3ZAC": {
+      "title": "Enchantment Descriptions",
+      "slug": "enchantment-descriptions",
+      "project_type": "mod",
+      "categories": [
+        "magic",
+        "utility"
+      ],
+      "license": {
+        "id": "LGPL-2.1-only",
+        "name": "GNU Lesser General Public License v2.1 only",
+        "url": ""
+      }
+    },
+    "YL57xq9U": {
+      "title": "Iris Shaders",
+      "slug": "iris",
+      "project_type": "mod",
+      "categories": [
+        "decoration",
+        "optimization"
+      ],
+      "license": {
+        "id": "LGPL-3.0-only",
+        "name": "GNU Lesser General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "aC3cM3Vq": {
+      "title": "Mouse Tweaks",
+      "slug": "mouse-tweaks",
+      "project_type": "mod",
+      "categories": [
+        "storage",
+        "utility"
+      ],
+      "license": {
+        "id": "BSD-3-Clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "url": ""
+      }
+    },
+    "aaRl8GiW": {
+      "title": "Prickle",
+      "slug": "prickle",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LGPL-2.1-only",
+        "name": "GNU Lesser General Public License v2.1 only",
+        "url": ""
+      }
+    },
+    "b1ZV3DIJ": {
+      "title": "Athena",
+      "slug": "athena-ctm",
+      "project_type": "mod",
+      "categories": [
+        "decoration",
+        "library"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "e0M1UDsY": {
+      "title": "Collective",
+      "slug": "collective",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "gvQqBUqZ": {
+      "title": "Lithium",
+      "slug": "lithium",
+      "project_type": "mod",
+      "categories": [
+        "optimization"
+      ],
+      "license": {
+        "id": "LGPL-3.0-only",
+        "name": "GNU Lesser General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "jCBrrLTs": {
+      "title": "Tax Free Levels",
+      "slug": "tax-free-levels",
+      "project_type": "mod",
+      "categories": [
+        "game-mechanics"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "lhGA9TYQ": {
+      "title": "Architectury API",
+      "slug": "architectury-api",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LGPL-3.0-only",
+        "name": "GNU Lesser General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "nmDcB62a": {
+      "title": "ModernFix",
+      "slug": "modernfix",
+      "project_type": "mod",
+      "categories": [
+        "optimization",
+        "utility"
+      ],
+      "license": {
+        "id": "LGPL-3.0-only",
+        "name": "GNU Lesser General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "nvQzSEkH": {
+      "title": "Jade \ud83d\udd0d",
+      "slug": "jade",
+      "project_type": "mod",
+      "categories": [
+        "utility"
+      ],
+      "license": {
+        "id": "CC-BY-NC-SA-4.0",
+        "name": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+        "url": ""
+      }
+    },
+    "p19vrgc2": {
+      "title": "Fusion (Connected Textures)",
+      "slug": "fusion-connected-textures",
+      "project_type": "mod",
+      "categories": [
+        "decoration"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "qyVF9oeo": {
+      "title": "Sound Physics Remastered",
+      "slug": "sound-physics-remastered",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "utility"
+      ],
+      "license": {
+        "id": "GPL-3.0-only",
+        "name": "GNU General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "rOUBggPv": {
+      "title": "SuperMartijn642's Core Lib",
+      "slug": "supermartijn642s-core-lib",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "rlloIFEV": {
+      "title": "Traveler's Backpack",
+      "slug": "travelersbackpack",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "equipment",
+        "storage"
+      ],
+      "license": {
+        "id": "LGPL-3.0-only",
+        "name": "GNU Lesser General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "t1VgucWo": {
+      "title": "Chunk Loaders",
+      "slug": "chunk-loaders",
+      "project_type": "mod",
+      "categories": [
+        "technology",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
+    "u6dRKJwZ": {
+      "title": "Just Enough Items (JEI)",
+      "slug": "jei",
+      "project_type": "mod",
+      "categories": [
+        "library",
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "uXXizFIs": {
+      "title": "FerriteCore",
+      "slug": "ferrite-core",
+      "project_type": "mod",
+      "categories": [
+        "optimization",
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "uwJu7Fi8": {
+      "title": "Simply Quests",
+      "slug": "simply-quests",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "game-mechanics",
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
+    "yBW8D80W": {
+      "title": "LambDynamicLights - Dynamic Lights",
+      "slug": "lambdynamiclights",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "decoration",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-Lambda-License",
+        "name": "",
+        "url": "https://github.com/LambdAurora/LambDynamicLights/blob/1.21.5/LICENSE"
+      }
+    }
+  },
+  "versions": {
+    "4IWjiFcM": {
+      "project_id": "6pdhya1q",
+      "version_number": "26.1.2-2.1-fabric+forge+neo",
+      "version_type": "release",
+      "date_published": "2026-04-09T22:33:37.480062Z",
+      "dependencies": [
+        {
+          "project_id": "e0M1UDsY",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "72WSQzeC": {
+      "project_id": "4sYI62kA",
+      "version_number": "2.0.0-exp3",
+      "version_type": "beta",
+      "date_published": "2026-08-03T18:29:24.706416Z",
+      "dependencies": [
+        {
+          "project_id": "J8MMsNrL",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "8BmcQJ2H",
+          "version_id": null,
+          "dependency_type": "required"
+        },
+        {
+          "project_id": "b1ZV3DIJ",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "8Hsu82sg": {
+      "project_id": "Q2OqKxDG",
+      "version_number": "0.6.0.76",
+      "version_type": "release",
+      "date_published": "2026-08-03T14:28:43.719751Z",
+      "dependencies": []
+    },
+    "8KRMFzZ7": {
+      "project_id": "b1ZV3DIJ",
+      "version_number": "4.7.3",
+      "version_type": "release",
+      "date_published": "2026-04-23T03:56:08.805277Z",
+      "dependencies": []
+    },
+    "9G0iRx9i": {
+      "project_id": "u6dRKJwZ",
+      "version_number": "29.21.0.66",
+      "version_type": "beta",
+      "date_published": "2026-07-31T17:00:28.875014Z",
+      "dependencies": []
+    },
+    "Albqzwfg": {
+      "project_id": "p19vrgc2",
+      "version_number": "1.3.12-neoforge-mc26.1",
+      "version_type": "release",
+      "date_published": "2026-07-29T22:03:25.224924Z",
+      "dependencies": []
+    },
+    "FzfKD3xX": {
+      "project_id": "aaRl8GiW",
+      "version_number": "26.1.2.6",
+      "version_type": "release",
+      "date_published": "2026-07-08T23:38:26.686263Z",
+      "dependencies": []
+    },
+    "Iy64Jptk": {
+      "project_id": "t1VgucWo",
+      "version_number": "1.2.9-neoforge-mc26.1",
+      "version_type": "release",
+      "date_published": "2026-07-04T17:30:41.151399Z",
+      "dependencies": [
+        {
+          "project_id": "LN9BxssP",
+          "version_id": null,
+          "dependency_type": "required"
+        },
+        {
+          "project_id": "rOUBggPv",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "JsaNH2Rl": {
+      "project_id": "rOUBggPv",
+      "version_number": "1.1.22-neoforge-mc26.1",
+      "version_type": "release",
+      "date_published": "2026-07-28T14:06:16.860242Z",
+      "dependencies": []
+    },
+    "LtVvw4uS": {
+      "project_id": "uXXizFIs",
+      "version_number": "9.0.0-neoforge",
+      "version_type": "release",
+      "date_published": "2026-03-24T18:31:50.324216Z",
+      "dependencies": []
+    },
+    "MgE23vi6": {
+      "project_id": "RYtXKJPr",
+      "version_number": "neoforge-1.0.38+26.1.2",
+      "version_type": "release",
+      "date_published": "2026-07-30T14:21:53.976643Z",
+      "dependencies": [
+        {
+          "project_id": "nvQzSEkH",
+          "version_id": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    "NYmekdmx": {
+      "project_id": "yBW8D80W",
+      "version_number": "4.11.0+26.1.2",
+      "version_type": "release",
+      "date_published": "2026-06-16T09:19:22.824883Z",
+      "dependencies": [
+        {
+          "project_id": "reCfnRvJ",
+          "version_id": null,
+          "dependency_type": "incompatible"
+        },
+        {
+          "project_id": "PxQSWIcD",
+          "version_id": null,
+          "dependency_type": "incompatible"
+        },
+        {
+          "project_id": "P7dR8mSH",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "P12kjgPK": {
+      "project_id": "KDvYkUg3",
+      "version_number": "3.2.1",
+      "version_type": "release",
+      "date_published": "2026-06-07T15:12:07.907201Z",
+      "dependencies": []
+    },
+    "PnHzV60Y": {
+      "project_id": "uwJu7Fi8",
+      "version_number": "0.1.1",
+      "version_type": "beta",
+      "date_published": "2026-06-14T18:21:26.495750Z",
+      "dependencies": []
+    },
+    "T1BCIEn8": {
+      "project_id": "rlloIFEV",
+      "version_number": "26.1.2-11.2.6",
+      "version_type": "release",
+      "date_published": "2026-07-28T14:46:53.714753Z",
+      "dependencies": [
+        {
+          "project_id": "yBW8D80W",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "jtmvUHXj",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "vRYk0bv7",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "SaCpeal4",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "tagwiZkJ",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "nfn13YXA",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "fRiHVvU7",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "DMu0oBKf",
+          "version_id": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    "TimoYzse": {
+      "project_id": "9s6osm5g",
+      "version_number": "26.1.154+neoforge",
+      "version_type": "release",
+      "date_published": "2026-03-26T16:04:39.594678Z",
+      "dependencies": []
+    },
+    "UETw0GTI": {
+      "project_id": "AANobbMI",
+      "version_number": "mc26.1.2-0.9.1-neoforge",
+      "version_type": "release",
+      "date_published": "2026-07-08T21:04:04.939552Z",
+      "dependencies": []
+    },
+    "V6JHyPSD": {
+      "project_id": "LQ3K71Q1",
+      "version_number": "3.11.7",
+      "version_type": "release",
+      "date_published": "2026-05-28T10:43:40.585528Z",
+      "dependencies": [
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    "Vd1fgVcT": {
+      "project_id": "aC3cM3Vq",
+      "version_number": "26.1-2.31-neoforge",
+      "version_type": "release",
+      "date_published": "2026-03-29T13:38:34.215512Z",
+      "dependencies": []
+    },
+    "YuBfnIgK": {
+      "project_id": "YL57xq9U",
+      "version_number": "1.11.3+26.1-neoforge",
+      "version_type": "release",
+      "date_published": "2026-08-03T20:53:13.090140Z",
+      "dependencies": []
+    },
+    "adbrNJLm": {
+      "project_id": "5ZwdcRci",
+      "version_number": "1.15.3+26.1-neoforge",
+      "version_type": "release",
+      "date_published": "2026-06-30T22:02:27.787010Z",
+      "dependencies": []
+    },
+    "bhoIwLZm": {
+      "project_id": "B0g2vT6l",
+      "version_number": "1.2.5-neoforge-mc26.1",
+      "version_type": "release",
+      "date_published": "2026-07-08T13:46:22.197123Z",
+      "dependencies": [
+        {
+          "project_id": "rOUBggPv",
+          "version_id": null,
+          "dependency_type": "required"
+        },
+        {
+          "project_id": "LN9BxssP",
+          "version_id": null,
+          "dependency_type": "required"
+        },
+        {
+          "project_id": "p19vrgc2",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "eZ0KJiEA": {
+      "project_id": "gvQqBUqZ",
+      "version_number": "mc26.1.2-0.24.7-neoforge",
+      "version_type": "release",
+      "date_published": "2026-07-29T11:40:19.063019Z",
+      "dependencies": []
+    },
+    "fJhWavsR": {
+      "project_id": "qyVF9oeo",
+      "version_number": "neoforge-1.5.1+26.1.2",
+      "version_type": "beta",
+      "date_published": "2026-04-10T05:16:20.980098Z",
+      "dependencies": [
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "9eGKb6K1",
+          "version_id": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    "gD2yQaPN": {
+      "project_id": "LN9BxssP",
+      "version_number": "1.1.8-neoforge-mc26.1",
+      "version_type": "release",
+      "date_published": "2026-06-23T14:35:44.969004Z",
+      "dependencies": []
+    },
+    "gWlwZzoj": {
+      "project_id": "nvQzSEkH",
+      "version_number": "26.1.8+neoforge",
+      "version_type": "release",
+      "date_published": "2026-06-26T22:27:28.971773Z",
+      "dependencies": [
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    "hzRdhkRf": {
+      "project_id": "UVtY3ZAC",
+      "version_number": "26.1.2.5",
+      "version_type": "release",
+      "date_published": "2026-06-18T00:38:58.620543Z",
+      "dependencies": [
+        {
+          "project_id": "aaRl8GiW",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "i8MiVItH": {
+      "project_id": "EsAfCjCV",
+      "version_number": "3.0.9+mc26.1",
+      "version_type": "release",
+      "date_published": "2026-04-01T04:52:23.143854Z",
+      "dependencies": []
+    },
+    "iXqgYZEw": {
+      "project_id": "e0M1UDsY",
+      "version_number": "26.1.2-8.32-fabric+forge+neo",
+      "version_type": "release",
+      "date_published": "2026-06-25T11:38:51.753761Z",
+      "dependencies": []
+    },
+    "jNWL0rAJ": {
+      "project_id": "J8MMsNrL",
+      "version_number": "2.0.0-exp1",
+      "version_type": "release",
+      "date_published": "2026-07-29T19:45:03.168060Z",
+      "dependencies": [
+        {
+          "project_id": "lhGA9TYQ",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "ltX2ZaPs": {
+      "project_id": "NcUtCpym",
+      "version_number": "neoforge-26.1.2-1.44.2",
+      "version_type": "release",
+      "date_published": "2026-07-17T08:45:27.752411Z",
+      "dependencies": [
+        {
+          "project_id": "gF3BGWvG",
+          "version_id": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    "oG75RchZ": {
+      "project_id": "nmDcB62a",
+      "version_number": "5.27.20+mc26.1.2",
+      "version_type": "release",
+      "date_published": "2026-07-18T18:48:21.206352Z",
+      "dependencies": []
+    },
+    "ppHJgCG9": {
+      "project_id": "jCBrrLTs",
+      "version_number": "1.5.4",
+      "version_type": "release",
+      "date_published": "2026-06-11T16:27:37.758707Z",
+      "dependencies": [
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "qhHYUN03": {
+      "project_id": "TPKaNwWP",
+      "version_number": "26.1-2.1.0",
+      "version_type": "release",
+      "date_published": "2026-07-03T05:32:19.957820Z",
+      "dependencies": []
+    },
+    "uNG0WqnM": {
+      "project_id": "lhGA9TYQ",
+      "version_number": "20.0.12+neoforge",
+      "version_type": "release",
+      "date_published": "2026-07-26T15:20:23.852019Z",
+      "dependencies": []
+    },
+    "wM2OXCPi": {
+      "project_id": "AnpW69o3",
+      "version_number": "v2.5.1",
+      "version_type": "release",
+      "date_published": "2026-04-28T20:44:17.780473Z",
+      "dependencies": []
+    },
+    "xfVfPcoC": {
+      "project_id": "8BmcQJ2H",
+      "version_number": "5.5.2",
+      "version_type": "release",
+      "date_published": "2026-06-27T03:10:38.819524Z",
+      "dependencies": []
+    },
+    "yCCduG44": {
+      "project_id": "HVnmMxH1",
+      "version_number": "r5.8.1",
+      "version_type": "release",
+      "date_published": "2026-05-21T14:50:03.992642Z",
+      "dependencies": []
+    }
+  }
+}

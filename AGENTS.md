@@ -34,6 +34,10 @@
 - Run `scripts/gate.sh` before committing. It runs pack and documentation checks,
   workflow linting, secret scanning, and whitespace validation. Local validation
   requires `uv`, `actionlint`, and `gitleaks` plus the pack build tools.
+- Treat `data/modrinth-metadata.json`, `docs/reference/mods.tsv`, and
+  `docs/reference/mods.md` as generated files. Refresh them with
+  `scripts/generate_mod_catalog.py --refresh`; never edit them by hand or fetch
+  live Modrinth metadata during ordinary documentation builds.
 - Treat the dedicated-server smoke workflow as the runtime compatibility gate
   for manifest, override, loader, and smoke-runner changes. Cache only
   content-addressed downloads, rehash every restore, and never cache worlds,
