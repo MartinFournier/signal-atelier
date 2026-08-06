@@ -32,6 +32,23 @@ Storage branches from the first Distributed Works logistics milestone, so a
 central inventory can grow alongside remote industry. The Signal Core remains
 the final objective.
 
+## System boundaries
+
+The notebook deliberately teaches a few cross-mod contracts:
+
+- Oritech owns power, processing, machine transport, remote work, and world
+  interaction. Refined Storage owns centralized storage, requests, and
+  autocrafting.
+- Traveler's Backpack, GraveStone, and XP Tome form a recovery loop that
+  should be proven with a controlled test before valuable expeditions.
+- Xaero waypoints identify workshops and remote sites; they do not replace
+  physical travel or Oritech logistics.
+- The single-chunk loader is optional resilience for a proven site, not a
+  requirement for making a factory safe.
+- Rechiseled supplies the industrial building palette without introducing a
+  second progression system.
+- The Signal Core is an optional capstone rather than a recipe or quest gate.
+
 ## Completing a milestone
 
 Check a milestone only after its description is true in the world. The game

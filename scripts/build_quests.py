@@ -26,7 +26,7 @@ CHAPTERS = [
         "minecraft:compass",
         [
             ("read_the_brief", "Read the Brief", "Know the workshop", "Read this notebook and the Oracle Index. Signal Atelier is built around Oritech; Refined Storage is intentionally limited to storage and autocrafting.", None),
-            ("survey_a_site", "Survey a Site", "Leave room to grow", "Choose a workshop site with expansion space, safe cable routes, and room for noisy or hazardous late-game machinery.", "read_the_brief"),
+            ("survey_a_site", "Survey a Site", "Leave room to grow", "Choose a workshop site with expansion space, safe cable routes, and room for noisy or hazardous late-game machinery. Mark it with an ordinary Xaero waypoint; mapping is for navigation, not teleportation or radar.", "read_the_brief"),
             ("mark_the_baseline", "Mark the Baseline", "Protect the experiment", "Treat this world as disposable while Oritech 2 and NeoForge remain experimental. Confirm that a recoverable backup exists outside the instance.", "survey_a_site"),
         ],
     ),
@@ -46,7 +46,7 @@ CHAPTERS = [
         "minecraft:blast_furnace",
         [
             ("processing_line", "Processing Line", "From input to product", "Build a repeatable Oritech processing line with explicit inputs, outputs, and overflow handling.", "power/renewable_baseline"),
-            ("principal_alloys", "Principal Alloys", "Stock the intermediates", "Automate the important alloys and components used throughout Oritech instead of crafting each machine ad hoc.", "processing_line"),
+            ("principal_alloys", "Principal Alloys", "Stock the intermediates", "Use the Oracle Index and JEI to identify Oritech's recurring alloys and components, then automate them instead of crafting each machine ad hoc.", "processing_line"),
             ("fluids_and_oil", "Fluids and Oil", "Separate the networks", "Process fluids through dedicated, labeled routes. Confirm that shutdown and restart do not strand or mix contents.", "principal_alloys"),
             ("rebuild_after_restart", "Rebuild After Restart", "Persistence is part of the machine", "Restart the game or server and verify that multiblocks, inventories, fluids, and energy reconnect correctly.", "fluids_and_oil"),
         ],
@@ -57,9 +57,9 @@ CHAPTERS = [
         "minecraft:rail",
         [
             ("pipes_first", "Pipes First", "Local logistics belong to Oritech", "Move items, fluids, and energy with Oritech infrastructure before introducing centralized storage.", "industry/rebuild_after_restart"),
-            ("remote_site", "Remote Site", "Build beyond the workshop", "Create a remote extraction or processing site with a clear supply route and safe failure behavior.", "pipes_first"),
-            ("drone_route", "Drone Route", "Cross the difficult gap", "Use Oritech drones or another Oritech-native solution for world interaction and long-distance logistics.", "remote_site"),
-            ("one_loaded_chunk", "One Loaded Chunk", "Spend persistence carefully", "Place only the single-chunk loader. Confirm ownership, the offline timeout, and the four-chunk-per-player limit before relying on it.", "drone_route"),
+            ("remote_site", "Remote Site", "Build beyond the workshop", "Before supplying a remote site, prove the field kit: store XP in an XP Tome carried by an equipped Traveler's Backpack, confirm GraveStone returns both without loss, and mark the site with an ordinary Xaero waypoint.", "pipes_first"),
+            ("drone_route", "Drone Route", "Cross the difficult gap", "Use Oritech drones or another Oritech-native solution for world interaction and long-distance logistics; Refined Storage must not replace the route.", "remote_site"),
+            ("one_loaded_chunk", "One Loaded Chunk", "Spend persistence carefully", "Optionally place only the single-chunk loader at a proven remote site. Confirm ownership, the offline timeout, and the four-chunk-per-player limit; no factory should require it to remain safe.", "drone_route"),
         ],
     ),
     (
@@ -68,9 +68,9 @@ CHAPTERS = [
         "minecraft:chest",
         [
             ("storage_core", "Storage Core", "Centralize without replacing the factory", "Build a Refined Storage Controller, Grid, Drive, and initial disk. Power the network from Oritech.", "distributed_works/pipes_first"),
-            ("external_boundaries", "External Boundaries", "Interfaces are contracts", "Connect an existing inventory through External Storage or an Interface. Keep Oritech pipes responsible for machine-side movement.", "storage_core"),
+            ("external_boundaries", "External Boundaries", "Interfaces are contracts", "Connect an existing inventory through External Storage or an Interface. Refined Storage owns storage and requests; Oritech pipes own machine-side movement.", "storage_core"),
             ("first_pattern", "First Pattern", "Request, do not handcraft", "Encode and successfully request a simple crafting pattern through an Autocrafter.", "external_boundaries"),
-            ("factory_request", "Factory Request", "Let Oritech do the processing", "Request a component whose production passes through an Oritech machine and returns through a deliberate interface boundary.", "first_pattern"),
+            ("factory_request", "Factory Request", "Let Oritech do the processing", "Request a component through Refined Storage, process it in an Oritech machine, and return it through Oritech pipes and a dedicated Interface.", "first_pattern"),
             ("respect_the_locks", "Respect the Locks", "Convenience has edges", "Confirm that wireless access, Constructors, Destructors, and remote network links remain unavailable in survival.", "factory_request"),
         ],
     ),
@@ -90,8 +90,8 @@ CHAPTERS = [
         "The Signal Core",
         "minecraft:beacon",
         [
-            ("project_charter", "Project Charter", "Define the megaproject", "Choose a visible site and define the Signal Core as a permanent demonstration of renewable supply, nuclear-scale power, particle products, autocrafting, and interdimensional logistics.", "supertech/survive_a_restart"),
-            ("production_cells", "Production Cells", "Build for continuous operation", "Dedicate production cells to the Core's major material families. Give each cell monitoring, buffers, and a safe stopped state.", "project_charter"),
+            ("project_charter", "Project Charter", "Define the megaproject", "Choose a visible site and define the optional Signal Core as a demonstration of renewable supply, nuclear-scale power, particle products, autocrafting, and interdimensional logistics.", "supertech/survive_a_restart"),
+            ("production_cells", "Production Cells", "Build for continuous operation", "Dedicate production cells to the Core's major material families. Give each cell monitoring, buffers, a safe stopped state, and a coherent Oritech-and-Rechiseled industrial identity.", "project_charter"),
             ("interdimensional_supply", "Interdimensional Supply", "Tune every signal", "Supply the project from more than one dimension without Refined Storage wireless or remote-network devices.", "production_cells"),
             ("continuous_run", "Continuous Run", "The atelier answers", "Run the complete Signal Core supply chain through a full operating cycle and restart. Record bottlenecks before calling the workshop complete.", "interdimensional_supply"),
         ],

@@ -80,6 +80,34 @@ class QuestChainTests(unittest.TestCase):
             set(nuclear["dependencies"]),
         )
 
+    def test_descriptions_teach_cross_mod_boundaries(self):
+        descriptions = {
+            quest["id"]: quest["description"] for quest in self.quests
+        }
+        expected_terms = {
+            "simplyquests:signal_atelier/distributed_works/remote_site": (
+                "XP Tome",
+                "Traveler's Backpack",
+                "GraveStone",
+                "Xaero waypoint",
+            ),
+            "simplyquests:signal_atelier/storage/external_boundaries": (
+                "Refined Storage owns storage and requests",
+                "Oritech pipes own machine-side movement",
+            ),
+            "simplyquests:signal_atelier/storage/factory_request": (
+                "Refined Storage",
+                "Oritech machine",
+                "dedicated Interface",
+            ),
+            "simplyquests:signal_atelier/signal_core/production_cells": (
+                "Oritech-and-Rechiseled",
+            ),
+        }
+        for identifier, terms in expected_terms.items():
+            for term in terms:
+                self.assertIn(term, descriptions[identifier])
+
     def test_chapter_schema_basics(self):
         for chapter in self.chapters:
             self.assertEqual("signal_atelier", chapter["group"])

@@ -50,7 +50,7 @@
       "chapterName": "industry",
       "title": "Principal Alloys",
       "subTitle": "Stock the intermediates",
-      "description": "Automate the important alloys and components used throughout Oritech instead of crafting each machine ad hoc.",
+      "description": "Use the Oracle Index and JEI to identify Oritech's recurring alloys and components, then automate them instead of crafting each machine ad hoc.",
       "x": 128.0,
       "y": 32.0,
       "shape": "GEAR",
