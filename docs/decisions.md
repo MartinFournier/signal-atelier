@@ -3,7 +3,7 @@
 ## Accepted
 
 - Use Modrinth as the catalog and distribution format.
-- Target Minecraft 26.1.2 with NeoForge and Java 25.
+- Target Minecraft 26.1.2 with NeoForge 26.1.2.81 and Java 25.
 - Use Oritech 2 as the only broad technology mod.
 - Keep world generation close to vanilla.
 - Support solo play and a small private server.
@@ -18,14 +18,15 @@
 - Keep Refined Storage Controllers, cables, disks, drives, Grids, Pattern
   Grids, Autocrafters, Monitors, Importers, Exporters, Interfaces, External
   Storage, Detectors, and required upgrades.
-- Add Resource Backpacks for modest expedition storage.
-- Limit backpacks to leather, copper, and iron progression with 18–27 slots.
-- Disable higher-tier and ender backpacks, backpack nesting, and filled
-  shulker storage inside backpacks.
+- Add Traveler's Backpack for modest expedition storage. Retain its sleeping
+  bag because it skips the night without changing the player's spawn point.
+- Target 9, 18, and 27 storage slots across the first three tiers. Disable
+  higher tiers, backpack nesting, tanks, crafting, furnace, feeding, magnet,
+  pickup, void, lantern, special abilities, and generated backpack loot.
 - Add GraveStone Mod as the sole death-recovery system with no grave expiry or
   teleport-to-grave feature.
-- Keep graves owner-restricted initially and verify multiplayer ownership,
-  backpack preservation, and persistence after server restarts.
+- Keep graves owner-restricted initially and verify multiplayer ownership and
+  persistence after server restarts.
 - Add Jade, AppleSkin, Mouse Tweaks, and Better Advancements as the initial
   quality-of-life set.
 - Add Xaero's World Map without Xaero's Minimap.
@@ -105,15 +106,15 @@
   or foliage systems.
 - FancyMenu and custom loading-screen mods unless the lightweight branding
   proves insufficient.
+- Resource Backpacks remains excluded because its current loader constraints
+  conflict with Oritech and JEI.
 - A permanent world and release designation while Oritech 2 remains
   experimental.
 
 ## Pending validation and implementation
 
-- Verify whether Resource Backpacks can reject filled shulker boxes through
-  configuration; otherwise enforce the restriction with the pack layer.
-- Capture Resource Backpacks' generated config and set leather to 18 slots,
-  copper to 27 slots, iron to 27 slots, and nesting off.
+- Validate Traveler's Backpack nesting, sleeping-bag spawn behavior, tier
+  locks, and GraveStone interaction in the first graphical playthrough.
 - Capture Xaero's generated config and disable entity tracking and teleport;
   retain player markers only if independently supported.
 - Validate the shipped Simply Quests chapter format and all cross-chapter

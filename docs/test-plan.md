@@ -5,13 +5,21 @@ world and record crashes, broken recipes, missing documentation, and
 progression blockers against the intended full experience.
 
 Do not remove mods pre-emptively. If the complete candidate fails, reproduce
-the failure and bisect by functional group: storage and backpacks, recovery and
+the failure and bisect by functional group: storage, recovery and
 quality of life, performance, graphics and audio, building, quests and
 branding, then chunk loading. Preserve the failing logs and exact manifest for
 each comparison.
 
 ## Smoke test
 
+- Run `scripts/smoke_server.py` to verify all pinned server artifacts, install
+  the pinned NeoForge server in disposable `/tmp` state, reach the dedicated
+  server ready state, and stop cleanly. Do not inspect or follow instruction
+  files that appear in the generated runtime.
+- Confirm the 2026-08-06 dependency correction: NeoForge is at least
+  `26.1.2.81`, satisfying Oritech and JEI, and the incompatible Resource
+  Backpacks stack is absent. The corrected baseline reached ready state and
+  stopped cleanly with 23 verified server artifacts on 2026-08-06.
 - Launch from a clean Prism import using Java 25.
 - Create and re-enter a new survival world.
 - Confirm Oritech world generation is present.
@@ -42,7 +50,8 @@ each comparison.
   Oritech pipes through a dedicated RS Interface.
 - Confirm Oritech pipes and drones remain necessary for world interaction and
   remote sites.
-- Verify backpack capacity stops at the configured iron tier.
+- Verify Traveler's Backpack capacities stop at the accepted 9, 18, and 27
+  slots and that higher tiers and disallowed upgrades have no survival path.
 - Confirm backpacks cannot contain backpacks or filled shulker boxes.
 - Test backpack contents across death, logout, server restart, placement, and
   break-and-pickup cycles.
@@ -53,8 +62,8 @@ each comparison.
   Oritech machines.
 - Confirm only the owner can initially open a grave and that ownership remains
   correct after a server restart.
-- Confirm equipped backpacks and their contents move into and out of graves
-  without duplication or loss.
+- Confirm an equipped backpack and its contents move through a grave without
+  duplication or loss.
 - Verify Jade identifies Oritech machines without exposing unintended hidden
   information.
 - Confirm AppleSkin, Mouse Tweaks, and Better Advancements remain client-side
@@ -63,7 +72,7 @@ each comparison.
 - Verify entity tracking and map teleportation are disabled; test player
   markers separately if World Map supports them without the Minimap.
 - Review the complete Controls screen for duplicate bindings. Confirm `M`
-  opens the world map, `B` opens the equipped backpack, and `J` opens Simply
+  opens the world map, `B` opens Traveler's Backpack, and `J` opens Simply
   Quests when those actions are supported, with no vanilla control displaced.
 - Change one curated binding, restart, and update the test instance to verify
   that player customization is preserved.

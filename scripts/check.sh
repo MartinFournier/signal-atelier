@@ -16,10 +16,21 @@ expected_locks=(
   chunkloaders/recipe/basic_chunk_loader.json
   chunkloaders/recipe/advanced_chunk_loader.json
   chunkloaders/recipe/ultimate_chunk_loader.json
-  resource_backpacks/recipe/backpack_gold.json
-  resource_backpacks/recipe/backpack_diamond.json
-  resource_backpacks/recipe/backpack_netherite.json
-  resource_backpacks/recipe/backpack_end.json
+  travelersbackpack/recipe/blank_upgrade.json
+  travelersbackpack/recipe/blast_furnace_upgrade.json
+  travelersbackpack/recipe/crafting_upgrade.json
+  travelersbackpack/recipe/diamond_tier_upgrade.json
+  travelersbackpack/recipe/feeding_upgrade.json
+  travelersbackpack/recipe/furnace_upgrade.json
+  travelersbackpack/recipe/jukebox_upgrade.json
+  travelersbackpack/recipe/lantern_upgrade.json
+  travelersbackpack/recipe/magnet_upgrade.json
+  travelersbackpack/recipe/netherite_tier_upgrade.json
+  travelersbackpack/recipe/pickup_upgrade.json
+  travelersbackpack/recipe/refill_upgrade.json
+  travelersbackpack/recipe/smoker_upgrade.json
+  travelersbackpack/recipe/tanks_upgrade.json
+  travelersbackpack/recipe/void_upgrade.json
   refinedstorage/recipe/constructor.json
   refinedstorage/recipe/destructor.json
   refinedstorage/recipe/network_receiver.json

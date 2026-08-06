@@ -1,0 +1,109 @@
+[server]
+
+[server.backpackSettings]
+rightClickEquip = true
+rightClickUnequip = false
+allowOnlyEquippedBackpack = false
+allowOpeningFromSlot = false
+preventMultiplePlayersAccess = true
+invulnerableBackpack = false
+allowToolSwapping = false
+toolSlotsAcceptEverything = false
+toolSlotsAcceptableItems = []
+blacklistedItems = []
+allowShulkerBoxes = false
+voidProtection = false
+backpackDeathPlace = false
+backpackForceDeathPlace = false
+quickSleepingBag = true
+enableSleepingBagSpawnPoint = false
+backSlotIntegration = true
+
+[server.backpackSettings.leatherTierBackpack]
+inventorySlotCount = 9
+upgradeSlotCount = 0
+toolSlotCount = 0
+tankCapacity = 1000
+
+[server.backpackSettings.ironTierBackpack]
+inventorySlotCount = 18
+upgradeSlotCount = 0
+toolSlotCount = 0
+tankCapacity = 1000
+
+[server.backpackSettings.goldTierBackpack]
+inventorySlotCount = 27
+upgradeSlotCount = 0
+toolSlotCount = 0
+tankCapacity = 1000
+
+[server.backpackSettings.diamondTierBackpack]
+inventorySlotCount = 27
+upgradeSlotCount = 0
+toolSlotCount = 0
+tankCapacity = 1000
+
+[server.backpackSettings.netheriteTierBackpack]
+inventorySlotCount = 27
+upgradeSlotCount = 0
+toolSlotCount = 0
+tankCapacity = 1000
+
+[server.backpackUpgrades]
+enableSleepingBag = true
+enableTanksUpgrade = false
+enableCraftingUpgrade = false
+enableFurnaceUpgrade = false
+enableSmokerUpgrade = false
+enableBlastFurnaceUpgrade = false
+enableJukeboxUpgrade = false
+enableLanternUpgrade = false
+
+[server.backpackUpgrades.pickupUpgradeSettings]
+enablePickupUpgrade = false
+filterSlotCount = 9
+slotsInRow = 3
+
+[server.backpackUpgrades.magnetUpgradeSettings]
+enableMagnetUpgrade = false
+filterSlotCount = 9
+slotsInRow = 3
+pullRange = 5
+tickRate = 10
+
+[server.backpackUpgrades.feedingUpgradeSettings]
+enableFeedingUpgrade = false
+filterSlotCount = 9
+slotsInRow = 3
+tickRate = 100
+
+[server.backpackUpgrades.refillUpgradeSettings]
+enableRefillUpgrade = false
+filterSlotCount = 9
+slotsInRow = 3
+tickRate = 5
+
+[server.backpackUpgrades.voidUpgradeSettings]
+enableVoidUpgrade = false
+filterSlotCount = 9
+slotsInRow = 3
+
+[server.world]
+spawnEntitiesWithBackpack = false
+chance = 0.0
+possibleOverworldEntityTypes = []
+possibleNetherEntityTypes = []
+overworldBackpacks = []
+netherBackpacks = []
+
+[server.backpackAbilities]
+enableBackpackAbilities = false
+forceAbilityEnabled = false
+allowedAbilities = []
+backpackEffects = []
+cooldowns = []
+
+[server.slownessDebuff]
+tooManyBackpacksSlowness = false
+maxNumberOfBackpacks = 3
+slownessPerExcessedBackpack = 1.0

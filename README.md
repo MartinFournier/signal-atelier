@@ -19,7 +19,7 @@ change while its foundations are experimental.
 ## Baseline
 
 - Minecraft 26.1.2
-- NeoForge 26.1.2.47-beta
+- NeoForge 26.1.2.81
 - Java 25
 - Oritech 2.0.0-exp3
 - Vanilla-like world generation
@@ -35,9 +35,9 @@ The current manifest contains the complete intended first-test experience:
 - Oritech 2 and Oracle Index as the technology and documentation foundation
 - Refined Storage with wireless, direct-world, and remote-network recipes
   locked
-- Resource Backpacks limited by recipe to leather, copper, and iron tiers
 - GraveStone, Jade, AppleSkin, Mouse Tweaks, Better Advancements, XP Tome,
   Tax Free Levels, and Enchantment Descriptions
+- Traveler's Backpack with a restrained storage-and-sleeping-bag profile
 - Xaero's World Map without the minimap
 - Sodium, ModernFix, FerriteCore, Lithium, ImmediatelyFast, and Dynamic FPS
 - Iris with optional Complementary Reimagined, LambDynamicLights, and optional
@@ -50,6 +50,16 @@ Every artifact is pinned by Modrinth URL and hashes. Static packaging passes;
 the candidate has not yet completed a graphical launch or gameplay test. See
 [docs/decisions.md](docs/decisions.md) for balance policy and
 [docs/test-plan.md](docs/test-plan.md) for the remaining validation.
+
+Run `scripts/smoke_server.py` for a disposable headless server launch. It
+downloads only pinned server artifacts, verifies their hashes, checks the
+official NeoForge installer checksum, and keeps untrusted runtime state under
+`/tmp`. A failed runtime is retained for deliberate manual review.
+
+The first headless run on 2026-08-06 exposed incompatible NeoForge constraints.
+Resource Backpacks and its two libraries were removed, and NeoForge was raised
+to the minimum version accepted by JEI. The corrected pack reached dedicated-
+server ready state and stopped cleanly with all 23 server artifacts verified.
 
 ## Branding
 
@@ -75,9 +85,11 @@ Constructors, Destructors, and equivalent direct-world features will be recipe
 locked. Oritech remains responsible for power, machines, processing, pipes,
 and drones.
 
-Resource Backpacks will provide modest expedition storage rather than a
-portable base. Progression stops at iron tier with 18–27 slots; higher and
-ender tiers, backpack nesting, and filled shulker storage are disallowed.
+Traveler's Backpack provides modest expedition storage and a sleeping bag that
+does not reset the player's spawn point. Target capacities are 9, 18, and 27
+slots. Diamond and Netherite progression, tool slots, tanks, automation-style
+upgrades, special abilities, generated loot, and backpack mob spawns are
+disabled by pack configuration and recipe locks.
 
 Xaero's World Map will record explored terrain for infrastructure planning.
 Entity tracking is disabled; player markers may remain enabled if World Map

@@ -136,6 +136,21 @@
       "fileSize": 35343
     },
     {
+      "path": "mods/travelersbackpack-neoforge-26.1.2-11.2.6.jar",
+      "hashes": {
+        "sha512": "ccfad5a490939998c4740f5543d2c20e31eefd969060b00e42a180219598cfad104763e99ce2063658c119e96d41d26bd755f10a445e4cd2fa4304e3c4a2c773",
+        "sha1": "4d6bd94b5ea7065b89d51e41b553687b9a2e895b"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/rlloIFEV/versions/T1BCIEn8/travelersbackpack-neoforge-26.1.2-11.2.6.jar"
+      ],
+      "fileSize": 1456348
+    },
+    {
       "path": "mods/appleskin-neoforge-mc26.1-3.0.9.jar",
       "hashes": {
         "sha1": "a9837dd537524a4b6a78ec17be41f5af1fc59f92",
@@ -436,51 +451,6 @@
       "fileSize": 4538659
     },
     {
-      "path": "mods/resource_backpacks-neoforge-26.1.2-2.0.0.jar",
-      "hashes": {
-        "sha512": "c9f7ddc4cc86858955fc3ef58111cc0e45974e02fa64929afe5a888d33d932fba2edcf8175d94c40a40eb927bb8bbde2be445bcb6dbfe14e57908c55218b2157",
-        "sha1": "6cb1af56a30c4780c0fe55613309b69e33e26a8d"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/t8iyhYu7/versions/lGf8y499/resource_backpacks-neoforge-26.1.2-2.0.0.jar"
-      ],
-      "fileSize": 411134
-    },
-    {
-      "path": "mods/resourceconfigapi-neoforge-26.1.2-4.0.2.jar",
-      "hashes": {
-        "sha512": "e3834fbd5a7567182d7121a9ccb6ef93752bf975df65a228e848bff7818d492f9fb70d31f5088496f16a232249d3717124388862f5754b01303cfa25120e51cb",
-        "sha1": "0240adaa5c30023e825b0c8e432205ae290a3e1c"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/69TY9iyJ/versions/swdzhEwE/resourceconfigapi-neoforge-26.1.2-4.0.2.jar"
-      ],
-      "fileSize": 204801
-    },
-    {
-      "path": "mods/resourcelibrary-neoforge-26.1.2-3.0.2.jar",
-      "hashes": {
-        "sha512": "200b23b5173e9ac35a5265409af6be55e6b068e11ce003fea5aa8a448141bddd2dd621060ae5cd53a3b227829a30b1823e9e2f085e61be2f8a551c29cc1a46e3",
-        "sha1": "bfd5fcd1a9db206e78817db14e9544c58c57ffd7"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/XLhounCW/versions/eK3HfxK0/resourcelibrary-neoforge-26.1.2-3.0.2.jar"
-      ],
-      "fileSize": 207297
-    },
-    {
       "path": "mods/simplemenu-26.1.2-2.1.jar",
       "hashes": {
         "sha512": "c738f8f5f35337deabe24cb387580c69aa28dc8c82a196df9524bb252907d68c1427ec46a51a07cc0cf60bacbeff8d58f536dc0a99db0aa4c9bd3bee802fcce5",
@@ -603,6 +573,6 @@
   ],
   "dependencies": {
     "minecraft": "26.1.2",
-    "neoforge": "26.1.2.47-beta"
+    "neoforge": "26.1.2.81"
   }
 }

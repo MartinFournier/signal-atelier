@@ -6,7 +6,7 @@ Oritech handles power, processing, transport, and world interaction, while
 Refined Storage provides bounded centralized storage and autocrafting.
 
 The current 0.3.0 build is a test candidate for Minecraft 26.1.2, NeoForge
-26.1.2.47-beta, and Java 25. Oritech and the loader are experimental, so use a
+26.1.2.81, and Java 25. Oritech and the loader are experimental, so use a
 disposable world until the full test plan passes.
 
 ## Start here
@@ -21,7 +21,7 @@ disposable world until the full test plan passes.
 
 - One broad technology system: Oritech 2
 - Restricted Refined Storage for storage and request-based autocrafting
-- Modest backpacks and owner-restricted graves
+- Restrained backpacks, owner-restricted graves, and bounded XP storage
 - Vanilla-like exploration, farming, food, and structures
 - Optional shaders and sound simulation
 - Solo and small cooperative server support

@@ -9,6 +9,7 @@ __pycache__/
 .prism/
 instance/
 run/
+.server-smoke/
 logs/
 crash-reports/
 saves/

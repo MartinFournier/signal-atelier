@@ -25,7 +25,7 @@
 
 ## Packaging follow-up
 
-- Capture runtime-generated Resource Backpacks and Xaero World Map
+- Capture runtime-generated Traveler's Backpack and Xaero World Map
   configuration from the first clean graphical Prism launch, sanitize it, and
   add only the reviewed settings to `overrides/`. Validate the source-derived
   Simply Quests files against the running mod before release.
