@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import os
 import sys
 import zipfile
@@ -46,6 +47,8 @@ def build(root: Path, output: Path) -> None:
     files = pack_files(root)
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_name(f".{output.name}.tmp")
+    checksum = output.with_name(f"{output.name}.sha256")
+    temporary_checksum = checksum.with_name(f".{checksum.name}.tmp")
     try:
         with zipfile.ZipFile(temporary, "w", compression=zipfile.ZIP_STORED) as archive:
             for source, archive_name in files:
@@ -53,9 +56,13 @@ def build(root: Path, output: Path) -> None:
                 info.create_system = 3
                 info.external_attr = 0o100644 << 16
                 archive.writestr(info, source.read_bytes())
+        digest = hashlib.sha256(temporary.read_bytes()).hexdigest()
+        temporary_checksum.write_text(f"{digest}  {output.name}\n")
         os.replace(temporary, output)
+        os.replace(temporary_checksum, checksum)
     finally:
         temporary.unlink(missing_ok=True)
+        temporary_checksum.unlink(missing_ok=True)
 
 
 def parse_args() -> argparse.Namespace:
