@@ -11,9 +11,9 @@
 
 ## Documentation site
 
-- Expand the player guide with configuration rationale, troubleshooting,
-  server setup, upgrade procedure, and release notes.
 - Add sanitized screenshots after the pack's first clean graphical launch.
+- Replace provisional controls and server guidance with runtime-verified steps
+  after the first graphical and multiplayer validation passes.
 
 ## Packaging follow-up
 

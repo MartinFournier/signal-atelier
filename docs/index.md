@@ -13,10 +13,15 @@ disposable world until the full test plan passes.
 
 1. Follow the [installation guide](guide/install.md).
 2. Complete the [first-launch checklist](guide/first-launch.md).
-3. Check the [current project status](status.md).
-4. Read the [pack decisions](decisions.md) to understand intentional feature
+3. Keep the [quick reference](guide/quick-reference.md) nearby while playing.
+4. Check the [current project status](status.md).
+5. Read the [pack decisions](decisions.md) to understand intentional feature
    limits.
-5. Consult the [test plan](test-plan.md) before keeping a long-lived world.
+6. Consult the [test plan](test-plan.md) before keeping a long-lived world.
+
+For problems, see [Troubleshooting](guide/troubleshooting.md). Server operators
+should read the [server guide](guide/server.md) and [safe update
+procedure](guide/updating.md) before creating persistent state.
 
 ## Pack identity
 
