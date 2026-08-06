@@ -18,6 +18,7 @@ nav:
       - First launch: guide/first-launch.md
       - Engineering notebook: guide/progression.md
   - Project reference:
+      - Generated pack reference: reference/pack.md
       - Pack decisions: decisions.md
       - Test plan: test-plan.md
       - Roadmap: roadmap.md

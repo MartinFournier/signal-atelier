@@ -113,6 +113,10 @@ instance to use Java 25 if Prism does not select it automatically.
 See [docs/test-plan.md](docs/test-plan.md) before treating a test world as
 persistent.
 
+The [generated pack reference](docs/reference/pack.md) lists pinned artifacts,
+client/server environments, recipe locks, shipped configuration, and quest
+counts. Refresh it with `scripts/generate_reference.py` after source changes.
+
 See [docs/roadmap.md](docs/roadmap.md) for planned CI, scheduled mod-update
 pull requests, and the MkDocs player guide.
 
