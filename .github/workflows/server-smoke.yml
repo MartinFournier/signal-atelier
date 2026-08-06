@@ -1,0 +1,57 @@
+name: Server smoke test
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/server-smoke.yml
+      - modrinth.index.json
+      - overrides/**
+      - scripts/smoke_server.py
+      - tests/test_smoke_server.py
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/server-smoke.yml
+      - modrinth.index.json
+      - overrides/**
+      - scripts/smoke_server.py
+      - tests/test_smoke_server.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: server-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    name: Start dedicated server
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Java
+        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5
+        with:
+          distribution: temurin
+          java-version: "25"
+
+      - name: Restore verified-download cache
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ~/.cache/signal-atelier/server-downloads
+          key: server-downloads-${{ runner.os }}-${{ hashFiles('modrinth.index.json') }}
+          restore-keys: |
+            server-downloads-${{ runner.os }}-
+
+      - name: Start and stop dedicated server
+        run: >-
+          python3 scripts/smoke_server.py
+          --cache-dir ~/.cache/signal-atelier/server-downloads
+          --timeout 600
