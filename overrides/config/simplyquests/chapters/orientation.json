@@ -48,7 +48,7 @@
       "chapterName": "orientation",
       "title": "Survey a Site",
       "subTitle": "Leave room to grow",
-      "description": "Choose a workshop site with expansion space, safe cable routes, and room for noisy or hazardous late-game machinery.",
+      "description": "Choose a workshop site with expansion space, safe cable routes, and room for noisy or hazardous late-game machinery. Mark it with an ordinary Xaero waypoint; mapping is for navigation, not teleportation or radar.",
       "x": 128.0,
       "y": 32.0,
       "shape": "GEAR",
