@@ -3,7 +3,9 @@
 
 from __future__ import annotations
 
+import argparse
 import json
+import sys
 from pathlib import Path
 
 
@@ -160,9 +162,9 @@ def make_quest(chapter: str, index: int, data: tuple) -> dict:
     }
 
 
-def main() -> None:
+def render() -> dict[Path, str]:
     chapters_dir = OUTPUT / "chapters"
-    chapters_dir.mkdir(parents=True, exist_ok=True)
+    outputs = {}
     chapter_names = []
     for order, (name, title, icon, quests) in enumerate(CHAPTERS):
         chapter_names.append(name)
@@ -181,7 +183,7 @@ def main() -> None:
             "offsetY": 0.0,
             "zoom": 0.85,
         }
-        (chapters_dir / f"{name}.json").write_text(json.dumps(chapter, indent=2) + "\n")
+        outputs[chapters_dir / f"{name}.json"] = json.dumps(chapter, indent=2) + "\n"
 
     groups = {
         "groups": [
@@ -196,8 +198,39 @@ def main() -> None:
         ],
         "rootChapters": [],
     }
-    (OUTPUT / "groups.json").write_text(json.dumps(groups, indent=2) + "\n")
+    outputs[OUTPUT / "groups.json"] = json.dumps(groups, indent=2) + "\n"
+    return outputs
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true", help="fail if quest JSON is stale")
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    outputs = render()
+    if args.check:
+        existing = set(OUTPUT.glob("*.json")) | set((OUTPUT / "chapters").glob("*.json"))
+        stale = [
+            path
+            for path, expected in outputs.items()
+            if not path.exists() or path.read_text() != expected
+        ]
+        stale.extend(sorted(existing - outputs.keys()))
+        if stale:
+            for path in stale:
+                print(f"Generated quest file is stale: {path.relative_to(ROOT)}", file=sys.stderr)
+            print("Run scripts/build_quests.py", file=sys.stderr)
+            return 1
+        return 0
+
+    for path, content in outputs.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content)
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

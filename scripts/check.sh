@@ -53,6 +53,7 @@ bash -n \
   scripts/serve-docs.sh
 python3 -c 'import ast,pathlib; [ast.parse(path.read_text()) for path in pathlib.Path("scripts").glob("*.py")]'
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
+python3 scripts/build_quests.py --check
 python3 scripts/generate_reference.py --check
 python3 scripts/generate_mod_catalog.py --check
 scripts/build.sh >/dev/null
