@@ -5,6 +5,41 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 QUEST_ROOT = ROOT / "overrides/config/simplyquests"
+EXPECTED_SLUGS = {
+    "orientation": ["read_the_brief", "survey_a_site", "mark_the_baseline"],
+    "power": ["first_generation", "buffer_and_measure", "renewable_baseline"],
+    "industry": [
+        "processing_line",
+        "principal_alloys",
+        "fluids_and_oil",
+        "rebuild_after_restart",
+    ],
+    "distributed_works": [
+        "pipes_first",
+        "remote_site",
+        "drone_route",
+        "one_loaded_chunk",
+    ],
+    "storage": [
+        "storage_core",
+        "external_boundaries",
+        "first_pattern",
+        "factory_request",
+        "respect_the_locks",
+    ],
+    "supertech": [
+        "nuclear_scale",
+        "particle_products",
+        "renewable_supertech",
+        "survive_a_restart",
+    ],
+    "signal_core": [
+        "project_charter",
+        "production_cells",
+        "interdimensional_supply",
+        "continuous_run",
+    ],
+}
 
 
 class QuestChainTests(unittest.TestCase):
@@ -43,6 +78,81 @@ class QuestChainTests(unittest.TestCase):
         known = set(quest_ids)
         for quest in self.quests:
             self.assertTrue(set(quest["dependencies"]).issubset(known))
+
+    def test_ids_remain_stable_for_saved_progress(self):
+        expected = {
+            f"simplyquests:signal_atelier/{chapter}/{slug}"
+            for chapter, slugs in EXPECTED_SLUGS.items()
+            for slug in slugs
+        }
+        self.assertEqual(expected, {quest["id"] for quest in self.quests})
+
+    def test_graph_is_acyclic_and_reachable(self):
+        dependencies = {
+            quest["id"]: set(quest["dependencies"]) for quest in self.quests
+        }
+        visiting = set()
+        visited = set()
+
+        def visit(identifier):
+            self.assertNotIn(identifier, visiting, f"quest dependency cycle at {identifier}")
+            if identifier in visited:
+                return
+            visiting.add(identifier)
+            for dependency in dependencies[identifier]:
+                visit(dependency)
+            visiting.remove(identifier)
+            visited.add(identifier)
+
+        for identifier in dependencies:
+            visit(identifier)
+        self.assertEqual(set(dependencies), visited)
+
+    def test_dependencies_only_point_backward(self):
+        chapters = {
+            chapter["name"]: chapter["chapterOrder"] for chapter in self.chapters
+        }
+        positions = {
+            quest["id"]: (chapters[quest["chapterName"]], quest["x"])
+            for quest in self.quests
+        }
+        for quest in self.quests:
+            for dependency in quest["dependencies"]:
+                self.assertLess(positions[dependency], positions[quest["id"]])
+
+    def test_each_chapter_has_one_entry_quest(self):
+        for chapter in self.chapters:
+            entries = []
+            for quest in chapter["quests"]:
+                external = [
+                    dependency
+                    for dependency in quest["dependencies"]
+                    if f"/{chapter['name']}/" not in dependency
+                ]
+                if external or not quest["dependencies"]:
+                    entries.append(quest["id"])
+            self.assertEqual(1, len(entries), chapter["name"])
+
+    def test_optional_quests_do_not_gate_required_quests(self):
+        quests = {quest["id"]: quest for quest in self.quests}
+        optional = {
+            identifier
+            for identifier, quest in quests.items()
+            if quest["settings"]["isOptional"]
+        }
+
+        def ancestors(identifier):
+            result = set()
+            pending = list(quests[identifier]["dependencies"])
+            while pending:
+                dependency = pending.pop()
+                if dependency not in result:
+                    result.add(dependency)
+                    pending.extend(quests[dependency]["dependencies"])
+            return result
+
+        for identifier in quests.keys() - optional:
+            self.assertTrue(ancestors(identifier).isdisjoint(optional), identifier)
 
     def test_chain_is_non_gating_and_reward_free(self):
         for quest in self.quests:
