@@ -45,7 +45,12 @@ for lock in "${expected_locks[@]}"; do
   test "$(jq -c . "$data_root/$lock")" = '{}'
 done
 
-bash -n scripts/build.sh scripts/check.sh scripts/check-docs.sh scripts/gate.sh
+bash -n \
+  scripts/build.sh \
+  scripts/check.sh \
+  scripts/check-docs.sh \
+  scripts/gate.sh \
+  scripts/serve-docs.sh
 python3 -c 'import ast,pathlib; [ast.parse(path.read_text()) for path in pathlib.Path("scripts").glob("*.py")]'
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/generate_reference.py --check

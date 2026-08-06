@@ -74,6 +74,8 @@ class GenerateModCatalogTests(unittest.TestCase):
         self.assertIn("1.2.3", page)
         self.assertNotIn("sha512", page)
         self.assertNotIn("version_id", page)
+        self.assertNotIn("| Client |", page)
+        self.assertNotIn("| Server |", page)
 
     def test_page_escapes_upstream_markdown_and_rejects_unsafe_links(self):
         row = {
