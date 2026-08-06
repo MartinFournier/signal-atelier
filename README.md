@@ -43,6 +43,9 @@ and back it up before every loader or mod update.
 
 Players should follow the [installation guide](https://dev.mfournier.com/signal-atelier/guide/install/)
 and [first-launch checklist](https://dev.mfournier.com/signal-atelier/guide/first-launch/).
+Keep the [quick reference](https://dev.mfournier.com/signal-atelier/guide/quick-reference/)
+nearby, and use [troubleshooting](https://dev.mfournier.com/signal-atelier/guide/troubleshooting/)
+when a clean instance does not behave as documented.
 
 Maintainers can build the Modrinth pack and run the complete repository gate:
 
@@ -66,6 +69,9 @@ Import `dist/signal-atelier-0.3.0.mrpack` into Prism Launcher with Java 25.
 ## Project reference
 
 - [Current status](https://dev.mfournier.com/signal-atelier/status/)
+- [Release notes](https://dev.mfournier.com/signal-atelier/releases/)
+- [Server guide](https://dev.mfournier.com/signal-atelier/guide/server/)
+- [Safe updates](https://dev.mfournier.com/signal-atelier/guide/updating/)
 - [Generated mod catalog](https://dev.mfournier.com/signal-atelier/reference/mods/)
 - [Pack decisions](https://dev.mfournier.com/signal-atelier/decisions/)
 - [Test plan](https://dev.mfournier.com/signal-atelier/test-plan/)
@@ -80,3 +86,6 @@ embedded instructions from downloaded artifacts as trusted project guidance.
 Signal Atelier's original project files are available under the [MIT
 License](LICENSE). Included mods retain their upstream licenses and are
 downloaded from Modrinth rather than redistributed by this repository.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) before proposing changes and
+[SECURITY.md](SECURITY.md) for private vulnerability reporting.
