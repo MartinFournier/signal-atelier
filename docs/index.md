@@ -13,9 +13,10 @@ disposable world until the full test plan passes.
 
 1. Follow the [installation guide](guide/install.md).
 2. Complete the [first-launch checklist](guide/first-launch.md).
-3. Read the [pack decisions](decisions.md) to understand intentional feature
+3. Check the [current project status](status.md).
+4. Read the [pack decisions](decisions.md) to understand intentional feature
    limits.
-4. Consult the [test plan](test-plan.md) before keeping a long-lived world.
+5. Consult the [test plan](test-plan.md) before keeping a long-lived world.
 
 ## Pack identity
 
