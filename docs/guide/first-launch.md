@@ -33,10 +33,10 @@ Create a new survival world that you are willing to delete. Verify that:
 - Xaero's World Map reveals explored terrain without teleportation or entity
   radar.
 
-Backpack limits, map privacy, quest content, and several optional client
-defaults still need their runtime-generated configuration captured during
-this test. Record discrepancies rather than treating the current defaults as
-final.
+Backpack limits are configured but still require runtime verification. Map
+privacy, quest content, and optional client defaults may require sanitized
+runtime configuration after this test. Record discrepancies rather than
+treating observed defaults as final.
 
 ## Optional graphics
 

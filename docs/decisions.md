@@ -111,30 +111,12 @@
 - A permanent world and release designation while Oritech 2 remains
   experimental.
 
-## Pending validation and implementation
+## Validation
 
-- Validate Traveler's Backpack nesting, sleeping-bag spawn behavior, tier
-  locks, and GraveStone interaction in the first graphical playthrough.
-- Capture Xaero's generated config and disable entity tracking and teleport;
-  retain player markers only if independently supported.
-- Validate the shipped Simply Quests chapter format and all cross-chapter
-  dependencies in the first clean client and dedicated-server launches.
-- Treat recipe removal as the initial enforcement layer. Confirm creative-tab
-  visibility and every alternate acquisition path during the first launch,
-  then add item hiding or stronger removal only where the running mods require
-  it.
-- Verify LambDynamicLights starts standalone on NeoForge despite its Modrinth
-  version metadata declaring Fabric API as required.
-- Confirm the configured Chunk Loaders ownership, offline timeout, random
-  ticking, and per-player limits at runtime.
-- Design the exact Signal Core recipe only after a complete Oritech playthrough
-  establishes realistic production rates.
-- Add and enable the curated splash-text resource pack after verifying the
-  title logo and icons in-game.
-- Capture every registered key translation and conflict from the first launch,
-  then choose an update-safe first-install mechanism for the curated defaults.
-  Leave optional shader, sound, overlay, and diagnostic toggles unbound unless
-  testing shows a strong reason to expose them.
+Accepted decisions are not considered runtime-proven until they pass the
+[test plan](test-plan.md). Remaining implementation work is tracked in the
+[roadmap](roadmap.md), and the latest verified baseline is recorded in
+[project status](status.md).
 
 ## Experimental policy
 

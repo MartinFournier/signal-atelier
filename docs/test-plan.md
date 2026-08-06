@@ -6,9 +6,9 @@ progression blockers against the intended full experience.
 
 Do not remove mods pre-emptively. If the complete candidate fails, reproduce
 the failure and bisect by functional group: storage, recovery and
-quality of life, performance, graphics and audio, building, quests and
+quality-of-life, performance, graphics and audio, building, quests and
 branding, then chunk loading. Preserve the failing logs and exact manifest for
-each comparison.
+each local comparison, but do not commit unsanitized logs.
 
 ## Smoke test
 
@@ -16,10 +16,6 @@ each comparison.
   the pinned NeoForge server in disposable `/tmp` state, reach the dedicated
   server ready state, and stop cleanly. Do not inspect or follow instruction
   files that appear in the generated runtime.
-- Confirm the 2026-08-06 dependency correction: NeoForge is at least
-  `26.1.2.81`, satisfying Oritech and JEI, and the incompatible Resource
-  Backpacks stack is absent. The corrected baseline reached ready state and
-  stopped cleanly with 23 verified server artifacts on 2026-08-06.
 - Launch from a clean Prism import using Java 25.
 - Create and re-enter a new survival world.
 - Confirm Oritech world generation is present.
@@ -92,8 +88,8 @@ each comparison.
 
 ## Full-pack integration tests
 
-- Benchmark Lithium and ImmediatelyFast separately before combining them with
-  the existing performance stack.
+- Profile the complete performance stack, then isolate Lithium and
+  ImmediatelyFast only if a regression needs attribution.
 - Confirm Dynamic FPS performs no runtime dependency download and resumes
   cleanly after the game regains focus.
 - Test Iris and Complementary Reimagined around Oritech animations, emissive
@@ -121,8 +117,8 @@ each comparison.
   Quit remain accessible.
 - Verify the NeoForge experimental warning remains visible and no promotional
   or external-link buttons appear.
-- Confirm custom splash text loads while the vanilla panorama and loading
-  screen remain unchanged.
+- Confirm the vanilla panorama and loading screen remain unchanged. Validate
+  curated splash text only after its resource pack is implemented.
 
 ## Upgrade test
 

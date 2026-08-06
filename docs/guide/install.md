@@ -40,9 +40,8 @@ Continue with the [first-launch checklist](first-launch.md).
 From the repository root:
 
 ```sh
-scripts/check.sh
+scripts/gate.sh
 ```
 
-The gate validates the manifest, curated configuration, recipe locks, branding
-assets, and generated archive. The resulting pack is
-`dist/signal-atelier-0.3.0.mrpack`.
+The gate validates the pack, generated documentation, workflows, secrets, and
+whitespace. The resulting pack is `dist/signal-atelier-0.3.0.mrpack`.
