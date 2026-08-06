@@ -33,6 +33,7 @@ nav:
       - Current status: status.md
       - Release notes: releases.md
       - Mod catalog: reference/mods.md
+      - Licenses and distribution: reference/licenses.md
       - Mod integration: reference/integration.md
       - Generated pack reference: reference/pack.md
       - Pack decisions: decisions.md

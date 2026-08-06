@@ -95,6 +95,32 @@ class GenerateModCatalogTests(unittest.TestCase):
         self.assertIn("&#96;1.2.3&#96;", page)
         self.assertNotIn("javascript:", page)
 
+    def test_license_page_separates_pack_and_upstream_terms(self):
+        rows = [
+            {
+                "name": "Example",
+                "version": "1.2.3",
+                "project_url": "https://modrinth.com/mod/example",
+                "license": "MIT License",
+                "license_url": "",
+            },
+            {
+                "name": "Restricted",
+                "version": "2.0.0",
+                "project_url": "https://modrinth.com/mod/restricted",
+                "license": "LicenseRef-All-Rights-Reserved",
+                "license_url": "",
+            },
+        ]
+
+        page = CATALOG.render_license_page(rows)
+
+        self.assertIn("pack-owned", page)
+        self.assertIn("MIT License", page)
+        self.assertIn("Terms requiring manual review", page)
+        self.assertIn("LicenseRef-All-Rights-Reserved", page)
+        self.assertEqual(2, page.count("Modrinth download |"))
+
 
 if __name__ == "__main__":
     unittest.main()
