@@ -59,6 +59,54 @@ def digest(path: Path, algorithm: str) -> str:
     return checksum.hexdigest()
 
 
+def require_digest(value: str, algorithm: str) -> None:
+    size = hashlib.new(algorithm).digest_size * 2
+    if len(value) != size or any(character not in "0123456789abcdef" for character in value):
+        raise ValueError(f"invalid {algorithm} digest")
+
+
+def download_verified(
+    url: str,
+    target: Path,
+    host: str,
+    algorithm: str,
+    expected: str,
+    cache_dir: Path | None,
+) -> bool:
+    require_digest(expected, algorithm)
+    cached = False
+
+    if cache_dir is not None:
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        cache_file = safe_target(cache_dir, f"{algorithm}/{expected}")
+        if cache_file.is_file() and not cache_file.is_symlink():
+            cached = digest(cache_file, algorithm) == expected
+
+        if not cached:
+            cache_file.parent.mkdir(parents=True, exist_ok=True)
+            descriptor, temporary_name = tempfile.mkstemp(
+                dir=cache_file.parent, prefix=f".{expected}.", suffix=".download"
+            )
+            os.close(descriptor)
+            temporary = Path(temporary_name)
+            try:
+                download(url, temporary, host)
+                if digest(temporary, algorithm) != expected:
+                    raise ValueError(f"{algorithm} mismatch: {target.name}")
+                os.replace(temporary, cache_file)
+            finally:
+                temporary.unlink(missing_ok=True)
+
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(cache_file, target)
+    else:
+        download(url, target, host)
+
+    if digest(target, algorithm) != expected:
+        raise ValueError(f"{algorithm} mismatch: {target.name}")
+    return cached
+
+
 def server_files(manifest: dict) -> list[dict]:
     return [
         entry
@@ -67,32 +115,36 @@ def server_files(manifest: dict) -> list[dict]:
     ]
 
 
-def install_mods(runtime: Path, manifest: dict) -> int:
+def install_mods(runtime: Path, manifest: dict, cache_dir: Path | None) -> tuple[int, int]:
     entries = server_files(manifest)
+    cache_hits = 0
     for entry in entries:
         target = safe_target(runtime, entry["path"])
         urls = entry.get("downloads", [])
         expected = entry.get("hashes", {}).get("sha512")
         if len(urls) != 1 or not expected:
             raise ValueError(f"manifest entry lacks one URL and SHA-512: {entry['path']}")
-        download(urls[0], target, MODRINTH_HOST)
-        if digest(target, "sha512") != expected:
-            raise ValueError(f"SHA-512 mismatch: {entry['path']}")
-    return len(entries)
+        if download_verified(
+            urls[0], target, MODRINTH_HOST, "sha512", expected, cache_dir
+        ):
+            cache_hits += 1
+    return len(entries), cache_hits
 
 
-def install_neoforge(runtime: Path, version: str, java: str) -> None:
+def install_neoforge(
+    runtime: Path, version: str, java: str, cache_dir: Path | None
+) -> bool:
     base = (
         f"https://{NEOFORGE_HOST}/releases/net/neoforged/neoforge/"
         f"{version}/neoforge-{version}-installer.jar"
     )
     installer = runtime / "neoforge-installer.jar"
     checksum_file = runtime / "neoforge-installer.jar.sha256"
-    download(base, installer, NEOFORGE_HOST)
     download(f"{base}.sha256", checksum_file, NEOFORGE_HOST)
     expected = checksum_file.read_text(encoding="ascii").strip().split()[0]
-    if len(expected) != 64 or digest(installer, "sha256") != expected:
-        raise ValueError("NeoForge installer SHA-256 mismatch")
+    cached = download_verified(
+        base, installer, NEOFORGE_HOST, "sha256", expected, cache_dir
+    )
 
     with (runtime / "installer.log").open("wb") as log:
         result = subprocess.run(
@@ -106,6 +158,7 @@ def install_neoforge(runtime: Path, version: str, java: str) -> None:
         )
     if result.returncode != 0:
         raise RuntimeError("NeoForge server installation failed")
+    return cached
 
 
 def free_port() -> int:
@@ -195,6 +248,11 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--java", default="java", help="Java 25 executable")
     parser.add_argument("--timeout", type=int, default=600, help="startup timeout in seconds")
+    parser.add_argument(
+        "--cache-dir",
+        type=Path,
+        help="content-addressed download cache; every restored file is reverified",
+    )
     parser.add_argument("--keep", action="store_true", help="retain the untrusted runtime")
     return parser.parse_args()
 
@@ -208,10 +266,11 @@ def main() -> int:
 
     print(f"Runtime: {runtime}")
     try:
-        count = install_mods(runtime, manifest)
-        print(f"Verified {count} server artifacts")
-        install_neoforge(runtime, version, args.java)
-        print(f"Verified and installed NeoForge {version}")
+        count, cache_hits = install_mods(runtime, manifest, args.cache_dir)
+        print(f"Verified {count} server artifacts ({cache_hits} cache hits)")
+        installer_cached = install_neoforge(runtime, version, args.java, args.cache_dir)
+        source = "cache" if installer_cached else "network"
+        print(f"Verified and installed NeoForge {version} ({source})")
         configure(runtime)
         run_server(runtime, args.timeout)
         print("Dedicated server reached ready state and stopped cleanly")
