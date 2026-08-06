@@ -62,6 +62,9 @@ first_pack_hash=$(sha256sum "$pack_file" | cut -d ' ' -f1)
 scripts/build.sh >/dev/null
 second_pack_hash=$(sha256sum "$pack_file" | cut -d ' ' -f1)
 test "$first_pack_hash" = "$second_pack_hash"
+checksum_file="${pack_file}.sha256"
+recorded_pack_hash=$(cut -d ' ' -f1 "$checksum_file")
+test "$second_pack_hash" = "$recorded_pack_hash"
 unzip -t "$pack_file" >/dev/null
 python3 -c 'import pathlib,struct; expected={"docs/assets/images/signal-icon.png":(1024,1024),"overrides/config/simplemenu/logo/logo.png":(1024,256),"overrides/config/simplemenu/icon/icon_32x32.png":(32,32),"overrides/config/simplemenu/icon/icon_16x16.png":(16,16)}; assert all(struct.unpack(">II",pathlib.Path(p).read_bytes()[16:24]) == size for p,size in expected.items())'
 git diff --check

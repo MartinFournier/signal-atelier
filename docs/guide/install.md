@@ -44,4 +44,6 @@ scripts/gate.sh
 ```
 
 The gate validates the pack, generated documentation, workflows, secrets, and
-whitespace. The resulting pack is `dist/signal-atelier-0.3.0.mrpack`.
+whitespace. The resulting pack is `dist/signal-atelier-0.3.0.mrpack`; its
+companion `.sha256` file records the exact candidate identity used in test
+reports.

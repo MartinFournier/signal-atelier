@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import os
 import tempfile
 import unittest
@@ -32,6 +33,14 @@ class BuildPackTests(unittest.TestCase):
             BUILD_PACK.build(root, second)
 
             self.assertEqual(first.read_bytes(), second.read_bytes())
+            self.assertEqual(
+                f"{hashlib.sha256(first.read_bytes()).hexdigest()}  first.mrpack\n",
+                (root / "first.mrpack.sha256").read_text(),
+            )
+            self.assertEqual(
+                f"{hashlib.sha256(second.read_bytes()).hexdigest()}  second.mrpack\n",
+                (root / "second.mrpack.sha256").read_text(),
+            )
             with zipfile.ZipFile(first) as archive:
                 self.assertEqual(
                     ["modrinth.index.json", "overrides/config/example.json"],
