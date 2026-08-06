@@ -54,6 +54,32 @@ class QuestChainTests(unittest.TestCase):
             self.assertFalse(task["consume"])
             self.assertFalse(task["repeatable"])
 
+    def test_optional_projects_and_supertech_dependencies(self):
+        quests = {quest["id"]: quest for quest in self.quests}
+        optional = {
+            identifier
+            for identifier, quest in quests.items()
+            if quest["settings"]["isOptional"]
+        }
+        self.assertEqual(
+            {
+                "simplyquests:signal_atelier/distributed_works/one_loaded_chunk",
+                "simplyquests:signal_atelier/signal_core/project_charter",
+                "simplyquests:signal_atelier/signal_core/production_cells",
+                "simplyquests:signal_atelier/signal_core/interdimensional_supply",
+                "simplyquests:signal_atelier/signal_core/continuous_run",
+            },
+            optional,
+        )
+        nuclear = quests["simplyquests:signal_atelier/supertech/nuclear_scale"]
+        self.assertEqual(
+            {
+                "simplyquests:signal_atelier/storage/respect_the_locks",
+                "simplyquests:signal_atelier/distributed_works/drone_route",
+            },
+            set(nuclear["dependencies"]),
+        )
+
     def test_chapter_schema_basics(self):
         for chapter in self.chapters:
             self.assertEqual("signal_atelier", chapter["group"])

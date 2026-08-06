@@ -23,7 +23,8 @@
         "useTaskIcon": true
       },
       "dependencies": [
-        "simplyquests:signal_atelier/storage/respect_the_locks"
+        "simplyquests:signal_atelier/storage/respect_the_locks",
+        "simplyquests:signal_atelier/distributed_works/drone_route"
       ],
       "tasks": [
         {
