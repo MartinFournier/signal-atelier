@@ -79,8 +79,8 @@
 - Add Simple Menu as the lightweight client-side branding layer.
 - Set the window title to `Signal Atelier`; keep version details in the
   manifest and launcher instance rather than crowding the title bar.
-- Use a custom Signal Atelier icon and title logo built around a compact copper
-  signal-wave glyph in a dark workshop frame.
+- Use a custom Signal Atelier icon and title wordmark built around a pixel-art
+  pickaxe emitting signal waves from its head.
 - Keep the vanilla panorama and loading screen initially.
 - Hide Realms, but retain the standard Singleplayer, Multiplayer, Mods,
   Options, and Quit controls.

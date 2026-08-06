@@ -38,10 +38,12 @@
   `docs/reference/mods.md` as generated files. Refresh them with
   `scripts/generate_mod_catalog.py --refresh`; never edit them by hand or fetch
   live Modrinth metadata during ordinary documentation builds.
-- Treat the dedicated-server smoke workflow as the runtime compatibility gate
-  for manifest, override, loader, and smoke-runner changes. Cache only
-  content-addressed downloads, rehash every restore, and never cache worlds,
-  installed servers, generated runtime state, or logs.
+- Treat the dedicated-server smoke workflow as the post-merge runtime
+  compatibility gate for manifest, server-relevant override, loader, and
+  smoke-runner changes. It executes downloaded code and must run only from
+  trusted `main` or intentional manual dispatch, never from pull-request code.
+  Cache only content-addressed downloads, rehash every restore, and never cache
+  worlds, installed servers, generated runtime state, or logs.
 - Export and test the final `.mrpack` in a clean Prism instance, including a new
   world and the intended multiplayer path, before calling it releasable.
 - Keep commands usable on narrow screens: assign long values and never wrap

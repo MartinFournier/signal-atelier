@@ -13,6 +13,9 @@ experimental.
   the checksum-verified NeoForge server, reaches ready state, and stops cleanly.
 - Both cold and fully restored content-addressed download caches pass the same
   server smoke test; every restored artifact is rehashed before execution.
+- Because the smoke test executes downloaded artifacts, it runs only after
+  relevant changes reach trusted `main` or through intentional manual dispatch;
+  pull requests receive static validation instead.
 - The first headless run exposed incompatible NeoForge constraints. Resource
   Backpacks and its libraries were removed, and NeoForge was raised to
   26.1.2.81 before the successful run.
