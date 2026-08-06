@@ -186,10 +186,11 @@ def render_page(catalog: list[dict[str, str]]) -> str:
         "",
         "This player-facing table shows a subset of the tracked catalog.",
         "[Download the complete TSV](mods.tsv) for exact IDs, filenames, hashes,",
-        "release channels, publication dates, and dependency relationships.",
+        "environments, release channels, publication dates, and dependency",
+        "relationships. Select a column heading to sort the table.",
         "",
-        "| Mod | Categories | Version | Client | Server | License |",
-        "| --- | --- | --- | --- | --- | --- |",
+        "| Mod | Categories | Version | License |",
+        "| --- | --- | --- | --- |",
     ]
     for item in catalog:
         name = f"[{markdown(item['name'])}]({item['project_url']})"
@@ -199,8 +200,7 @@ def render_page(catalog: list[dict[str, str]]) -> str:
             license_name = f"[{license_name}]({license_url})"
         lines.append(
             f"| {name} | {markdown(item['categories'])} | "
-            f"`{markdown(item['version'])}` | {item['client']} | "
-            f"{item['server']} | {license_name} |"
+            f"`{markdown(item['version'])}` | {license_name} |"
         )
     lines.extend(["", f"Total: **{len(catalog)} artifacts**.", ""])
     return "\n".join(lines)

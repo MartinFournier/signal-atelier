@@ -1,0 +1,528 @@
+:root,
+[data-bs-theme="dark"] {
+  --atelier-bg: #101311;
+  --atelier-grid: rgba(116, 128, 119, 0.055);
+  --atelier-surface: #1a1f1c;
+  --atelier-surface-raised: #232a26;
+  --atelier-border: #465048;
+  --atelier-border-strong: #667268;
+  --atelier-text: #e7ebe7;
+  --atelier-muted: #aeb8b0;
+  --atelier-copper: #d68a4a;
+  --atelier-copper-bright: #f0ad6c;
+  --atelier-oxidized: #66a69b;
+  --atelier-code: #121713;
+  --atelier-shadow: rgba(0, 0, 0, 0.45);
+}
+
+[data-bs-theme="light"] {
+  --atelier-bg: #d8d4c8;
+  --atelier-grid: rgba(54, 61, 55, 0.08);
+  --atelier-surface: #f1eee5;
+  --atelier-surface-raised: #e4dfd2;
+  --atelier-border: #8b8d82;
+  --atelier-border-strong: #62685f;
+  --atelier-text: #20251f;
+  --atelier-muted: #5b635b;
+  --atelier-copper: #9b542c;
+  --atelier-copper-bright: #783d20;
+  --atelier-oxidized: #367a72;
+  --atelier-code: #ddd8ca;
+  --atelier-shadow: rgba(36, 39, 35, 0.2);
+}
+
+body {
+  color: var(--atelier-text);
+  background-color: var(--atelier-bg);
+  background-image:
+    linear-gradient(var(--atelier-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--atelier-grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--atelier-copper-bright);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--atelier-oxidized);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--atelier-copper-bright);
+  outline-offset: 3px;
+}
+
+.navbar {
+  color: #f4f0e8;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
+    #171c19 !important;
+  border-bottom: 3px solid var(--atelier-copper);
+  box-shadow: 0 4px 0 var(--atelier-shadow);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar .container {
+  max-width: 1180px;
+  min-height: 56px;
+}
+
+.navbar .navbar-nav {
+  align-self: stretch;
+  min-height: 56px;
+}
+
+.navbar .navbar-collapse {
+  align-self: stretch;
+  min-height: 56px;
+}
+
+.navbar-toggler {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 44px;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible,
+.navbar-toggler:active {
+  outline: 0;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus-visible .navbar-toggler-icon,
+.navbar-toggler:active .navbar-toggler-icon {
+  filter: sepia(1) saturate(2.5) hue-rotate(330deg) brightness(1.2);
+}
+
+.navbar .nav-item {
+  display: flex;
+  align-items: stretch;
+  min-height: 56px;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  color: #fff8eb;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.navbar-brand::before {
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url("../images/signal-icon.png") center / contain no-repeat;
+  image-rendering: auto;
+}
+
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  color: #dce3dc;
+}
+
+.navbar .navbar-nav:not(.ms-md-auto) > .nav-item > .nav-link {
+  width: 100%;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff;
+  background-color: rgba(214, 138, 74, 0.14);
+}
+
+.navbar .nav-item.dropdown > .nav-link.active {
+  background-color: rgba(102, 166, 155, 0.12);
+  box-shadow: inset 0 -3px var(--atelier-oxidized);
+}
+
+.navbar .nav-item:not(.dropdown) > .nav-link.active {
+  font-weight: 700;
+  background-color: rgba(214, 138, 74, 0.2);
+  box-shadow: inset 0 -3px var(--atelier-copper);
+}
+
+.navbar a[rel="prev"],
+.navbar a[rel="next"] {
+  display: none;
+}
+
+.navbar .navbar-nav.ms-md-auto {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.navbar .navbar-nav.ms-md-auto .nav-item:has(
+  a[href="https://github.com/MartinFournier/signal-atelier"]
+) {
+  order: 1;
+}
+
+.navbar .navbar-nav.ms-md-auto .nav-item:has(#theme-menu) {
+  order: 2;
+}
+
+.navbar .navbar-nav.ms-md-auto .nav-item:has(
+  [data-bs-target="#mkdocs_search_modal"]
+) {
+  order: 3;
+}
+
+.navbar .navbar-nav.ms-md-auto .nav-link {
+  justify-content: center;
+  width: 48px;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 0;
+}
+
+.navbar .navbar-nav.ms-md-auto .nav-link i {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.navbar a[href="https://github.com/MartinFournier/signal-atelier"]::before {
+  content: "\f09b";
+  font-family: "Font Awesome 6 Brands";
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+#theme-menu span {
+  display: none;
+}
+
+.dropdown-menu,
+.modal-content {
+  color: var(--atelier-text);
+  background: var(--atelier-surface-raised);
+  border: 1px solid var(--atelier-border-strong);
+  border-radius: 0;
+  box-shadow: 4px 4px 0 var(--atelier-shadow);
+}
+
+.dropdown-item {
+  color: var(--atelier-text);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item.active {
+  color: #fff;
+  font-weight: 700;
+  background: rgba(214, 138, 74, 0.24);
+  box-shadow: inset 3px 0 var(--atelier-copper);
+}
+
+body > .container {
+  max-width: 1180px;
+}
+
+[role="main"] {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  background: var(--atelier-surface);
+  border: 1px solid var(--atelier-border);
+  box-shadow: 6px 6px 0 var(--atelier-shadow);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--atelier-text);
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  scroll-margin-top: 5.5rem;
+}
+
+h1 {
+  padding-bottom: 0.6rem;
+  border-bottom: 3px solid var(--atelier-copper);
+}
+
+h2 {
+  padding-bottom: 0.35rem;
+  margin-top: 2.2rem;
+  border-bottom: 1px solid var(--atelier-border);
+}
+
+h2::before {
+  color: var(--atelier-copper);
+  content: "// ";
+}
+
+.bs-sidebar .card {
+  background: var(--atelier-surface-raised) !important;
+  border: 1px solid var(--atelier-border);
+  border-radius: 0;
+}
+
+.bs-sidebar .nav-link {
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--atelier-muted);
+  border-left: 3px solid transparent;
+}
+
+.bs-sidebar .nav,
+.bs-sidebar .nav-item {
+  width: 100%;
+}
+
+.bs-sidebar .nav-link:hover,
+.bs-sidebar .nav-link.active {
+  color: var(--atelier-text);
+  background: rgba(102, 166, 155, 0.1);
+  border-left-color: var(--atelier-oxidized);
+}
+
+code,
+kbd,
+pre {
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+}
+
+code {
+  color: var(--atelier-copper-bright);
+  background: var(--atelier-code);
+  border: 1px solid var(--atelier-border);
+  border-radius: 0;
+  padding: 0.12rem 0.3rem;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  background: var(--atelier-code);
+  border: 1px solid var(--atelier-border);
+  border-left: 4px solid var(--atelier-oxidized);
+  border-radius: 0;
+}
+
+pre code {
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+}
+
+[role="main"] table,
+.table {
+  display: table;
+  width: 100%;
+  color: var(--atelier-text);
+  white-space: nowrap;
+  border: 1px solid var(--atelier-border);
+}
+
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll .table {
+  width: max-content;
+  min-width: 100%;
+  margin-bottom: 0;
+}
+
+.table > :not(caption) > * > * {
+  color: inherit;
+  background: transparent;
+  border-color: var(--atelier-border);
+}
+
+.table th,
+.table td {
+  white-space: nowrap;
+}
+
+.table thead {
+  background: var(--atelier-surface-raised);
+  border-bottom: 2px solid var(--atelier-copper);
+}
+
+.sort-button {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.35rem 0;
+  color: inherit;
+  font: inherit;
+  font-weight: 750;
+  text-align: left;
+  background: transparent;
+  border: 0;
+}
+
+.sort-button::after {
+  color: var(--atelier-muted);
+  content: "↕";
+  font-size: 0.85em;
+}
+
+th[aria-sort="ascending"] .sort-button::after {
+  color: var(--atelier-copper-bright);
+  content: "↑";
+}
+
+th[aria-sort="descending"] .sort-button::after {
+  color: var(--atelier-copper-bright);
+  content: "↓";
+}
+
+.table tbody tr:nth-child(even) {
+  background: rgba(102, 166, 155, 0.055);
+}
+
+blockquote {
+  padding: 0.8rem 1rem;
+  color: var(--atelier-muted);
+  background: var(--atelier-surface-raised);
+  border-left: 4px solid var(--atelier-copper);
+}
+
+.form-control {
+  color: var(--atelier-text);
+  background: var(--atelier-code);
+  border-color: var(--atelier-border-strong);
+  border-radius: 0;
+}
+
+footer {
+  color: var(--atelier-muted);
+}
+
+footer hr {
+  border-color: var(--atelier-border);
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .nav-link,
+  .navbar .dropdown-item,
+  #theme-menu {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .nav-item {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .navbar .navbar-nav:not(.ms-md-auto) > .nav-item > .nav-link {
+    width: calc(100% + 1.5rem);
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .navbar .navbar-nav.ms-md-auto {
+    justify-content: flex-start;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--atelier-border);
+  }
+
+  .navbar .navbar-nav.ms-md-auto .nav-item {
+    width: auto;
+  }
+
+  .navbar .navbar-nav.ms-md-auto .nav-link {
+    width: 44px;
+  }
+
+  .navbar .navbar-collapse,
+  .navbar .navbar-nav {
+    min-height: auto;
+  }
+
+  .navbar-collapse {
+    padding: 0.75rem 0 1rem;
+  }
+
+  .navbar-collapse.show {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body > .container {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  [role="main"] {
+    padding: 1.1rem;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: 0 5px 0 var(--atelier-shadow);
+  }
+
+  .bs-sidebar {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 8vw, 2.2rem);
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  .table {
+    font-size: 0.88rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

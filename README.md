@@ -49,6 +49,16 @@ scripts/build.sh
 scripts/gate.sh
 ```
 
+Preview documentation with hot reload on port 8000:
+
+```sh
+scripts/serve-docs.sh
+```
+
+The preview binds all IPv4 interfaces so it is available at
+`http://172.20.x.x:8000/signal-atelier/` on the local network. Set
+`SIGNAL_ATELIER_DOCS_ADDR=127.0.0.1:8000` to restrict it to the local machine.
+
 Import `dist/signal-atelier-0.3.0.mrpack` into Prism Launcher with Java 25.
 
 ## Project reference
