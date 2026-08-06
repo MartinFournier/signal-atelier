@@ -1,6 +1,6 @@
 # Signal Atelier
 
-<img src="docs/assets/images/signal-icon.png" alt="Signal Atelier copper cable icon" width="160">
+<img src="overrides/config/simplemenu/logo/logo.png" alt="Signal Atelier" width="512">
 
 **A focused automation workshop.**
 
