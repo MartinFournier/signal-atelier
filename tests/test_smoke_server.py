@@ -1,5 +1,6 @@
 import importlib.util
 import hashlib
+import io
 import tempfile
 import unittest
 from unittest import mock
@@ -92,6 +93,42 @@ class SmokeServerTests(unittest.TestCase):
     def test_digest_must_be_lowercase_hex(self):
         with self.assertRaises(ValueError):
             SMOKE.require_digest("not-a-digest", "sha256")
+
+    def test_failure_log_tail_is_bounded_and_sanitized(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            runtime = Path(temporary)
+            home = Path.home()
+            log = runtime / "server-smoke.log"
+            log.write_text(
+                "discarded\n"
+                f"\x1b[31merror in {runtime}/mods/example.jar\x1b[0m\n"
+                f"home path: {home}/.cache/example\x00 hidden\n"
+            )
+
+            lines = SMOKE.sanitized_log_tail(
+                log,
+                runtime,
+                max_lines=2,
+                max_characters=80,
+            )
+
+        self.assertEqual(
+            [
+                "error in <runtime>/mods/example.jar",
+                "home path: <home>/.cache/example hidden",
+            ],
+            lines,
+        )
+
+    def test_missing_failure_log_is_reported_without_runtime_path(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            runtime = Path(temporary)
+            output = io.StringIO()
+            with mock.patch("sys.stderr", output):
+                SMOKE.print_failure_log(runtime)
+
+        self.assertIn("<log unavailable>", output.getvalue())
+        self.assertNotIn(str(runtime), output.getvalue())
 
 
 if __name__ == "__main__":
