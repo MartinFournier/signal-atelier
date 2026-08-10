@@ -4,9 +4,11 @@
 from __future__ import annotations
 
 import argparse
+from collections import deque
 import hashlib
 import json
 import os
+import re
 import select
 import signal
 import shutil
@@ -24,6 +26,7 @@ ROOT = Path(__file__).parents[1]
 MANIFEST = ROOT / "modrinth.index.json"
 MODRINTH_HOST = "cdn.modrinth.com"
 NEOFORGE_HOST = "maven.neoforged.net"
+ANSI_ESCAPE = re.compile(r"\x1b\[[0-?]*[ -/]*[@-~]")
 
 
 def safe_target(root: Path, relative: str) -> Path:
@@ -188,6 +191,47 @@ def stop_process(process: subprocess.Popen, force: bool = False) -> None:
     os.killpg(process.pid, signal.SIGKILL if force else signal.SIGTERM)
 
 
+def sanitized_log_tail(
+    path: Path,
+    runtime: Path,
+    max_lines: int = 200,
+    max_characters: int = 2000,
+) -> list[str]:
+    if max_lines < 1 or max_characters < 1:
+        raise ValueError("log-tail limits must be positive")
+
+    with path.open(encoding="utf-8", errors="replace") as log:
+        raw_lines = deque(log, maxlen=max_lines)
+
+    replacements = (
+        (str(runtime.resolve()), "<runtime>"),
+        (str(Path.home().resolve()), "<home>"),
+    )
+    result = []
+    for raw_line in raw_lines:
+        line = ANSI_ESCAPE.sub("", raw_line.rstrip("\r\n"))
+        for value, replacement in replacements:
+            line = line.replace(value, replacement)
+        line = "".join(
+            character
+            for character in line
+            if character == "\t" or ord(character) >= 32
+        )
+        result.append(line[:max_characters])
+    return result
+
+
+def print_failure_log(runtime: Path) -> None:
+    path = runtime / "server-smoke.log"
+    print("--- sanitized server-smoke.log tail ---", file=sys.stderr)
+    if not path.is_file() or path.is_symlink():
+        print("<log unavailable>", file=sys.stderr)
+        return
+    for line in sanitized_log_tail(path, runtime):
+        print(line, file=sys.stderr)
+    print("--- end sanitized server-smoke.log tail ---", file=sys.stderr)
+
+
 def run_server(runtime: Path, timeout_seconds: int) -> None:
     log_path = runtime / "server-smoke.log"
     deadline = time.monotonic() + timeout_seconds
@@ -278,6 +322,7 @@ def main() -> int:
     except Exception as error:
         keep = True
         print(f"Smoke test failed: {error}", file=sys.stderr)
+        print_failure_log(runtime)
         print("Runtime retained for manual log review", file=sys.stderr)
         return 1
     finally:
