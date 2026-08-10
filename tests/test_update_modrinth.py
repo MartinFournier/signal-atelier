@@ -60,6 +60,10 @@ class UpdateModrinthTests(unittest.TestCase):
         proposed["files"][0]["filename"] = "new.zip"
         updated = UPDATER.updated_entry(entry, proposed)
         self.assertEqual("shaderpacks/new.zip", updated["path"])
+
+        entry["path"] = "resourcepacks/old.zip"
+        updated = UPDATER.updated_entry(entry, proposed)
+        self.assertEqual("resourcepacks/new.zip", updated["path"])
         self.assertEqual(entry["env"], updated["env"])
         self.assertEqual(42, updated["fileSize"])
 

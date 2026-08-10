@@ -12,8 +12,14 @@ validation** may change after the first graphical gameplay pass.
 - Refined Storage wireless devices, Constructors, Destructors, and remote
   network links have no intended survival recipe.
 - Use Oritech pipes and drones for machine logistics and remote sites.
+- **JEI** is the recipe reference; the redundant vanilla recipe book and its
+  recipe-unlock toasts are intentionally suppressed.
 
 ## Travel and inventory
+
+- **Inventory Management** provides player-initiated sorting, stacking into
+  existing stacks, and container transfer. Broader automatic behavior is
+  pending runtime configuration and validation.
 
 - **Traveler's Backpack** is limited to restrained capacities of 9, 18, and 27
   slots; higher tiers and most automation-style upgrades are locked.
@@ -41,8 +47,10 @@ validation** may change after the first graphical gameplay pass.
 
 ## Optional presentation
 
-- Complementary Reimagined, dynamic lights, and Sound Physics Remastered are
-  optional and can be disabled without affecting progression.
+- Whimscape, Complementary Reimagined, dynamic lights, and Sound Physics
+  Remastered are optional and can be disabled without affecting progression.
+- Whimscape is bundled but disabled by default. It changes vanilla textures,
+  models, font, and GUI; Oritech and Rechiseled retain their own assets.
 - Shaders are disabled for the first validation launch and are never part of
   the minimum hardware target.
 

@@ -20,7 +20,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/distributed_works/pipes_first"
@@ -43,7 +43,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:chest"
     },
     {
       "id": "simplyquests:signal_atelier/storage/external_boundaries",
@@ -58,7 +58,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/storage/storage_core"
@@ -81,7 +81,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:barrel"
     },
     {
       "id": "simplyquests:signal_atelier/storage/first_pattern",
@@ -96,7 +96,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/storage/external_boundaries"
@@ -119,7 +119,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:crafting_table"
     },
     {
       "id": "simplyquests:signal_atelier/storage/factory_request",
@@ -134,7 +134,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/storage/first_pattern"
@@ -157,7 +157,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:hopper"
     },
     {
       "id": "simplyquests:signal_atelier/storage/respect_the_locks",
@@ -172,7 +172,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/storage/factory_request"
@@ -195,7 +195,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:barrier"
     }
   ],
   "canvasTexts": [],

@@ -1,6 +1,21 @@
 {
   "schema": 1,
   "projects": {
+    "4YkvO5Rp": {
+      "title": "Whimscape",
+      "slug": "whimscape",
+      "project_type": "resourcepack",
+      "categories": [
+        "16x",
+        "entities",
+        "models"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
     "4sYI62kA": {
       "title": "Oritech",
       "slug": "oritech",
@@ -111,6 +126,19 @@
         "url": ""
       }
     },
+    "CnOG2wlS": {
+      "title": "Toast Control",
+      "slug": "toast-control",
+      "project_type": "mod",
+      "categories": [
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
     "EsAfCjCV": {
       "title": "AppleSkin",
       "slug": "appleskin",
@@ -122,6 +150,20 @@
       "license": {
         "id": "Unlicense",
         "name": "The Unlicense",
+        "url": ""
+      }
+    },
+    "F7wXag4i": {
+      "title": "Inventory Management",
+      "slug": "inventory-management",
+      "project_type": "mod",
+      "categories": [
+        "storage",
+        "utility"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
         "url": ""
       }
     },
@@ -224,6 +266,19 @@
         "url": "https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md"
       }
     },
+    "RH2KUdKJ": {
+      "title": "ShatterLib | OctoLib",
+      "slug": "shatterbyte-lib",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
     "RYtXKJPr": {
       "title": "GraveStone Mod",
       "slug": "gravestone-mod",
@@ -320,6 +375,20 @@
       "license": {
         "id": "MIT",
         "name": "MIT License",
+        "url": ""
+      }
+    },
+    "bQh7xzFq": {
+      "title": "Not Enough Recipe Book [NERB]",
+      "slug": "notenoughrecipebook",
+      "project_type": "mod",
+      "categories": [
+        "optimization",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
         "url": ""
       }
     },
@@ -471,6 +540,19 @@
         "url": ""
       }
     },
+    "tCkE8p2N": {
+      "title": "Placebo",
+      "slug": "placebo",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": ""
+      }
+    },
     "u6dRKJwZ": {
       "title": "Just Enough Items (JEI)",
       "slug": "jei",
@@ -544,6 +626,13 @@
         }
       ]
     },
+    "4KBVt31P": {
+      "project_id": "F7wXag4i",
+      "version_number": "2.0.0+26.1-neoforge",
+      "version_type": "release",
+      "date_published": "2026-06-12T20:26:39.508745Z",
+      "dependencies": []
+    },
     "72WSQzeC": {
       "project_id": "4sYI62kA",
       "version_number": "2.0.0-exp3",
@@ -551,14 +640,14 @@
       "date_published": "2026-08-03T18:29:24.706416Z",
       "dependencies": [
         {
-          "project_id": "J8MMsNrL",
-          "version_id": null,
-          "dependency_type": "optional"
-        },
-        {
           "project_id": "8BmcQJ2H",
           "version_id": null,
           "dependency_type": "required"
+        },
+        {
+          "project_id": "J8MMsNrL",
+          "version_id": null,
+          "dependency_type": "optional"
         },
         {
           "project_id": "b1ZV3DIJ",
@@ -756,6 +845,19 @@
       "date_published": "2026-07-08T21:04:04.939552Z",
       "dependencies": []
     },
+    "V1YU5Xyx": {
+      "project_id": "CnOG2wlS",
+      "version_number": "26.1.2-10.0.0",
+      "version_type": "release",
+      "date_published": "2026-06-16T23:52:15.492351Z",
+      "dependencies": [
+        {
+          "project_id": "tCkE8p2N",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
     "V6JHyPSD": {
       "project_id": "LQ3K71Q1",
       "version_number": "3.11.7",
@@ -812,6 +914,20 @@
           "dependency_type": "required"
         }
       ]
+    },
+    "c4uzJQYp": {
+      "project_id": "tCkE8p2N",
+      "version_number": "26.1.2-10.0.2",
+      "version_type": "release",
+      "date_published": "2026-07-24T20:32:23.573015Z",
+      "dependencies": []
+    },
+    "eRKJhmrJ": {
+      "project_id": "4YkvO5Rp",
+      "version_number": "26.1-26.2_r1",
+      "version_type": "release",
+      "date_published": "2026-06-15T17:59:10.326557Z",
+      "dependencies": []
     },
     "eZ0KJiEA": {
       "project_id": "gvQqBUqZ",
@@ -911,6 +1027,13 @@
         }
       ]
     },
+    "nDf20sjT": {
+      "project_id": "RH2KUdKJ",
+      "version_number": "0.7.0+26.1.2",
+      "version_type": "release",
+      "date_published": "2026-06-15T13:45:42.092509Z",
+      "dependencies": []
+    },
     "oG75RchZ": {
       "project_id": "nmDcB62a",
       "version_number": "5.27.20+mc26.1.2",
@@ -965,6 +1088,19 @@
       "version_type": "release",
       "date_published": "2026-05-21T14:50:03.992642Z",
       "dependencies": []
+    },
+    "yziDsCIm": {
+      "project_id": "bQh7xzFq",
+      "version_number": "0.4.3+26.1.2",
+      "version_type": "release",
+      "date_published": "2026-06-19T10:19:54.978436Z",
+      "dependencies": [
+        {
+          "project_id": "RH2KUdKJ",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
     }
   }
 }

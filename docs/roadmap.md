@@ -21,13 +21,19 @@
 ## Packaging follow-up
 
 - Capture runtime-generated Traveler's Backpack and Xaero World Map
-  configuration from the first clean graphical Prism launch, sanitize it, and
-  add only the reviewed settings to `overrides/`. Validate the source-derived
-  Simply Quests files against the running mod before release.
+  configuration, plus the minimum Toast Control and Inventory Management
+  settings, from the first clean graphical Prism launch. Sanitize them and add
+  only reviewed settings to `overrides/`. Validate the source-derived Simply
+  Quests files and curated icons against the running mod before release.
+- Diagnose the observed Save & Quit hang from a sanitized Prism console and
+  `latest.log` tail, identify the last active shutdown subsystem, and verify an
+  immediate relaunch before release.
 - Inventory all registered controls and implement first-install-only defaults
   for the world map, backpack, and engineering notebook without overwriting the
   rest of `options.txt` or later player changes.
 - Verify recipe locks and branding in-game before publishing 0.3.0.
+- Validate Whimscape with Oritech, Rechiseled, JEI, Refined Storage, Simply
+  Quests, and Complementary Reimagined before considering it for a default.
 - Design the exact Signal Core recipe after a complete Oritech playthrough
   establishes realistic production rates.
 - Add and enable the curated splash-text resource pack after verifying the

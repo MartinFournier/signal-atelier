@@ -12,6 +12,8 @@ test. See the [test plan](../test-plan.md) for runtime acceptance checks.
 | [Oritech](https://modrinth.com/project/4sYI62kA) | Anchor technology system for power, processing, transport, remote work, and endgame production. | The engineering notebook follows its factory arc; no competing broad technology mod is included. | Complete progression, persistence, and production-rate pass. |
 | [Oracle Index](https://modrinth.com/project/J8MMsNrL) | Oritech's in-game technical manual. | The Orientation chapter directs players to it before factory construction. | Confirm the book opens and covers the pinned Oritech build. |
 | [Just Enough Items](https://modrinth.com/project/u6dRKJwZ) | Shared recipe and machine-process reference. | Locked recipes are removed through the pack datapack and must disappear from ordinary discovery. | Inspect all Oritech processes and locked entries in-game. |
+| [Not Enough Recipe Book](https://modrinth.com/project/bQh7xzFq) | Removes the redundant vanilla recipe book so JEI is the single recipe reference. | Required on both client and server; it must not hide JEI or ordinary crafting output. | Confirm every supported crafting screen omits the vanilla book while JEI remains usable. |
+| [Toast Control](https://modrinth.com/project/CnOG2wlS) | Removes recipe-unlock and tutorial toast noise made redundant by JEI and pack guidance. | Client-only; advancement and important system feedback must remain visible. | Verify the intended toast categories in a clean instance. |
 | [Jade](https://modrinth.com/project/nvQzSEkH) | Identifies machines, inventories, and graves at the point of use. | Kept informational; it must not expose unintended hidden machine state. | Inspect Oritech and GraveStone overlays. |
 | [Simply Quests](https://modrinth.com/project/uwJu7Fi8) | Reward-free engineering notebook joining the pack's systems into one progression. | Seven generated chapters and 27 manual milestones; recipes never depend on quest state. | Confirm loading, layout, team sync, persistence, and update behavior. |
 
@@ -32,6 +34,7 @@ test. See the [test plan](../test-plan.md) for runtime acceptance checks.
 | --- | --- | --- | --- |
 | [AppleSkin](https://modrinth.com/project/EsAfCjCV) | Makes vanilla food decisions legible without changing food progression. | Client-only informational role. | Confirm it remains a presentation-only convenience. |
 | [Mouse Tweaks](https://modrinth.com/project/aC3cM3Vq) | Reduces friction across machine, backpack, and storage inventories. | Client-only input role with no progression effect. | Review inventory interactions and control conflicts. |
+| [Inventory Management](https://modrinth.com/project/F7wXag4i) | Adds explicit sorting, stacking into existing stacks, and container transfer across workshop storage. | Convenience must remain player-initiated; broader automation stays disabled pending sanitized runtime configuration. | Test vanilla, backpack, Oritech, and Refined Storage-adjacent inventories for loss, duplication, or surprising movement. |
 | [Better Advancements](https://modrinth.com/project/Q2OqKxDG) | Improves the vanilla advancement screen alongside the separate engineering notebook. | Client-only presentation role; Simply Quests remains the pack guide. | Confirm both interfaces remain distinct and usable. |
 | [XP Tome](https://modrinth.com/project/AnpW69o3) | Stores a bounded level-30-equivalent XP reserve for workshop use. | Default 1,395 XP capacity is accepted; it must work safely with graves and restarts. | Test capacity, death, logout, restart, and duplication paths. |
 | [Tax Free Levels](https://modrinth.com/project/jCBrrLTs) | Makes anvil costs use consistent raw XP alongside the XP Tome. | Pack config retains the vanilla anvil ceiling and one-level renaming. | Compare raw-XP costs at different starting levels. |
@@ -42,6 +45,7 @@ test. See the [test plan](../test-plan.md) for runtime acceptance checks.
 | Project | Pack role and connection | Enforcement and guidance | Evidence still required |
 | --- | --- | --- | --- |
 | [Rechiseled](https://modrinth.com/project/B0g2vT6l) | Sole broad decorative block expansion for industrial builds. | Avoids overlapping furniture and building systems. | Test recipes, connected textures, variants, and persistence. |
+| [Whimscape](https://modrinth.com/project/4YkvO5Rp) | Optional 16×16 visual identity for the vanilla world around the industrial workshop. | Bundled but disabled by default; pack branding retains priority, and no extra framework is required for baseline use. | Compare vanilla, Oritech, and Rechiseled materials; inspect its font and GUI across modded screens. |
 | [Simple Menu](https://modrinth.com/project/6pdhya1q) | Applies the Signal Atelier title, icon, wordmark, and restrained menu policy. | Pack assets and config hide Realms while retaining standard play and settings controls. | Check scaling, required buttons, warning visibility, and absence of promotions. |
 
 ## Performance, graphics, and sound
@@ -74,6 +78,8 @@ manifest and server smoke checks.
 | [Fusion](https://modrinth.com/project/p19vrgc2) | Rechiseled connected textures |
 | [Geckolib](https://modrinth.com/project/8BmcQJ2H) | Oritech animation and rendering |
 | [Prickle](https://modrinth.com/project/aaRl8GiW) | Enchantment Descriptions on the client |
+| [Placebo](https://modrinth.com/project/tCkE8p2N) | Toast Control |
+| [ShatterLib](https://modrinth.com/project/RH2KUdKJ) | Not Enough Recipe Book |
 | [SuperMartijn642's Config Lib](https://modrinth.com/project/LN9BxssP) | Chunk Loaders and Rechiseled |
 | [SuperMartijn642's Core Lib](https://modrinth.com/project/rOUBggPv) | Chunk Loaders and Rechiseled |
 

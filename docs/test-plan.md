@@ -20,6 +20,9 @@ each local comparison, but do not commit unsanitized logs.
 - Create and re-enter a new survival world.
 - Confirm Oritech world generation is present.
 - Confirm JEI shows Oritech recipes and Oracle Index opens its documentation.
+- Confirm the vanilla recipe book is absent from supported crafting screens,
+  JEI remains usable, and recipe-unlock/tutorial toasts are suppressed while
+  advancement and important system toasts remain visible.
 - Connect a second client or dedicated server before calling the pack
   multiplayer-capable.
 
@@ -64,6 +67,10 @@ each local comparison, but do not commit unsanitized logs.
   information.
 - Confirm AppleSkin, Mouse Tweaks, and Better Advancements remain client-side
   conveniences and do not alter progression.
+- Sort and transfer items in vanilla chests, Traveler's Backpack, Oritech
+  machines, and storage-facing containers. Verify stacking into existing
+  stacks causes no loss, duplication, locked-slot violation, or unsolicited
+  hotbar replacement.
 - Confirm Xaero's World Map reveals only explored terrain.
 - Verify entity tracking and map teleportation are disabled; test player
   markers separately if World Map supports them without the Minimap.
@@ -95,10 +102,16 @@ each local comparison, but do not commit unsanitized logs.
 - Test Iris and Complementary Reimagined around Oritech animations, emissive
   textures, transparent blocks, portals, and Xaero's map; shaders must remain
   disabled by default.
+- With Whimscape enabled, apply its documented Complementary compatibility
+  settings and recheck Oritech emissives, portals, glass, foliage, and weather.
 - Test LambDynamicLights with Oritech items and Sodium after resolving its
   NeoForge dependency metadata.
 - Verify Rechiseled connected textures, stairs, slabs, recipes, and restart
   persistence without adding unintended storage or progression features.
+- Enable Whimscape and compare vanilla materials beside Oritech machines and
+  Rechiseled blocks. Verify its custom font and GUI remain readable in JEI,
+  Refined Storage, Simply Quests, Inventory Management, and configuration
+  screens; disabling it must restore the baseline without affecting the world.
 - Test Sound Physics Remastered in factories and tunnels and confirm it can be
   disabled without affecting a world or server connection.
 - Confirm only the single-chunk loader is craftable, respects placement limits,
@@ -108,6 +121,11 @@ each local comparison, but do not commit unsanitized logs.
 - Confirm the Signal Atelier group contains seven ordered chapters and 27
   milestones, every dependency unlocks in sequence, and manual checkboxes
   synchronize between clients without granting items, XP, or commands.
+- Confirm every milestone renders its curated item icon instead of the generic
+  checkbox task icon.
+- Save and quit from a disposable world, confirm the Java process exits without
+  a forced Prism stop, and immediately relaunch the same instance. If it hangs,
+  preserve a sanitized Prism console and `latest.log` tail for attribution.
 - Complete the provisional Signal Core production chain without relying on
   locked Refined Storage or chunk-loader features.
 - Verify Simple Menu shows `Signal Atelier` in the window title and renders the

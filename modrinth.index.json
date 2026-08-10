@@ -556,6 +556,96 @@
       "fileSize": 35912
     },
     {
+      "path": "mods/nerb-neoforge-0.4.3+26.1.2.jar",
+      "hashes": {
+        "sha1": "86e1538899b4e1209667fb43762bd41b6b55996c",
+        "sha512": "36873f80e5b9599459423cc6e7364c12e056de3e4ae100e1b61a0a0a86dedcf055fcd930d92f0c36312ebfec6da99f7504a49f8cda2991265310ac4a4d8a6da3"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/bQh7xzFq/versions/yziDsCIm/nerb-neoforge-0.4.3%2B26.1.2.jar"
+      ],
+      "fileSize": 16365
+    },
+    {
+      "path": "mods/shatterlib-neoforge-0.7.0+26.1.2.jar",
+      "hashes": {
+        "sha1": "636deda9b992072fa6b2fbb42e499f1961e4bc49",
+        "sha512": "f24de798613fcb4c64de38d06cbef633805dfde97a4c42840e3ac99e68c4d4640d6d52f677140c6c80aae5a9df7822a8bb5ca32bdcb3b701b1e514d78e5f77b8"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/RH2KUdKJ/versions/nDf20sjT/shatterlib-neoforge-0.7.0%2B26.1.2.jar"
+      ],
+      "fileSize": 415472
+    },
+    {
+      "path": "mods/ToastControl-26.1.2-10.0.0.jar",
+      "hashes": {
+        "sha1": "3362983e6187787f7b30834b3c26a25073f90f87",
+        "sha512": "db47b292d1279dbb115af055ba70e893bbeb0ac2f2636b90eec59eaaba6d434dd8aa78ec3b36c79999130de3c4db5a349ce27937deb8e1f40ba4ca423590f5af"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/CnOG2wlS/versions/V1YU5Xyx/ToastControl-26.1.2-10.0.0.jar"
+      ],
+      "fileSize": 20891
+    },
+    {
+      "path": "mods/Placebo-26.1.2-10.0.2.jar",
+      "hashes": {
+        "sha1": "1a822d3ea3f16b8f5a44cafb40942df65380b1d2",
+        "sha512": "a55e8d5833c8260aab27ef90b0f2db40b02d10cb49c3a32f66ac85f75cb1357d5519e69e5bcb61e277ebe724dd3852d769fd32806182910d88b11f7c53ca1dab"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/tCkE8p2N/versions/c4uzJQYp/Placebo-26.1.2-10.0.2.jar"
+      ],
+      "fileSize": 363015
+    },
+    {
+      "path": "mods/inventorymanagement-neoforge-2.0.0+26.1.jar",
+      "hashes": {
+        "sha1": "8858799edf63875bbdf5f24d5cfe7793a12c2e62",
+        "sha512": "8760b21f320d13a35be60c36fb666a2b445e0668012cf713500b990a3bd308bd592706d2f35346e86c6069fd288f224bf14a6440757f12b26f459f741fcdbb3b"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/F7wXag4i/versions/4KBVt31P/inventorymanagement-neoforge-2.0.0%2B26.1.jar"
+      ],
+      "fileSize": 933457
+    },
+    {
+      "path": "resourcepacks/Whimscape_26.1-26.2_r1.zip",
+      "hashes": {
+        "sha1": "9e2acd9c688b5b238adc19ad9da2f23ea52fa101",
+        "sha512": "7819e00928985fc0e63d1eb7cedc0b1d710d1d58cc0fa404fc6e2ab05c733d28429bae605b21e9e97875c286cbbb552da7c98f04062cf3e0eccd434a5191728c"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/4YkvO5Rp/versions/eRKJhmrJ/Whimscape_26.1-26.2_r1.zip"
+      ],
+      "fileSize": 5212417
+    },
+    {
       "path": "shaderpacks/ComplementaryReimagined_r5.8.1.zip",
       "hashes": {
         "sha512": "6bd95215755d25812556ce790d976221f7d677d63112e3e4d3e70b08a62ed41348fa3792dd31bbe720d1e46fe2d525cadb4f66e6358118e1f4aa8e0d11f25c39",

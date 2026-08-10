@@ -20,7 +20,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/orientation/mark_the_baseline"
@@ -43,7 +43,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:redstone_torch"
     },
     {
       "id": "simplyquests:signal_atelier/power/buffer_and_measure",
@@ -58,7 +58,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/power/first_generation"
@@ -81,7 +81,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:comparator"
     },
     {
       "id": "simplyquests:signal_atelier/power/renewable_baseline",
@@ -96,7 +96,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/power/buffer_and_measure"
@@ -119,7 +119,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:daylight_detector"
     }
   ],
   "canvasTexts": [],

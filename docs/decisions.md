@@ -29,6 +29,13 @@
   persistence after server restarts.
 - Add Jade, AppleSkin, Mouse Tweaks, and Better Advancements as the initial
   quality-of-life set.
+- Use JEI as the sole recipe-discovery interface. Remove the redundant vanilla
+  recipe book with Not Enough Recipe Book and suppress recipe-unlock and
+  tutorial toasts with Toast Control; retain advancement and system feedback.
+- Add Inventory Management for deliberate inventory sorting, stacking into
+  existing stacks, and container transfer. Keep automatic replacement,
+  unsolicited hotbar changes, and other automation disabled until its clean
+  runtime configuration is captured and validated.
 - Add Xaero's World Map without Xaero's Minimap.
 - Limit mapping to explored terrain and ordinary waypoints. Disable entity
   tracking and map teleportation; allow player markers only if World Map
@@ -40,6 +47,9 @@
   disabled by default.
 - Add LambDynamicLights with conservative update quality.
 - Add Rechiseled as the sole general-purpose decorative block expansion.
+- Bundle Whimscape as an optional, disabled-by-default visual overhaul. Keep
+  pack-owned Signal Atelier branding above it in resource-pack priority and do
+  not require its optional OptiFine-equivalent features.
 - Add Sound Physics Remastered as an independently disableable client feature.
 - Keep world generation, structures, food, and farming otherwise close to
   vanilla; Oritech supplies the industrial building identity.
@@ -53,6 +63,8 @@
 - Ship 27 manual checklist milestones across those seven chapters. Keep the
   notebook reward-free and independent of recipes so experimental registry
   changes cannot block a world.
+- Give each milestone a curated vanilla item icon instead of displaying its
+  identical checkbox task icon.
 - Add XP Tome with its default 1,395 XP capacity, equivalent to level 30.
 - Add Tax Free Levels for level-independent XP accounting while retaining the
   vanilla anvil limit.

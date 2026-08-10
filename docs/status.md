@@ -27,6 +27,9 @@ experimental.
 - Runtime configuration capture and sanitization
 - Multiplayer connection and persistence testing
 - In-game recipe-lock, quest, control, map, backpack, and branding validation
+- Runtime validation of recipe-book suppression, toast filtering, inventory
+  management, and curated quest icons
+- Diagnosis of the observed Save & Quit process hang and clean relaunch proof
 
 See the [test plan](test-plan.md) for acceptance checks and the
 [roadmap](roadmap.md) for implementation follow-up.

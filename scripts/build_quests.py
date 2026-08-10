@@ -20,6 +20,35 @@ OPTIONAL_QUESTS = {
     "signal_core/interdimensional_supply",
     "signal_core/continuous_run",
 }
+QUEST_ICONS = {
+    "orientation/read_the_brief": "minecraft:book",
+    "orientation/survey_a_site": "minecraft:compass",
+    "orientation/mark_the_baseline": "minecraft:chest",
+    "power/first_generation": "minecraft:redstone_torch",
+    "power/buffer_and_measure": "minecraft:comparator",
+    "power/renewable_baseline": "minecraft:daylight_detector",
+    "industry/processing_line": "minecraft:furnace",
+    "industry/principal_alloys": "minecraft:iron_ingot",
+    "industry/fluids_and_oil": "minecraft:bucket",
+    "industry/rebuild_after_restart": "minecraft:observer",
+    "distributed_works/pipes_first": "minecraft:hopper",
+    "distributed_works/remote_site": "minecraft:minecart",
+    "distributed_works/drone_route": "minecraft:phantom_membrane",
+    "distributed_works/one_loaded_chunk": "minecraft:lodestone",
+    "storage/storage_core": "minecraft:chest",
+    "storage/external_boundaries": "minecraft:barrel",
+    "storage/first_pattern": "minecraft:crafting_table",
+    "storage/factory_request": "minecraft:hopper",
+    "storage/respect_the_locks": "minecraft:barrier",
+    "supertech/nuclear_scale": "minecraft:beacon",
+    "supertech/particle_products": "minecraft:end_crystal",
+    "supertech/renewable_supertech": "minecraft:blaze_powder",
+    "supertech/survive_a_restart": "minecraft:clock",
+    "signal_core/project_charter": "minecraft:writable_book",
+    "signal_core/production_cells": "minecraft:copper_block",
+    "signal_core/interdimensional_supply": "minecraft:ender_eye",
+    "signal_core/continuous_run": "minecraft:nether_star",
+}
 
 CHAPTERS = [
     (
@@ -137,7 +166,7 @@ def make_quest(chapter: str, index: int, data: tuple) -> dict:
         "settings": {
             "isOptional": f"{chapter}/{slug}" in OPTIONAL_QUESTS,
             "isRepeatable": False,
-            "useTaskIcon": True,
+            "useTaskIcon": False,
         },
         "dependencies": dependency_ids(chapter, dependency),
         "tasks": [
@@ -158,7 +187,7 @@ def make_quest(chapter: str, index: int, data: tuple) -> dict:
         ],
         "rewards": [],
         "lockedBy": "",
-        "logo": "minecraft:paper",
+        "logo": QUEST_ICONS[f"{chapter}/{slug}"],
     }
 
 

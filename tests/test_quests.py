@@ -164,6 +164,13 @@ class QuestChainTests(unittest.TestCase):
             self.assertFalse(task["consume"])
             self.assertFalse(task["repeatable"])
 
+    def test_milestones_use_curated_vanilla_icons(self):
+        icons = [quest["logo"] for quest in self.quests]
+        self.assertTrue(all(icon.startswith("minecraft:") for icon in icons))
+        self.assertTrue(all(not quest["settings"]["useTaskIcon"] for quest in self.quests))
+        self.assertNotIn("minecraft:paper", icons)
+        self.assertGreaterEqual(len(set(icons)), 20)
+
     def test_optional_projects_and_supertech_dependencies(self):
         quests = {quest["id"]: quest for quest in self.quests}
         optional = {

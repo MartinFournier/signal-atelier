@@ -35,6 +35,7 @@ Stop the current run and preserve the exact candidate and sanitized evidence
 after any of these results:
 
 - Startup crash, world corruption, or repeatable disconnect
+- Save & Quit leaves the Java process running or blocks an immediate relaunch
 - Item, XP, fluid, energy, backpack, grave, or quest duplication or loss
 - A locked recipe remains available in survival
 - Grave ownership allows unauthorized recovery
@@ -65,6 +66,7 @@ once in a disposable copy, then follow the documented functional-group bisect.
 - [ ] Allocate 4096 MiB minimum or 6144 MiB when the host has sufficient free
       memory.
 - [ ] Confirm Complementary Reimagined is installed but disabled.
+- [ ] Confirm Whimscape is installed but disabled.
 - [ ] Reach the title screen without adding, removing, or replacing mods.
 - [ ] Confirm the window title is `Signal Atelier`.
 - [ ] Inspect the wordmark at small, medium, and large GUI scales.
@@ -74,6 +76,9 @@ once in a disposable copy, then follow the documented functional-group bisect.
 - [ ] Confirm the NeoForge experimental warning remains visible.
 - [ ] Confirm the vanilla panorama and loading screen remain unchanged.
 - [ ] Exit cleanly, relaunch, and confirm the same title-screen result.
+- [ ] After Save & Quit, confirm the Java process exits without Prism's Kill
+      action and the instance can launch again immediately. On failure, record
+      the last sanitized Prism console and `latest.log` lines before killing it.
 
 ## Session 2: disposable-world baseline
 
@@ -82,6 +87,10 @@ once in a disposable copy, then follow the documented functional-group bisect.
 - [ ] Find evidence that Oritech world generation is present.
 - [ ] Open Oracle Index and confirm its Oritech documentation loads.
 - [ ] Confirm JEI shows Oritech processes and Refined Storage recipes.
+- [ ] Confirm the vanilla recipe book is absent from supported crafting screens
+      while JEI search, lookup, and recipe transfer remain usable.
+- [ ] Unlock a recipe and trigger tutorial conditions; confirm their toasts are
+      suppressed while an advancement and important system toast remain shown.
 - [ ] Confirm wireless Refined Storage devices, Constructors, Destructors,
       Network Transmitters, and Network Receivers have no survival recipe.
 - [ ] Confirm only the single-chunk Chunk Loader has a survival path.
@@ -98,6 +107,13 @@ once in a disposable copy, then follow the documented functional-group bisect.
 ## Session 3: short cross-mod loops
 
 ### Factory and storage
+
+- [ ] Sort a mixed vanilla chest and stack matching player-inventory items into
+      its existing stacks; verify counts exactly before and after.
+- [ ] Repeat sorting and deliberate transfer with Traveler's Backpack, an
+      Oritech machine, and a storage-facing container. Confirm locked slots are
+      respected and no item is lost, duplicated, or moved into the hotbar
+      automatically.
 
 - [ ] Generate Oritech power and deliver it to an Oritech machine.
 - [ ] Build the initial Refined Storage Controller, Grid, Drive, disk, and
@@ -128,6 +144,8 @@ once in a disposable copy, then follow the documented functional-group bisect.
 - [ ] Confirm seven chapters and 27 milestones appear in the intended order.
 - [ ] Confirm milestones use manual checkboxes and grant no item, XP, command,
       or recipe permission.
+- [ ] Confirm milestones show distinct descriptive item icons instead of the
+      generic checkbox task icon.
 - [ ] Complete one milestone, relaunch, and confirm it remains complete.
 - [ ] Mark the workshop and a remote site with ordinary Xaero waypoints.
 - [ ] Confirm navigation does not provide teleportation or automated logistics.
@@ -160,6 +178,12 @@ once in a disposable copy, then follow the documented functional-group bisect.
       enchantments.
 - [ ] Exercise Rechiseled recipes, connected textures, stairs, and slabs.
 - [ ] Restart and confirm decorative blocks and connected textures persist.
+- [ ] Enable Whimscape and compare vanilla stone, wood, metals, and terrain
+      beside Oritech machines and Rechiseled building blocks.
+- [ ] Inspect Whimscape's font and GUI in JEI, Refined Storage, Simply Quests,
+      Inventory Management, and configuration screens at multiple GUI scales.
+- [ ] Disable Whimscape and confirm the baseline assets return without changing
+      the world, inventories, or configuration.
 - [ ] Confirm Jade identifies Oritech machines without unintended hidden data.
 - [ ] Confirm AppleSkin, Mouse Tweaks, and Better Advancements remain
       presentation or input conveniences.
@@ -172,6 +196,9 @@ once in a disposable copy, then follow the documented functional-group bisect.
 - [ ] Enable Complementary Reimagined only after the unshaded baseline passes.
 - [ ] Inspect Oritech animations, emissive textures, transparent blocks,
       portals, Rechiseled textures, and Xaero's map with shaders enabled.
+- [ ] Enable Whimscape with its documented Complementary Integrated PBR+
+      compatibility settings; recheck Oritech emissives, portals, glass,
+      foliage, and weather.
 - [ ] Disable shaders again and confirm the world remains unaffected.
 
 ## Session 6: multiplayer and persistence
@@ -195,6 +222,8 @@ once in a disposable copy, then follow the documented functional-group bisect.
 - [ ] Inventory files generated or changed by the clean graphical launch.
 - [ ] Identify the minimum Traveler's Backpack and Xaero settings required to
       enforce accepted pack policy.
+- [ ] Identify the minimum Toast Control and Inventory Management settings;
+      retain important toasts and only deliberate inventory actions.
 - [ ] Review each candidate file manually; do not bulk-copy the instance
       `config/` directory.
 - [ ] Remove account data, paths, server history, UUIDs, coordinates, caches,
