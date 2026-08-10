@@ -115,8 +115,16 @@ class PackPolicyTests(unittest.TestCase):
 
     def test_menu_keeps_required_controls_and_warning(self):
         config = load_json("simplemenu.json5")
+        manifest = json.loads((ROOT / "modrinth.index.json").read_text())
+        pack_version = manifest["versionId"].split(".")
+        self.assertGreaterEqual(len(pack_version), 2)
+        pack_line = ".".join(pack_version[:2])
+        expected_title = (
+            f"{manifest['name']} {pack_line} | "
+            f"Minecraft {manifest['dependencies']['minecraft']}"
+        )
         self.assertEqual(
-            "Signal Atelier 0.3 | Minecraft 26.1.2",
+            expected_title,
             config["customWindowTitle"],
         )
         self.assertTrue(config["setCustomWindowTitle"])
