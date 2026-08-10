@@ -16,9 +16,9 @@ Run `scripts/generate_reference.py` after changing those sources.
 | Client required | 48 |
 | Client optional | 2 |
 | Client unsupported | 0 |
-| Server required | 30 |
+| Server required | 29 |
 | Server optional | 1 |
-| Server unsupported | 19 |
+| Server unsupported | 20 |
 | Recipe locks | 26 |
 | Quest chapters | 7 |
 | Quest milestones | 44 |
@@ -44,7 +44,7 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `geckolib-neoforge-26.1.2-5.5.2.jar` | [Modrinth](https://modrinth.com/project/8BmcQJ2H) | required | required |
 | `gravestone-neoforge-1.0.38+26.1.2.jar` | [Modrinth](https://modrinth.com/project/RYtXKJPr) | required | required |
 | `ImmediatelyFast-NeoForge-1.15.3+26.1.jar` | [Modrinth](https://modrinth.com/project/5ZwdcRci) | required | unsupported |
-| `inventorymanagement-neoforge-2.0.0+26.1.jar` | [Modrinth](https://modrinth.com/project/F7wXag4i) | required | required |
+| `inventorymanagement-neoforge-2.0.0+26.1.jar` | [Modrinth](https://modrinth.com/project/F7wXag4i) | required | unsupported |
 | `iris-neoforge-1.11.3+mc26.1.2.jar` | [Modrinth](https://modrinth.com/project/YL57xq9U) | required | unsupported |
 | `Jade-mc26.1-NeoForge-26.1.8.jar` | [Modrinth](https://modrinth.com/project/nvQzSEkH) | required | required |
 | `jei-26.1.2-neoforge-29.21.0.66.jar` | [Modrinth](https://modrinth.com/project/u6dRKJwZ) | required | optional |

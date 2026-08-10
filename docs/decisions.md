@@ -35,7 +35,9 @@
 - Add Inventory Management for deliberate inventory sorting, stacking into
   existing stacks, and container transfer. Keep automatic replacement,
   unsolicited hotbar changes, and other automation disabled until its clean
-  runtime configuration is captured and validated.
+  runtime configuration is captured and validated. Treat it as client-only:
+  despite its published server environment, version 2.0.0 loads client GUI
+  classes during construction and crashes a dedicated server.
 - Add Xaero's World Map without Xaero's Minimap.
 - Limit mapping to explored terrain and ordinary waypoints. Disable entity
   tracking and map teleportation; allow player markers only if World Map
