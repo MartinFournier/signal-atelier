@@ -20,7 +20,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [],
       "tasks": [
@@ -41,7 +41,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:book"
     },
     {
       "id": "simplyquests:signal_atelier/orientation/survey_a_site",
@@ -56,7 +56,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/orientation/read_the_brief"
@@ -79,7 +79,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:compass"
     },
     {
       "id": "simplyquests:signal_atelier/orientation/mark_the_baseline",
@@ -94,7 +94,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/orientation/survey_a_site"
@@ -117,7 +117,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:chest"
     }
   ],
   "canvasTexts": [],

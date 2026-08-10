@@ -40,7 +40,10 @@ class ManifestPolicyTests(unittest.TestCase):
             parsed = urlparse(entry["downloads"][0])
             self.assertEqual("https", parsed.scheme)
             self.assertEqual("cdn.modrinth.com", parsed.hostname)
-            self.assertIn(Path(entry["path"]).parts[0], {"mods", "shaderpacks"})
+            self.assertIn(
+                Path(entry["path"]).parts[0],
+                {"mods", "resourcepacks", "shaderpacks"},
+            )
             self.assertEqual(Path(entry["path"]).name, Path(unquote(parsed.path)).name)
             self.assertGreater(entry["fileSize"], 0)
 
@@ -65,7 +68,7 @@ class ManifestPolicyTests(unittest.TestCase):
             self.assertEqual(project_id, version["project_id"])
             self.assertTrue(project["title"])
             self.assertTrue(project["slug"])
-            self.assertIn(project["project_type"], {"mod", "shader"})
+            self.assertIn(project["project_type"], {"mod", "resourcepack", "shader"})
             self.assertTrue(project["license"]["id"] or project["license"]["name"])
             self.assertTrue(version["version_number"])
             self.assertIn(version["version_type"], {"release", "beta", "alpha"})

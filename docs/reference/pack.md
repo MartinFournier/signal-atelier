@@ -12,13 +12,13 @@ Run `scripts/generate_reference.py` after changing those sources.
 | Pack | Signal Atelier 0.3.0 |
 | Minecraft | 26.1.2 |
 | NeoForge | 26.1.2.81 |
-| Artifacts | 38 |
-| Client required | 38 |
+| Artifacts | 44 |
+| Client required | 44 |
 | Client optional | 0 |
 | Client unsupported | 0 |
-| Server required | 22 |
+| Server required | 25 |
 | Server optional | 1 |
-| Server unsupported | 15 |
+| Server unsupported | 18 |
 | Recipe locks | 26 |
 | Quest chapters | 7 |
 | Quest milestones | 27 |
@@ -41,6 +41,7 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `geckolib-neoforge-26.1.2-5.5.2.jar` | [Modrinth](https://modrinth.com/project/8BmcQJ2H) | required | required |
 | `gravestone-neoforge-1.0.38+26.1.2.jar` | [Modrinth](https://modrinth.com/project/RYtXKJPr) | required | required |
 | `ImmediatelyFast-NeoForge-1.15.3+26.1.jar` | [Modrinth](https://modrinth.com/project/5ZwdcRci) | required | unsupported |
+| `inventorymanagement-neoforge-2.0.0+26.1.jar` | [Modrinth](https://modrinth.com/project/F7wXag4i) | required | required |
 | `iris-neoforge-1.11.3+mc26.1.2.jar` | [Modrinth](https://modrinth.com/project/YL57xq9U) | required | unsupported |
 | `Jade-mc26.1-NeoForge-26.1.8.jar` | [Modrinth](https://modrinth.com/project/nvQzSEkH) | required | required |
 | `jei-26.1.2-neoforge-29.21.0.66.jar` | [Modrinth](https://modrinth.com/project/u6dRKJwZ) | required | optional |
@@ -48,11 +49,14 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `lithium-neoforge-0.24.7+mc26.1.2.jar` | [Modrinth](https://modrinth.com/project/gvQqBUqZ) | required | required |
 | `modernfix-neoforge-5.27.20+mc26.1.2.jar` | [Modrinth](https://modrinth.com/project/nmDcB62a) | required | required |
 | `MouseTweaks-neoforge-mc26.1-2.31.jar` | [Modrinth](https://modrinth.com/project/aC3cM3Vq) | required | unsupported |
+| `nerb-neoforge-0.4.3+26.1.2.jar` | [Modrinth](https://modrinth.com/project/bQh7xzFq) | required | required |
 | `oracle_index-neoforge-2.0.0-exp1.jar` | [Modrinth](https://modrinth.com/project/J8MMsNrL) | required | required |
 | `oritech-2.0.0-exp3.jar` | [Modrinth](https://modrinth.com/project/4sYI62kA) | required | required |
+| `Placebo-26.1.2-10.0.2.jar` | [Modrinth](https://modrinth.com/project/tCkE8p2N) | required | unsupported |
 | `PrickleMC-neoforge-MC26.1.2-26.1.2.6.jar` | [Modrinth](https://modrinth.com/project/aaRl8GiW) | required | unsupported |
 | `rechiseled-1.2.5-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/B0g2vT6l) | required | required |
 | `refinedstorage-neoforge-3.2.1.jar` | [Modrinth](https://modrinth.com/project/KDvYkUg3) | required | required |
+| `shatterlib-neoforge-0.7.0+26.1.2.jar` | [Modrinth](https://modrinth.com/project/RH2KUdKJ) | required | required |
 | `simplemenu-26.1.2-2.1.jar` | [Modrinth](https://modrinth.com/project/6pdhya1q) | required | unsupported |
 | `Simply Quests v0.1.1.jar` | [Modrinth](https://modrinth.com/project/uwJu7Fi8) | required | required |
 | `sodium-neoforge-0.9.1+mc26.1.2.jar` | [Modrinth](https://modrinth.com/project/AANobbMI) | required | unsupported |
@@ -60,10 +64,12 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `supermartijn642configlib-1.1.8-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/LN9BxssP) | required | required |
 | `supermartijn642corelib-1.1.22-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/rOUBggPv) | required | required |
 | `TaxFreeLevels-1.5.4-neoforge-26.1.jar` | [Modrinth](https://modrinth.com/project/jCBrrLTs) | required | required |
+| `ToastControl-26.1.2-10.0.0.jar` | [Modrinth](https://modrinth.com/project/CnOG2wlS) | required | unsupported |
 | `travelersbackpack-neoforge-26.1.2-11.2.6.jar` | [Modrinth](https://modrinth.com/project/rlloIFEV) | required | required |
 | `universaldatapack-26.1-2.1.0.jar` | [Modrinth](https://modrinth.com/project/TPKaNwWP) | required | required |
 | `xaeroworldmap-neoforge-26.1.2-1.44.2.jar` | [Modrinth](https://modrinth.com/project/NcUtCpym) | required | unsupported |
 | `xptome-neoforge-26.1.2-2.5.1.jar` | [Modrinth](https://modrinth.com/project/AnpW69o3) | required | required |
+| `Whimscape_26.1-26.2_r1.zip` | [Modrinth](https://modrinth.com/project/4YkvO5Rp) | required | unsupported |
 | `ComplementaryReimagined_r5.8.1.zip` | [Modrinth](https://modrinth.com/project/HVnmMxH1) | required | unsupported |
 
 ## Recipe locks

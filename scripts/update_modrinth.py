@@ -63,7 +63,9 @@ def updated_entry(entry: dict, version: dict) -> dict:
     file = primary_file(version)
     if file is None:
         raise ValueError(f"Version {version['id']} has no downloadable file")
-    path_root = "shaderpacks" if entry["path"].startswith("shaderpacks/") else "mods"
+    path_root = Path(entry["path"]).parts[0]
+    if path_root not in {"mods", "resourcepacks", "shaderpacks"}:
+        raise ValueError(f"Unsupported artifact path: {entry['path']}")
     return {
         "path": f"{path_root}/{file['filename']}",
         "hashes": file["hashes"],

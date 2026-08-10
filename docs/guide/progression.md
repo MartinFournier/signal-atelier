@@ -9,6 +9,9 @@ no item, XP, or command reward. Recipes and machines continue to work whether
 or not a quest is checked. This keeps an experimental Oritech update from
 turning a renamed item into a progression blocker.
 
+Milestones use distinct vanilla item icons to make the notebook scannable;
+the icon is descriptive only and does not change completion requirements.
+
 ## Chapters
 
 1. **Orientation** — read the pack brief, choose an expandable workshop site,

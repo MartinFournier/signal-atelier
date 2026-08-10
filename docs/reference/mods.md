@@ -24,6 +24,7 @@ relationships. Select a column heading to sort the table.
 | [Geckolib](https://modrinth.com/mod/geckolib) | game-mechanics; library; utility | `5.5.2` | MIT License |
 | [GraveStone Mod](https://modrinth.com/mod/gravestone-mod) | adventure; technology; utility | `neoforge-1.0.38+26.1.2` | LicenseRef-All-Rights-Reserved |
 | [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) | optimization | `1.15.3+26.1-neoforge` | GNU Lesser General Public License v3.0 or later |
+| [Inventory Management](https://modrinth.com/mod/inventory-management) | storage; utility | `2.0.0+26.1-neoforge` | MIT License |
 | [Iris Shaders](https://modrinth.com/mod/iris) | decoration; optimization | `1.11.3+26.1-neoforge` | GNU Lesser General Public License v3.0 only |
 | [Jade 🔍](https://modrinth.com/mod/jade) | utility | `26.1.8+neoforge` | Creative Commons Attribution Non Commercial Share Alike 4.0 International |
 | [Just Enough Items (JEI)](https://modrinth.com/mod/jei) | library; utility | `29.21.0.66` | MIT License |
@@ -31,11 +32,14 @@ relationships. Select a column heading to sort the table.
 | [Lithium](https://modrinth.com/mod/lithium) | optimization | `mc26.1.2-0.24.7-neoforge` | GNU Lesser General Public License v3.0 only |
 | [ModernFix](https://modrinth.com/mod/modernfix) | optimization; utility | `5.27.20+mc26.1.2` | GNU Lesser General Public License v3.0 only |
 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) | storage; utility | `26.1-2.31-neoforge` | BSD 3-Clause "New" or "Revised" License |
+| [Not Enough Recipe Book \[NERB\]](https://modrinth.com/mod/notenoughrecipebook) | optimization; utility | `0.4.3+26.1.2` | LicenseRef-All-Rights-Reserved |
 | [Oracle Index](https://modrinth.com/mod/oracle-index) | library; utility | `2.0.0-exp1` | Creative Commons Attribution 4.0 International |
 | [Oritech](https://modrinth.com/mod/oritech) | technology | `2.0.0-exp3` | [Creative Commons Attribution 4.0 International](https://github.com/Rearth/Oritech?tab=CC0-1.0-1-ov-file) |
+| [Placebo](https://modrinth.com/mod/placebo) | library | `26.1.2-10.0.2` | MIT License |
 | [Prickle](https://modrinth.com/mod/prickle) | library | `26.1.2.6` | GNU Lesser General Public License v2.1 only |
 | [Rechiseled](https://modrinth.com/mod/rechiseled) | decoration | `1.2.5-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Refined Storage](https://modrinth.com/mod/refined-storage) | storage; technology; transportation | `3.2.1` | MIT License |
+| [ShatterLib \| OctoLib](https://modrinth.com/mod/shatterbyte-lib) | library | `0.7.0+26.1.2` | LicenseRef-All-Rights-Reserved |
 | [Simple Menu](https://modrinth.com/mod/simple-menu) | decoration; management; utility | `26.1.2-2.1-fabric+forge+neo` | LicenseRef-All-Rights-Reserved |
 | [Simply Quests](https://modrinth.com/mod/simply-quests) | adventure; game-mechanics; utility | `0.1.1` | MIT License |
 | [Sodium](https://modrinth.com/mod/sodium) | optimization | `mc26.1.2-0.9.1-neoforge` | [LicenseRef-Polyform-Shield-1.0.0](https://github.com/CaffeineMC/sodium/blob/dev/LICENSE.md) |
@@ -43,9 +47,11 @@ relationships. Select a column heading to sort the table.
 | [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib) | library | `1.1.8-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib) | library | `1.1.22-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Tax Free Levels](https://modrinth.com/mod/tax-free-levels) | game-mechanics | `1.5.4` | MIT License |
+| [Toast Control](https://modrinth.com/mod/toast-control) | utility | `26.1.2-10.0.0` | MIT License |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | adventure; equipment; storage | `26.1.2-11.2.6` | GNU Lesser General Public License v3.0 only |
 | [Universal Data Pack](https://modrinth.com/mod/universal-data-pack) | game-mechanics; management; utility | `26.1-2.1.0` | GNU General Public License v3.0 or later |
+| [Whimscape](https://modrinth.com/resourcepack/whimscape) | 16x; entities; models | `26.1-26.2_r1` | LicenseRef-All-Rights-Reserved |
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | adventure; transportation; utility | `neoforge-26.1.2-1.44.2` | LicenseRef-All-Rights-Reserved |
 | [XP Tome](https://modrinth.com/mod/xp-tome) | adventure; storage; utility | `v2.5.1` | MIT License |
 
-Total: **38 artifacts**.
+Total: **44 artifacts**.

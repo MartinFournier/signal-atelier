@@ -20,7 +20,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/storage/respect_the_locks",
@@ -44,7 +44,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:beacon"
     },
     {
       "id": "simplyquests:signal_atelier/supertech/particle_products",
@@ -59,7 +59,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/supertech/nuclear_scale"
@@ -82,7 +82,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:end_crystal"
     },
     {
       "id": "simplyquests:signal_atelier/supertech/renewable_supertech",
@@ -97,7 +97,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/supertech/particle_products"
@@ -120,7 +120,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:blaze_powder"
     },
     {
       "id": "simplyquests:signal_atelier/supertech/survive_a_restart",
@@ -135,7 +135,7 @@
       "settings": {
         "isOptional": false,
         "isRepeatable": false,
-        "useTaskIcon": true
+        "useTaskIcon": false
       },
       "dependencies": [
         "simplyquests:signal_atelier/supertech/renewable_supertech"
@@ -158,7 +158,7 @@
       ],
       "rewards": [],
       "lockedBy": "",
-      "logo": "minecraft:paper"
+      "logo": "minecraft:clock"
     }
   ],
   "canvasTexts": [],
