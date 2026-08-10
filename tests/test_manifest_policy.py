@@ -55,6 +55,15 @@ class ManifestPolicyTests(unittest.TestCase):
             self.assertIn(entry["env"]["client"], ENVIRONMENTS)
             self.assertIn(entry["env"]["server"], ENVIRONMENTS)
 
+    def test_inventory_management_is_excluded_from_servers(self):
+        entry = next(
+            entry
+            for entry in MANIFEST["files"]
+            if coordinates(entry)[0] == "F7wXag4i"
+        )
+        self.assertEqual("required", entry["env"]["client"])
+        self.assertEqual("unsupported", entry["env"]["server"])
+
     def test_cached_metadata_exactly_covers_manifest_pins(self):
         pins = {coordinates(entry) for entry in MANIFEST["files"]}
         project_ids = {project_id for project_id, _ in pins}

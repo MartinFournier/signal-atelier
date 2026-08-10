@@ -623,7 +623,7 @@
       },
       "env": {
         "client": "required",
-        "server": "required"
+        "server": "unsupported"
       },
       "downloads": [
         "https://cdn.modrinth.com/data/F7wXag4i/versions/4KBVt31P/inventorymanagement-neoforge-2.0.0%2B26.1.jar"
