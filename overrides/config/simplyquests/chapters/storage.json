@@ -12,7 +12,7 @@
       "chapterName": "storage",
       "title": "Storage Core",
       "subTitle": "Centralize without replacing the factory",
-      "description": "Build a Refined Storage Controller, Grid, Drive, and initial disk. Power the network from Oritech.",
+      "description": "Build a Refined Storage Controller, Grid, Drive, and initial disk, powered by Oritech. Use Inventory Management only for deliberate chest cleanup; Refined Storage becomes the searchable request layer.",
       "x": 0.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -41,16 +41,23 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/storage/storage_core/reward_item",
+          "type": "item",
+          "item": "minecraft:barrel",
+          "count": 2
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:chest"
     },
     {
-      "id": "simplyquests:signal_atelier/storage/external_boundaries",
+      "id": "simplyquests:signal_atelier/storage/first_disk",
       "chapterName": "storage",
-      "title": "External Boundaries",
-      "subTitle": "Interfaces are contracts",
-      "description": "Connect an existing inventory through External Storage or an Interface. Refined Storage owns storage and requests; Oritech pipes own machine-side movement.",
+      "title": "First Disk",
+      "subTitle": "Move storage without losing the inventory model",
+      "description": "Install an initial storage disk and move a controlled sample into the network. Confirm the Grid reports the expected counts before migrating bulk materials.",
       "x": 128.0,
       "y": 32.0,
       "shape": "GEAR",
@@ -62,6 +69,44 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/storage/storage_core"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/storage/first_disk/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: First Disk",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:map"
+    },
+    {
+      "id": "simplyquests:signal_atelier/storage/external_boundaries",
+      "chapterName": "storage",
+      "title": "External Boundaries",
+      "subTitle": "Interfaces are contracts",
+      "description": "Connect an existing inventory through External Storage or an Interface. Refined Storage owns storage and requests; Oritech pipes own machine-side movement.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/storage/first_disk"
       ],
       "tasks": [
         {
@@ -79,7 +124,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/storage/external_boundaries/reward_item",
+          "type": "item",
+          "item": "minecraft:item_frame",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:barrel"
     },
@@ -89,8 +141,8 @@
       "title": "First Pattern",
       "subTitle": "Request, do not handcraft",
       "description": "Encode and successfully request a simple crafting pattern through an Autocrafter.",
-      "x": 256.0,
-      "y": 0.0,
+      "x": 384.0,
+      "y": 32.0,
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
@@ -117,18 +169,25 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/storage/first_pattern/reward_item",
+          "type": "item",
+          "item": "minecraft:crafting_table",
+          "count": 1
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:crafting_table"
     },
     {
-      "id": "simplyquests:signal_atelier/storage/factory_request",
+      "id": "simplyquests:signal_atelier/storage/crafting_capacity",
       "chapterName": "storage",
-      "title": "Factory Request",
-      "subTitle": "Let Oritech do the processing",
-      "description": "Request a component through Refined Storage, process it in an Oritech machine, and return it through Oritech pipes and a dedicated Interface.",
-      "x": 384.0,
-      "y": 32.0,
+      "title": "Crafting Capacity",
+      "subTitle": "Scale one proven request path",
+      "description": "Add patterns and crafting capacity gradually. Test missing ingredients and nested requests, then confirm a failed request leaves stored materials intact.",
+      "x": 512.0,
+      "y": 0.0,
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
@@ -138,6 +197,44 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/storage/first_pattern"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/storage/crafting_capacity/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Crafting Capacity",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:repeater"
+    },
+    {
+      "id": "simplyquests:signal_atelier/storage/factory_request",
+      "chapterName": "storage",
+      "title": "Factory Request",
+      "subTitle": "Let Oritech do the processing",
+      "description": "Request a component through Refined Storage, process it in an Oritech machine, and return it through Oritech pipes and a dedicated Interface.",
+      "x": 640.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/storage/crafting_capacity"
       ],
       "tasks": [
         {
@@ -155,7 +252,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/storage/factory_request/reward_item",
+          "type": "item",
+          "item": "minecraft:firework_rocket",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:hopper"
     },
@@ -164,8 +268,8 @@
       "chapterName": "storage",
       "title": "Respect the Locks",
       "subTitle": "Convenience has edges",
-      "description": "Confirm that wireless access, Constructors, Destructors, and remote network links remain unavailable in survival.",
-      "x": 512.0,
+      "description": "Confirm that Refined Storage wireless access, Constructors, Destructors, and remote network links remain unavailable in survival. If JEI shows a locked recipe or another path bypasses the boundary, stop and report it.",
+      "x": 768.0,
       "y": 0.0,
       "shape": "GEAR",
       "size": 24.0,
@@ -193,7 +297,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/storage/respect_the_locks/reward_item",
+          "type": "item",
+          "item": "minecraft:iron_bars",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:barrier"
     }

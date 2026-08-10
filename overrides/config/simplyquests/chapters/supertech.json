@@ -8,11 +8,11 @@
   "icon": "minecraft:nether_star",
   "quests": [
     {
-      "id": "simplyquests:signal_atelier/supertech/nuclear_scale",
+      "id": "simplyquests:signal_atelier/supertech/reactor_supply",
       "chapterName": "supertech",
-      "title": "Nuclear Scale",
-      "subTitle": "Power for the final workshop",
-      "description": "Bring Oritech's reactor-scale generation online with safe inputs, outputs, shutdown behavior, and restart recovery.",
+      "title": "Reactor Supply",
+      "subTitle": "Prepare before producing power",
+      "description": "Build repeatable input and output routes for reactor operation before starting it. Buffers must expose shortages without making the rest of the factory unsafe.",
       "x": 0.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -25,6 +25,82 @@
       "dependencies": [
         "simplyquests:signal_atelier/storage/respect_the_locks",
         "simplyquests:signal_atelier/distributed_works/drone_route"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/reactor_supply/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Reactor Supply",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:hopper"
+    },
+    {
+      "id": "simplyquests:signal_atelier/supertech/reactor_safety",
+      "chapterName": "supertech",
+      "title": "Reactor Safety",
+      "subTitle": "Design the stopped state first",
+      "description": "Establish monitoring, exclusion space, and a tested shutdown procedure. Confirm the reactor can remain stopped indefinitely without manual rescue work.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/supertech/reactor_supply"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/reactor_safety/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Reactor Safety",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:shield"
+    },
+    {
+      "id": "simplyquests:signal_atelier/supertech/nuclear_scale",
+      "chapterName": "supertech",
+      "title": "Nuclear Scale",
+      "subTitle": "Power for the final workshop",
+      "description": "Bring Oritech's reactor-scale generation online with safe inputs, outputs, shutdown behavior, and restart recovery.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/supertech/reactor_safety"
       ],
       "tasks": [
         {
@@ -42,17 +118,24 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/nuclear_scale/reward_item",
+          "type": "item",
+          "item": "minecraft:redstone_lamp",
+          "count": 2
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:beacon"
     },
     {
-      "id": "simplyquests:signal_atelier/supertech/particle_products",
+      "id": "simplyquests:signal_atelier/supertech/accelerator_inputs",
       "chapterName": "supertech",
-      "title": "Particle Products",
-      "subTitle": "Make the rare repeatable",
-      "description": "Operate the particle accelerator and turn its products into a documented, repeatable production chain.",
-      "x": 128.0,
+      "title": "Accelerator Inputs",
+      "subTitle": "Stage the expensive experiment",
+      "description": "Prepare the particle accelerator's power, consumables, and output storage before its first run. Keep this supply chain independent of manual inventory shuffling.",
+      "x": 384.0,
       "y": 32.0,
       "shape": "GEAR",
       "size": 24.0,
@@ -63,6 +146,44 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/supertech/nuclear_scale"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/accelerator_inputs/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Accelerator Inputs",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:blaze_rod"
+    },
+    {
+      "id": "simplyquests:signal_atelier/supertech/particle_products",
+      "chapterName": "supertech",
+      "title": "Particle Products",
+      "subTitle": "Make the rare repeatable",
+      "description": "Operate the particle accelerator and turn its products into a documented, repeatable production chain.",
+      "x": 512.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/supertech/accelerator_inputs"
       ],
       "tasks": [
         {
@@ -80,7 +201,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/particle_products/reward_item",
+          "type": "item",
+          "item": "minecraft:tinted_glass",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:end_crystal"
     },
@@ -90,8 +218,8 @@
       "title": "Renewable Supertech",
       "subTitle": "Remove the heroic hand-feed",
       "description": "Make the critical supertech inputs renewable or sustainably supplied from distributed works.",
-      "x": 256.0,
-      "y": 0.0,
+      "x": 640.0,
+      "y": 32.0,
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
@@ -118,7 +246,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/renewable_supertech/reward_item",
+          "type": "item",
+          "item": "minecraft:honey_bottle",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:blaze_powder"
     },
@@ -128,8 +263,8 @@
       "title": "Survive a Restart",
       "subTitle": "Prove the whole factory",
       "description": "Restart at full scale and verify power, processing, storage requests, drones, and remote sites without duplication or loss.",
-      "x": 384.0,
-      "y": 32.0,
+      "x": 768.0,
+      "y": 0.0,
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
@@ -156,7 +291,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/supertech/survive_a_restart/reward_item",
+          "type": "item",
+          "item": "minecraft:firework_rocket",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:clock"
     }

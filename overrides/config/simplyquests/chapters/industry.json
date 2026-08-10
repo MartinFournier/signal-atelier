@@ -8,11 +8,11 @@
   "icon": "minecraft:blast_furnace",
   "quests": [
     {
-      "id": "simplyquests:signal_atelier/industry/processing_line",
+      "id": "simplyquests:signal_atelier/industry/first_machine",
       "chapterName": "industry",
-      "title": "Processing Line",
-      "subTitle": "From input to product",
-      "description": "Build a repeatable Oritech processing line with explicit inputs, outputs, and overflow handling.",
+      "title": "First Machine",
+      "subTitle": "Learn one process end to end",
+      "description": "Build and power a basic Oritech processing machine. Use JEI and the Oracle Index to identify its recipe, energy demand, inputs, and outputs before connecting automation.",
       "x": 0.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -24,6 +24,82 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/power/renewable_baseline"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/first_machine/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: First Machine",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:blast_furnace"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/ore_processing",
+      "chapterName": "industry",
+      "title": "Ore Processing",
+      "subTitle": "Choose a repeatable resource path",
+      "description": "Process a batch of raw ore through Oritech and compare input, output, energy use, and time with the vanilla route. Keep the result measurable rather than chasing every possible multiplier immediately.",
+      "x": 128.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/first_machine"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/ore_processing/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Ore Processing",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:raw_iron"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/processing_line",
+      "chapterName": "industry",
+      "title": "Processing Line",
+      "subTitle": "From input to product",
+      "description": "Build a repeatable Oritech processing line with explicit inputs, outputs, and overflow handling. Inventory Management may sort and transfer deliberately, but it must not become hidden factory automation.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/ore_processing"
       ],
       "tasks": [
         {
@@ -41,7 +117,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/industry/processing_line/reward_item",
+          "type": "item",
+          "item": "minecraft:scaffolding",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:furnace"
     },
@@ -51,7 +134,7 @@
       "title": "Principal Alloys",
       "subTitle": "Stock the intermediates",
       "description": "Use the Oracle Index and JEI to identify Oritech's recurring alloys and components, then automate them instead of crafting each machine ad hoc.",
-      "x": 128.0,
+      "x": 384.0,
       "y": 32.0,
       "shape": "GEAR",
       "size": 24.0,
@@ -79,17 +162,24 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/industry/principal_alloys/reward_item",
+          "type": "item",
+          "item": "minecraft:chest",
+          "count": 2
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:iron_ingot"
     },
     {
-      "id": "simplyquests:signal_atelier/industry/fluids_and_oil",
+      "id": "simplyquests:signal_atelier/industry/machine_addons",
       "chapterName": "industry",
-      "title": "Fluids and Oil",
-      "subTitle": "Separate the networks",
-      "description": "Process fluids through dedicated, labeled routes. Confirm that shutdown and restart do not strand or mix contents.",
-      "x": 256.0,
+      "title": "Machine Addons",
+      "subTitle": "Tune a measured process",
+      "description": "Install an Oritech machine addon or upgrade and compare throughput, energy demand, and operating behavior before and after. Keep the change only if the surrounding power and logistics can support it.",
+      "x": 512.0,
       "y": 0.0,
       "shape": "GEAR",
       "size": 24.0,
@@ -100,6 +190,44 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/industry/principal_alloys"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/machine_addons/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Machine Addons",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:piston"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/fluids_and_oil",
+      "chapterName": "industry",
+      "title": "Fluids and Oil",
+      "subTitle": "Separate the networks",
+      "description": "Process fluids through dedicated, labeled routes. Confirm that shutdown and restart do not strand or mix contents.",
+      "x": 640.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/machine_addons"
       ],
       "tasks": [
         {
@@ -117,18 +245,25 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/industry/fluids_and_oil/reward_item",
+          "type": "item",
+          "item": "minecraft:glass",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:bucket"
     },
     {
-      "id": "simplyquests:signal_atelier/industry/rebuild_after_restart",
+      "id": "simplyquests:signal_atelier/industry/byproducts_and_overflow",
       "chapterName": "industry",
-      "title": "Rebuild After Restart",
-      "subTitle": "Persistence is part of the machine",
-      "description": "Restart the game or server and verify that multiblocks, inventories, fluids, and energy reconnect correctly.",
-      "x": 384.0,
-      "y": 32.0,
+      "title": "Byproducts and Overflow",
+      "subTitle": "Plan for the output you did not request",
+      "description": "Give secondary outputs and full inventories an explicit destination. Test the line with its preferred output blocked and confirm it stalls safely without voiding or scattering materials.",
+      "x": 768.0,
+      "y": 0.0,
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
@@ -138,6 +273,82 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/industry/fluids_and_oil"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/byproducts_and_overflow/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Byproducts and Overflow",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:barrel"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/automated_harvest",
+      "chapterName": "industry",
+      "title": "Automated Harvest",
+      "subTitle": "Make one renewable input dependable",
+      "description": "Build an Oritech farming loop with a renewable source, controlled working area, collection, and overflow handling. Confirm it can stop safely when storage fills.",
+      "x": 896.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/byproducts_and_overflow"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/industry/automated_harvest/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Automated Harvest",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:hay_block"
+    },
+    {
+      "id": "simplyquests:signal_atelier/industry/rebuild_after_restart",
+      "chapterName": "industry",
+      "title": "Rebuild After Restart",
+      "subTitle": "Persistence is part of the machine",
+      "description": "Save and quit, confirm Java exits cleanly, then restart the game or server. Verify that multiblocks, inventories, fluids, and energy reconnect without loss or duplication.",
+      "x": 1024.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/industry/automated_harvest"
       ],
       "tasks": [
         {
@@ -155,7 +366,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/industry/rebuild_after_restart/reward_item",
+          "type": "item",
+          "item": "minecraft:clock",
+          "count": 1
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:observer"
     }

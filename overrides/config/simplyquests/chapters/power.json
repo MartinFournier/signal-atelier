@@ -12,7 +12,7 @@
       "chapterName": "power",
       "title": "First Generation",
       "subTitle": "Make power visible",
-      "description": "Build an Oritech generator and verify that energy reaches a machine. Prefer a measured, expandable layout over a temporary cable tangle.",
+      "description": "Use the Oracle Index and JEI to choose an Oritech generator, then verify energy reaches a machine. Prefer a measured, expandable layout over a temporary cable tangle.",
       "x": 0.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -41,16 +41,23 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/power/first_generation/reward_item",
+          "type": "item",
+          "item": "minecraft:lantern",
+          "count": 2
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:redstone_torch"
     },
     {
-      "id": "simplyquests:signal_atelier/power/buffer_and_measure",
+      "id": "simplyquests:signal_atelier/power/distribution_bus",
       "chapterName": "power",
-      "title": "Buffer and Measure",
-      "subTitle": "Understand demand",
-      "description": "Add energy storage or monitoring, then observe idle and working demand. Leave capacity for the next processing line.",
+      "title": "Distribution Bus",
+      "subTitle": "Build a legible power backbone",
+      "description": "Route Oritech energy through a deliberate main line with room for branches. Label generation, storage, and machine connections so later faults can be isolated.",
       "x": 128.0,
       "y": 32.0,
       "shape": "GEAR",
@@ -62,6 +69,44 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/power/first_generation"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/power/distribution_bus/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Distribution Bus",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:redstone"
+    },
+    {
+      "id": "simplyquests:signal_atelier/power/buffer_and_measure",
+      "chapterName": "power",
+      "title": "Buffer and Measure",
+      "subTitle": "Understand demand",
+      "description": "Add energy storage or monitoring, then observe idle and working demand. Leave capacity for the next processing line.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/power/distribution_bus"
       ],
       "tasks": [
         {
@@ -79,18 +124,25 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/power/buffer_and_measure/reward_item",
+          "type": "item",
+          "item": "minecraft:oak_sign",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:comparator"
     },
     {
-      "id": "simplyquests:signal_atelier/power/renewable_baseline",
+      "id": "simplyquests:signal_atelier/power/safe_shutdown",
       "chapterName": "power",
-      "title": "Renewable Baseline",
-      "subTitle": "Keep the workshop alive",
-      "description": "Establish a renewable or continuously supplied generation path before scaling automation.",
-      "x": 256.0,
-      "y": 0.0,
+      "title": "Safe Shutdown",
+      "subTitle": "A stopped factory must stay safe",
+      "description": "Test a controlled shutdown under load. Machines should stop without losing inputs, spilling outputs, or requiring cables to be broken.",
+      "x": 384.0,
+      "y": 32.0,
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
@@ -100,6 +152,44 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/power/buffer_and_measure"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/power/safe_shutdown/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Safe Shutdown",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:lever"
+    },
+    {
+      "id": "simplyquests:signal_atelier/power/renewable_baseline",
+      "chapterName": "power",
+      "title": "Renewable Baseline",
+      "subTitle": "Keep the workshop alive",
+      "description": "Establish a renewable or continuously supplied generation path before scaling automation.",
+      "x": 512.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/power/safe_shutdown"
       ],
       "tasks": [
         {
@@ -117,7 +207,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/power/renewable_baseline/reward_item",
+          "type": "item",
+          "item": "minecraft:baked_potato",
+          "count": 6
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:daylight_detector"
     }

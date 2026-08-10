@@ -15,7 +15,7 @@ test. See the [test plan](../test-plan.md) for runtime acceptance checks.
 | [Not Enough Recipe Book](https://modrinth.com/project/bQh7xzFq) | Removes the redundant vanilla recipe book so JEI is the single recipe reference. | Required on both client and server; it must not hide JEI or ordinary crafting output. | Confirm every supported crafting screen omits the vanilla book while JEI remains usable. |
 | [Toast Control](https://modrinth.com/project/CnOG2wlS) | Removes recipe-unlock and tutorial toast noise made redundant by JEI and pack guidance. | Client-only; advancement and important system feedback must remain visible. | Verify the intended toast categories in a clean instance. |
 | [Jade](https://modrinth.com/project/nvQzSEkH) | Identifies machines, inventories, and graves at the point of use. | Kept informational; it must not expose unintended hidden machine state. | Inspect Oritech and GraveStone overlays. |
-| [Simply Quests](https://modrinth.com/project/uwJu7Fi8) | Reward-free engineering notebook joining the pack's systems into one progression. | Seven generated chapters and 27 manual milestones; recipes never depend on quest state. | Confirm loading, layout, team sync, persistence, and update behavior. |
+| [Simply Quests](https://modrinth.com/project/uwJu7Fi8) | Engineering notebook joining the pack's systems into one progression. | Seven generated chapters and 44 manual milestones with minor utility rewards; recipes never depend on quest state. | Confirm loading, layout, rewards, team sync, persistence, and update behavior. |
 
 ## Storage and distributed work
 
@@ -27,6 +27,9 @@ test. See the [test plan](../test-plan.md) for runtime acceptance checks.
 | [Traveler's Backpack](https://modrinth.com/project/rlloIFEV) | Modest expedition storage that can travel through the death-recovery loop. | Capacity, nesting, tanks, utilities, loot, and higher tiers are restricted through config and recipes. | Test capacities, nesting, graves, placement, pickup, logout, and restart. |
 | [GraveStone Mod](https://modrinth.com/project/RYtXKJPr) | Sole death-recovery system for player inventory and equipped backpack contents. | Owner restriction and no-expiry policy ship as server defaults; no competing grave mod is included. | Test hazards, ownership, backpack transfer, duplication, and persistence. |
 | [Xaero's World Map](https://modrinth.com/project/NcUtCpym) | Explored-terrain navigation and waypoints for remote Oritech sites. | Minimap, entity radar, and teleportation are outside pack policy. Runtime-generated privacy settings still need capture. | Verify explored-only mapping, teleport/radar state, and player markers. |
+| [Default Options](https://modrinth.com/project/WEg59z5b) | Applies a small first-install presentation baseline without replacing later player choices. | Enables Whimscape, disables pause-on-lost-focus, and leaves difficulty unlocked; no complete `options.txt` is distributed. | Confirm defaults apply once and player changes survive restart and pack update. |
+| [Explorify](https://modrinth.com/project/HSfsxuTo) | Adds a cohesive set of vanilla-like landmarks to make travel between remote worksites more memorable. | Structurify applies the pack-wide 1.75 spacing multiplier; structures affect only newly generated chunks. | Sample several seeds for density, terrain fit, loot balance, and Oritech worldgen overlap. |
+| [Thun's Structures](https://modrinth.com/project/ZLL4Dkxb) | Adds 16 biome-specific landmarks such as lighthouses, observatories, campsites, and windmills. | Shares the restrained Structurify spacing policy and adds no separate progression system. | Confirm its rarer landmarks do not cluster with Explorify or dominate Xaero's map. |
 
 ## Player information and handling
 
@@ -45,7 +48,7 @@ test. See the [test plan](../test-plan.md) for runtime acceptance checks.
 | Project | Pack role and connection | Enforcement and guidance | Evidence still required |
 | --- | --- | --- | --- |
 | [Rechiseled](https://modrinth.com/project/B0g2vT6l) | Sole broad decorative block expansion for industrial builds. | Avoids overlapping furniture and building systems. | Test recipes, connected textures, variants, and persistence. |
-| [Whimscape](https://modrinth.com/project/4YkvO5Rp) | Optional 16×16 visual identity for the vanilla world around the industrial workshop. | Bundled but disabled by default; pack branding retains priority, and no extra framework is required for baseline use. | Compare vanilla, Oritech, and Rechiseled materials; inspect its font and GUI across modded screens. |
+| [Whimscape](https://modrinth.com/project/4YkvO5Rp) | Default 16×16 visual identity for the vanilla world around the industrial workshop. | Enabled on first install but user-disableable; pack branding retains priority, and no extra framework is required. | Compare vanilla, Oritech, and Rechiseled materials; inspect its font and GUI across modded screens. |
 | [Simple Menu](https://modrinth.com/project/6pdhya1q) | Applies the Signal Atelier title, icon, wordmark, and restrained menu policy. | Pack assets and config hide Realms while retaining standard play and settings controls. | Check scaling, required buttons, warning visibility, and absence of promotions. |
 
 ## Performance, graphics, and sound
@@ -73,6 +76,7 @@ manifest and server smoke checks.
 | --- | --- |
 | [Architectury API](https://modrinth.com/project/lhGA9TYQ) | Oracle Index |
 | [Athena](https://modrinth.com/project/b1ZV3DIJ) | Oritech rendering |
+| [Balm](https://modrinth.com/project/MBAkmtvl) | Default Options |
 | [Cloth Config API](https://modrinth.com/project/9s6osm5g) | Dynamic FPS, Sound Physics Remastered, and Tax Free Levels |
 | [Collective](https://modrinth.com/project/e0M1UDsY) | Simple Menu |
 | [Fusion](https://modrinth.com/project/p19vrgc2) | Rechiseled connected textures |
@@ -80,8 +84,10 @@ manifest and server smoke checks.
 | [Prickle](https://modrinth.com/project/aaRl8GiW) | Enchantment Descriptions on the client |
 | [Placebo](https://modrinth.com/project/tCkE8p2N) | Toast Control |
 | [ShatterLib](https://modrinth.com/project/RH2KUdKJ) | Not Enough Recipe Book |
+| [Structurify](https://modrinth.com/project/yz7AM2zx) | Pack-wide rare structure placement policy |
 | [SuperMartijn642's Config Lib](https://modrinth.com/project/LN9BxssP) | Chunk Loaders and Rechiseled |
 | [SuperMartijn642's Core Lib](https://modrinth.com/project/rOUBggPv) | Chunk Loaders and Rechiseled |
+| [YetAnotherConfigLib](https://modrinth.com/project/1eAoo2KR) | Structurify configuration UI and serialization |
 
 ## Integration backlog
 

@@ -533,7 +533,7 @@
       },
       "env": {
         "client": "required",
-        "server": "unsupported"
+        "server": "required"
       },
       "downloads": [
         "https://cdn.modrinth.com/data/NcUtCpym/versions/ltX2ZaPs/xaeroworldmap-neoforge-26.1.2-1.44.2.jar"
@@ -629,6 +629,96 @@
         "https://cdn.modrinth.com/data/F7wXag4i/versions/4KBVt31P/inventorymanagement-neoforge-2.0.0%2B26.1.jar"
       ],
       "fileSize": 933457
+    },
+    {
+      "path": "mods/defaultoptions-neoforge-26.1.2-26.1.2.2.jar",
+      "hashes": {
+        "sha1": "7f8ad08bcdaedfdf8ffab8d25427213c6511be63",
+        "sha512": "478203219bf5bb195c161b78bb47243c812978b2e04877ad4bac8ca3a8124294260479df5659b3f67da186a7ae7c2a334823b1c3a78dae963034039d896fbc6e"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/WEg59z5b/versions/hakaEFny/defaultoptions-neoforge-26.1.2-26.1.2.2.jar"
+      ],
+      "fileSize": 110211
+    },
+    {
+      "path": "mods/balm-neoforge-26.1.2-26.1.2.11.jar",
+      "hashes": {
+        "sha1": "dcccc9fb517898baf82fed43b702632b4412f6ff",
+        "sha512": "11b7b43102127af4e1d5529fa808da5caa33b27dea6379c2a71a8d8ce64b95c5bcd155a64555abc70f522ce8ce723a0106776977ae062887eb0ed04ae41c5717"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/MBAkmtvl/versions/aL65cBEV/balm-neoforge-26.1.2-26.1.2.11.jar"
+      ],
+      "fileSize": 1070572
+    },
+    {
+      "path": "mods/Explorify v1.6.5.mod.jar",
+      "hashes": {
+        "sha1": "5fb28be29200a41b034e423d87823eb19ad651cd",
+        "sha512": "9b22adeb1952ec25856e160b93aaa41934fd41e8d1aef985317cb2c9d64aae1012e134e23f52ba39fac3a98b3309b60f0b55b98a4db4de1731960b998117c83e"
+      },
+      "env": {
+        "client": "optional",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/HSfsxuTo/versions/CuBdAr31/Explorify%20v1.6.5.mod.jar"
+      ],
+      "fileSize": 767884
+    },
+    {
+      "path": "mods/thuns-structures-1.3.2.jar",
+      "hashes": {
+        "sha1": "70854a8d5571d868753e240da28799676cfa9ed5",
+        "sha512": "38dffab789b3328366a8c24f3eade95152be43dc81263504f8786f347c989f4e4774460583f90f7ac7652d3785628d94f9da199f725c99673d5a3b7056e0733b"
+      },
+      "env": {
+        "client": "optional",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/ZLL4Dkxb/versions/9O7Gqu4j/thuns-structures-1.3.2.jar"
+      ],
+      "fileSize": 322693
+    },
+    {
+      "path": "mods/structurify-neoforge-2.0.30+mc26.1.2.jar",
+      "hashes": {
+        "sha1": "f6a7aecefddfbd13b1c51a5e2377ac539bcdfbb4",
+        "sha512": "a73614066553fee98a84a075b70a886d7b8893a6804cf3ae4914dbb75e7c8ff8b9b788b739befe07fbfe9d0d52ae49357a612fd6406efbb1754a4e2af391d921"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/yz7AM2zx/versions/zmjp9Hlc/structurify-neoforge-2.0.30%2Bmc26.1.2.jar"
+      ],
+      "fileSize": 473283
+    },
+    {
+      "path": "mods/yet_another_config_lib_v3-3.9.6+26.1-neoforge.jar",
+      "hashes": {
+        "sha1": "4c1333cd4ef9e03bb6c3603a6fb80ce59e367add",
+        "sha512": "191b1dbc88554fb810b98c31e02e8986435df69fa87bc146625082a2d12df81b3df7d2159d5981523158118a890fde7c075d92e7c870cd1eadd577db2a3f3c56"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/1eAoo2KR/versions/StuyKSnK/yet_another_config_lib_v3-3.9.6%2B26.1-neoforge.jar"
+      ],
+      "fileSize": 1115845
     },
     {
       "path": "resourcepacks/Whimscape_26.1-26.2_r1.zip",

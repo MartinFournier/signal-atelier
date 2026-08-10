@@ -41,16 +41,23 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/pipes_first/reward_item",
+          "type": "item",
+          "item": "minecraft:ladder",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:hopper"
     },
     {
-      "id": "simplyquests:signal_atelier/distributed_works/remote_site",
+      "id": "simplyquests:signal_atelier/distributed_works/separate_networks",
       "chapterName": "distributed_works",
-      "title": "Remote Site",
-      "subTitle": "Build beyond the workshop",
-      "description": "Before supplying a remote site, prove the field kit: store XP in an XP Tome carried by an equipped Traveler's Backpack, confirm GraveStone returns both without loss, and mark the site with an ordinary Xaero waypoint.",
+      "title": "Separate the Networks",
+      "subTitle": "Items, fluids, and energy have different jobs",
+      "description": "Build and label separate Oritech routes for items, fluids, and energy. Verify each route moves only its intended resource and remains understandable at crossings.",
       "x": 128.0,
       "y": 32.0,
       "shape": "GEAR",
@@ -62,6 +69,158 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/distributed_works/pipes_first"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/separate_networks/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Separate the Networks",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:glass_bottle"
+    },
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/route_control",
+      "chapterName": "distributed_works",
+      "title": "Route Control",
+      "subTitle": "Direct traffic deliberately",
+      "description": "Use Oritech filtering or routing controls to send one input to the correct destination and prevent outputs from feeding backward. Test both normal flow and a full destination.",
+      "x": 256.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/separate_networks"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/route_control/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Route Control",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:lever"
+    },
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/laser_workcell",
+      "chapterName": "distributed_works",
+      "title": "Laser Workcell",
+      "subTitle": "Control world interaction",
+      "description": "Build a contained Oritech laser or world-interaction workcell. Mark its operating area, test its stop control, and confirm it cannot reach unrelated machines, storage, or player routes.",
+      "x": 384.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/route_control"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/laser_workcell/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Laser Workcell",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:target"
+    },
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/field_recovery_drill",
+      "chapterName": "distributed_works",
+      "title": "Field Recovery Drill",
+      "subTitle": "Prove the expedition kit before relying on it",
+      "description": "Store XP in an XP Tome carried by an equipped Traveler's Backpack. In a disposable death test, confirm GraveStone returns the backpack, contents, and XP without loss or duplication.",
+      "x": 512.0,
+      "y": 0.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/laser_workcell"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/field_recovery_drill/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Field Recovery Drill",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:recovery_compass"
+    },
+    {
+      "id": "simplyquests:signal_atelier/distributed_works/remote_site",
+      "chapterName": "distributed_works",
+      "title": "Remote Site",
+      "subTitle": "Establish a recoverable outpost",
+      "description": "Carry the proven field kit to an outpost beyond the workshop, mark it with an ordinary Xaero waypoint, and provide labeled storage plus a safe stopped state before adding automation.",
+      "x": 640.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": false,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/distributed_works/field_recovery_drill"
       ],
       "tasks": [
         {
@@ -79,7 +238,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/remote_site/reward_item",
+          "type": "item",
+          "item": "minecraft:cooked_beef",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:minecart"
     },
@@ -89,7 +255,7 @@
       "title": "Drone Route",
       "subTitle": "Cross the difficult gap",
       "description": "Use Oritech drones or another Oritech-native solution for world interaction and long-distance logistics; Refined Storage must not replace the route.",
-      "x": 256.0,
+      "x": 768.0,
       "y": 0.0,
       "shape": "GEAR",
       "size": 24.0,
@@ -117,7 +283,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/drone_route/reward_item",
+          "type": "item",
+          "item": "minecraft:rail",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:phantom_membrane"
     },
@@ -127,7 +300,7 @@
       "title": "One Loaded Chunk",
       "subTitle": "Spend persistence carefully",
       "description": "Optionally place only the single-chunk loader at a proven remote site. Confirm ownership, the offline timeout, and the four-chunk-per-player limit; no factory should require it to remain safe.",
-      "x": 384.0,
+      "x": 896.0,
       "y": 32.0,
       "shape": "GEAR",
       "size": 24.0,
@@ -155,7 +328,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/distributed_works/one_loaded_chunk/reward_item",
+          "type": "item",
+          "item": "minecraft:compass",
+          "count": 1
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:lodestone"
     }

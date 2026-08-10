@@ -29,6 +29,8 @@ experimental.
 - In-game recipe-lock, quest, control, map, backpack, and branding validation
 - Runtime validation of recipe-book suppression, toast filtering, inventory
   management, and curated quest icons
+- Multi-seed validation of the 1.75 structure-spacing policy, added landmark
+  density, loot, terrain fit, and Oritech world-generation coexistence
 - Diagnosis of the observed Save & Quit process hang and clean relaunch proof
 
 See the [test plan](test-plan.md) for acceptance checks and the

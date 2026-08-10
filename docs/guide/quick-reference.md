@@ -29,6 +29,8 @@ validation** may change after the first graphical gameplay pass.
   entity radar. Player-marker behavior is pending runtime validation.
 - Oritech's late-game transport is the intended alternative to a general
   Waystones network.
+- Explorify and Thun's Structures add occasional landmarks in new chunks. A
+  pack-wide 1.75 spacing multiplier keeps vanilla and added structures sparse.
 
 ## Recovery and experience
 
@@ -49,8 +51,9 @@ validation** may change after the first graphical gameplay pass.
 
 - Whimscape, Complementary Reimagined, dynamic lights, and Sound Physics
   Remastered are optional and can be disabled without affecting progression.
-- Whimscape is bundled but disabled by default. It changes vanilla textures,
-  models, font, and GUI; Oritech and Rechiseled retain their own assets.
+- Whimscape is enabled on first install but remains user-disableable. It changes
+  vanilla textures, models, font, and GUI; Oritech and Rechiseled retain their
+  own assets.
 - Shaders are disabled for the first validation launch and are never part of
   the minimum hardware target.
 
@@ -66,3 +69,7 @@ The planned bindings are:
 
 These defaults are not packaged yet. Use **Options → Controls → Key Binds** to
 find each action and resolve conflicts without displacing a vanilla control.
+
+Fresh installs also default to unlocked Normal difficulty, keep running when
+the window loses focus, and disable Xaero cave mapping. Later player choices are
+preserved.

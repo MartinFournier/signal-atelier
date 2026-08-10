@@ -7,28 +7,48 @@ ROOT = Path(__file__).parents[1]
 QUEST_ROOT = ROOT / "overrides/config/simplyquests"
 EXPECTED_SLUGS = {
     "orientation": ["read_the_brief", "survey_a_site", "mark_the_baseline"],
-    "power": ["first_generation", "buffer_and_measure", "renewable_baseline"],
+    "power": [
+        "first_generation",
+        "distribution_bus",
+        "buffer_and_measure",
+        "safe_shutdown",
+        "renewable_baseline",
+    ],
     "industry": [
+        "first_machine",
+        "ore_processing",
         "processing_line",
         "principal_alloys",
+        "machine_addons",
         "fluids_and_oil",
+        "byproducts_and_overflow",
+        "automated_harvest",
         "rebuild_after_restart",
     ],
     "distributed_works": [
         "pipes_first",
+        "separate_networks",
+        "route_control",
+        "laser_workcell",
+        "field_recovery_drill",
         "remote_site",
         "drone_route",
         "one_loaded_chunk",
     ],
     "storage": [
         "storage_core",
+        "first_disk",
         "external_boundaries",
         "first_pattern",
+        "crafting_capacity",
         "factory_request",
         "respect_the_locks",
     ],
     "supertech": [
+        "reactor_supply",
+        "reactor_safety",
         "nuclear_scale",
+        "accelerator_inputs",
         "particle_products",
         "renewable_supertech",
         "survive_a_restart",
@@ -36,6 +56,7 @@ EXPECTED_SLUGS = {
     "signal_core": [
         "project_charter",
         "production_cells",
+        "monitor_the_core",
         "interdimensional_supply",
         "continuous_run",
     ],
@@ -64,7 +85,7 @@ class QuestChainTests(unittest.TestCase):
         ]
         group = self.groups["groups"][0]
         self.assertEqual(expected, group["chapters"])
-        self.assertEqual(27, len(self.quests))
+        self.assertEqual(44, len(self.quests))
         self.assertEqual(expected, [
             chapter["name"]
             for chapter in sorted(self.chapters, key=lambda item: item["chapterOrder"])
@@ -154,15 +175,52 @@ class QuestChainTests(unittest.TestCase):
         for identifier in quests.keys() - optional:
             self.assertTrue(ancestors(identifier).isdisjoint(optional), identifier)
 
-    def test_chain_is_non_gating_and_reward_free(self):
+    def test_chain_is_non_gating_with_minor_item_rewards(self):
+        allowed_rewards = {
+            "minecraft:baked_potato",
+            "minecraft:barrel",
+            "minecraft:bread",
+            "minecraft:cake",
+            "minecraft:chest",
+            "minecraft:clock",
+            "minecraft:cooked_beef",
+            "minecraft:copper_grate",
+            "minecraft:crafting_table",
+            "minecraft:ender_chest",
+            "minecraft:firework_rocket",
+            "minecraft:glass",
+            "minecraft:honey_bottle",
+            "minecraft:iron_bars",
+            "minecraft:item_frame",
+            "minecraft:ladder",
+            "minecraft:lantern",
+            "minecraft:compass",
+            "minecraft:oak_sign",
+            "minecraft:paper",
+            "minecraft:rail",
+            "minecraft:redstone_lamp",
+            "minecraft:scaffolding",
+            "minecraft:tinted_glass",
+            "minecraft:torch",
+            "minecraft:writable_book",
+        }
         for quest in self.quests:
-            self.assertEqual([], quest["rewards"])
+            self.assertLessEqual(len(quest["rewards"]), 1)
+            if quest["rewards"]:
+                reward = quest["rewards"][0]
+                self.assertEqual(f"{quest['id']}/reward_item", reward["id"])
+                self.assertEqual("item", reward["type"])
+                self.assertIn(reward["item"], allowed_rewards)
+                self.assertGreaterEqual(reward["count"], 1)
+                self.assertLessEqual(reward["count"], 8)
             self.assertFalse(quest["settings"]["isRepeatable"])
             self.assertEqual(1, len(quest["tasks"]))
             task = quest["tasks"][0]
             self.assertEqual("checkbox", task["type"])
             self.assertFalse(task["consume"])
             self.assertFalse(task["repeatable"])
+
+        self.assertEqual(27, sum(bool(quest["rewards"]) for quest in self.quests))
 
     def test_milestones_use_curated_vanilla_icons(self):
         icons = [quest["logo"] for quest in self.quests]
@@ -183,18 +241,26 @@ class QuestChainTests(unittest.TestCase):
                 "simplyquests:signal_atelier/distributed_works/one_loaded_chunk",
                 "simplyquests:signal_atelier/signal_core/project_charter",
                 "simplyquests:signal_atelier/signal_core/production_cells",
+                "simplyquests:signal_atelier/signal_core/monitor_the_core",
                 "simplyquests:signal_atelier/signal_core/interdimensional_supply",
                 "simplyquests:signal_atelier/signal_core/continuous_run",
             },
             optional,
         )
-        nuclear = quests["simplyquests:signal_atelier/supertech/nuclear_scale"]
+        reactor_supply = quests[
+            "simplyquests:signal_atelier/supertech/reactor_supply"
+        ]
         self.assertEqual(
             {
                 "simplyquests:signal_atelier/storage/respect_the_locks",
                 "simplyquests:signal_atelier/distributed_works/drone_route",
             },
-            set(nuclear["dependencies"]),
+            set(reactor_supply["dependencies"]),
+        )
+        nuclear = quests["simplyquests:signal_atelier/supertech/nuclear_scale"]
+        self.assertEqual(
+            ["simplyquests:signal_atelier/supertech/reactor_safety"],
+            nuclear["dependencies"],
         )
 
     def test_descriptions_teach_cross_mod_boundaries(self):
@@ -202,10 +268,12 @@ class QuestChainTests(unittest.TestCase):
             quest["id"]: quest["description"] for quest in self.quests
         }
         expected_terms = {
-            "simplyquests:signal_atelier/distributed_works/remote_site": (
+            "simplyquests:signal_atelier/distributed_works/field_recovery_drill": (
                 "XP Tome",
                 "Traveler's Backpack",
                 "GraveStone",
+            ),
+            "simplyquests:signal_atelier/distributed_works/remote_site": (
                 "Xaero waypoint",
             ),
             "simplyquests:signal_atelier/storage/external_boundaries": (
@@ -224,6 +292,22 @@ class QuestChainTests(unittest.TestCase):
         for identifier, terms in expected_terms.items():
             for term in terms:
                 self.assertIn(term, descriptions[identifier])
+
+    def test_orientation_acts_as_the_field_manual(self):
+        descriptions = {
+            quest["id"]: quest["description"] for quest in self.quests
+        }
+        brief = descriptions["simplyquests:signal_atelier/orientation/read_the_brief"]
+        for term in ("JEI", "Oracle Index", "Oritech owns", "Refined Storage"):
+            self.assertIn(term, brief)
+        survey = descriptions["simplyquests:signal_atelier/orientation/survey_a_site"]
+        for term in ("chunks loaded by your client", "cave maps", "teleportation"):
+            self.assertIn(term, survey)
+        baseline = descriptions[
+            "simplyquests:signal_atelier/orientation/mark_the_baseline"
+        ]
+        for term in ("Java 25", "4–6 GiB", "backup", "exit cleanly"):
+            self.assertIn(term, baseline)
 
     def test_chapter_schema_basics(self):
         for chapter in self.chapters:

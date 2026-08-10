@@ -10,9 +10,9 @@
     {
       "id": "simplyquests:signal_atelier/orientation/read_the_brief",
       "chapterName": "orientation",
-      "title": "Read the Brief",
-      "subTitle": "Know the workshop",
-      "description": "Read this notebook and the Oracle Index. Signal Atelier is built around Oritech; Refined Storage is intentionally limited to storage and autocrafting.",
+      "title": "Workshop Brief",
+      "subTitle": "Know the tools and their boundaries",
+      "description": "Use JEI for recipes and the Oracle Index for Oritech details; this notebook explains how the pack fits together. Oritech owns power, processing, transport, and world interaction. Refined Storage is deliberately limited to storage, requests, and autocrafting. Quests offer minor workshop supplies, never recipe gates or progression-critical rewards.",
       "x": 0.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -28,7 +28,7 @@
           "id": "simplyquests:signal_atelier/orientation/read_the_brief/acknowledge",
           "type": "checkbox",
           "targetId": "",
-          "name": "Mark complete: Read the Brief",
+          "name": "Mark complete: Workshop Brief",
           "requiredAmount": 1,
           "optional": false,
           "repeatable": false,
@@ -39,7 +39,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/orientation/read_the_brief/reward_item",
+          "type": "item",
+          "item": "minecraft:paper",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:book"
     },
@@ -47,8 +54,8 @@
       "id": "simplyquests:signal_atelier/orientation/survey_a_site",
       "chapterName": "orientation",
       "title": "Survey a Site",
-      "subTitle": "Leave room to grow",
-      "description": "Choose a workshop site with expansion space, safe cable routes, and room for noisy or hazardous late-game machinery. Mark it with an ordinary Xaero waypoint; mapping is for navigation, not teleportation or radar.",
+      "subTitle": "Explore, then leave room to grow",
+      "description": "Explore with Xaero's surface map and mark an expandable workshop using an ordinary waypoint. The map records chunks loaded by your client; cave maps, teleportation, and entity radar are disabled. Explorify and Thun's Structures provide occasional landmarks, not a checklist to clear.",
       "x": 128.0,
       "y": 32.0,
       "shape": "GEAR",
@@ -77,7 +84,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/orientation/survey_a_site/reward_item",
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:compass"
     },
@@ -86,7 +100,7 @@
       "chapterName": "orientation",
       "title": "Mark the Baseline",
       "subTitle": "Protect the experiment",
-      "description": "Treat this world as disposable while Oritech 2 and NeoForge remain experimental. Confirm that a recoverable backup exists outside the instance.",
+      "description": "Before building, confirm Java 25, 4\u20136 GiB of memory, and a recoverable backup outside the Prism instance. Treat the world as disposable while Oritech 2 and NeoForge remain experimental. Save and quit once; the Java process must exit cleanly before you trust the instance.",
       "x": 256.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -115,7 +129,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/orientation/mark_the_baseline/reward_item",
+          "type": "item",
+          "item": "minecraft:bread",
+          "count": 4
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:chest"
     }

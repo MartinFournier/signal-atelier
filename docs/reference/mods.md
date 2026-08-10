@@ -12,13 +12,16 @@ relationships. Select a column heading to sort the table.
 | [AppleSkin](https://modrinth.com/mod/appleskin) | food; utility | `3.0.9+mc26.1` | The Unlicense |
 | [Architectury API](https://modrinth.com/mod/architectury-api) | library | `20.0.12+neoforge` | GNU Lesser General Public License v3.0 only |
 | [Athena](https://modrinth.com/mod/athena-ctm) | decoration; library | `4.7.3` | MIT License |
+| [Balm](https://modrinth.com/mod/balm) | library | `26.1.2.11+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | utility | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | technology; utility | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) | library | `26.1.154+neoforge` | GNU Lesser General Public License v3.0 only |
 | [Collective](https://modrinth.com/mod/collective) | library | `26.1.2-8.32-fabric+forge+neo` | LicenseRef-All-Rights-Reserved |
 | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) | colored-lighting; vanilla-like | `r5.8.1` | [LicenseRef-Custom](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt) |
+| [Default Options](https://modrinth.com/mod/default-options) | management; utility | `26.1.2.2+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
 | [Dynamic FPS](https://modrinth.com/mod/dynamic-fps) | management; optimization; utility | `3.11.7` | MIT License |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) | magic; utility | `26.1.2.5` | GNU Lesser General Public License v2.1 only |
+| [Explorify](https://modrinth.com/mod/explorify) | adventure; worldgen | `v1.6.5` | LicenseRef-All-Rights-Reserved |
 | [FerriteCore](https://modrinth.com/mod/ferrite-core) | optimization; utility | `9.0.0-neoforge` | MIT License |
 | [Fusion (Connected Textures)](https://modrinth.com/mod/fusion-connected-textures) | decoration | `1.3.12-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Geckolib](https://modrinth.com/mod/geckolib) | game-mechanics; library; utility | `5.5.2` | MIT License |
@@ -44,14 +47,17 @@ relationships. Select a column heading to sort the table.
 | [Simply Quests](https://modrinth.com/mod/simply-quests) | adventure; game-mechanics; utility | `0.1.1` | MIT License |
 | [Sodium](https://modrinth.com/mod/sodium) | optimization | `mc26.1.2-0.9.1-neoforge` | [LicenseRef-Polyform-Shield-1.0.0](https://github.com/CaffeineMC/sodium/blob/dev/LICENSE.md) |
 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | adventure; utility | `neoforge-1.5.1+26.1.2` | GNU General Public License v3.0 only |
+| [Structurify - Structure Control](https://modrinth.com/mod/structurify) | management; utility; worldgen | `neoforge-2.0.30+mc26.1.2` | [LicenseRef-CC-BY-NC-ND-4.0](https://github.com/Faboslav/structurify/blob/master/LICENSE.txt) |
 | [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib) | library | `1.1.8-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib) | library | `1.1.22-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Tax Free Levels](https://modrinth.com/mod/tax-free-levels) | game-mechanics | `1.5.4` | MIT License |
+| [Thun's Structures](https://modrinth.com/mod/thuns-structures) | adventure; decoration; worldgen | `1.3.2` | MIT License |
 | [Toast Control](https://modrinth.com/mod/toast-control) | utility | `26.1.2-10.0.0` | MIT License |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | adventure; equipment; storage | `26.1.2-11.2.6` | GNU Lesser General Public License v3.0 only |
 | [Universal Data Pack](https://modrinth.com/mod/universal-data-pack) | game-mechanics; management; utility | `26.1-2.1.0` | GNU General Public License v3.0 or later |
 | [Whimscape](https://modrinth.com/resourcepack/whimscape) | 16x; entities; models | `26.1-26.2_r1` | LicenseRef-All-Rights-Reserved |
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | adventure; transportation; utility | `neoforge-26.1.2-1.44.2` | LicenseRef-All-Rights-Reserved |
 | [XP Tome](https://modrinth.com/mod/xp-tome) | adventure; storage; utility | `v2.5.1` | MIT License |
+| [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | library; management; utility | `3.9.6+26.1-neoforge` | GNU Lesser General Public License v3.0 or later |
 
-Total: **44 artifacts**.
+Total: **50 artifacts**.

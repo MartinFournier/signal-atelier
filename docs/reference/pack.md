@@ -12,16 +12,16 @@ Run `scripts/generate_reference.py` after changing those sources.
 | Pack | Signal Atelier 0.3.0 |
 | Minecraft | 26.1.2 |
 | NeoForge | 26.1.2.81 |
-| Artifacts | 44 |
-| Client required | 44 |
-| Client optional | 0 |
+| Artifacts | 50 |
+| Client required | 48 |
+| Client optional | 2 |
 | Client unsupported | 0 |
-| Server required | 25 |
+| Server required | 30 |
 | Server optional | 1 |
-| Server unsupported | 18 |
+| Server unsupported | 19 |
 | Recipe locks | 26 |
 | Quest chapters | 7 |
-| Quest milestones | 27 |
+| Quest milestones | 44 |
 
 ## Artifacts
 
@@ -30,12 +30,15 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `appleskin-neoforge-mc26.1-3.0.9.jar` | [Modrinth](https://modrinth.com/project/EsAfCjCV) | required | unsupported |
 | `architectury-neoforge-20.0.12.jar` | [Modrinth](https://modrinth.com/project/lhGA9TYQ) | required | required |
 | `athena-4.7.3.jar` | [Modrinth](https://modrinth.com/project/b1ZV3DIJ) | required | required |
+| `balm-neoforge-26.1.2-26.1.2.11.jar` | [Modrinth](https://modrinth.com/project/MBAkmtvl) | required | unsupported |
 | `BetterAdvancements-NeoForge-26.1.2-0.6.0.76.jar` | [Modrinth](https://modrinth.com/project/Q2OqKxDG) | required | unsupported |
 | `chunkloaders-1.2.9-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/t1VgucWo) | required | required |
 | `cloth-config-26.1.154.jar` | [Modrinth](https://modrinth.com/project/9s6osm5g) | required | required |
 | `collective-26.1.2-8.32.jar` | [Modrinth](https://modrinth.com/project/e0M1UDsY) | required | required |
+| `defaultoptions-neoforge-26.1.2-26.1.2.2.jar` | [Modrinth](https://modrinth.com/project/WEg59z5b) | required | unsupported |
 | `dynamic-fps-3.11.7+minecraft-26.1.0-neoforge.jar` | [Modrinth](https://modrinth.com/project/LQ3K71Q1) | required | unsupported |
 | `EnchantmentDescriptions-neoforge-MC26.1.2-26.1.2.5.jar` | [Modrinth](https://modrinth.com/project/UVtY3ZAC) | required | unsupported |
+| `Explorify v1.6.5.mod.jar` | [Modrinth](https://modrinth.com/project/HSfsxuTo) | optional | required |
 | `ferritecore-9.0.0-neoforge.jar` | [Modrinth](https://modrinth.com/project/uXXizFIs) | required | required |
 | `fusion-1.3.12-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/p19vrgc2) | required | unsupported |
 | `geckolib-neoforge-26.1.2-5.5.2.jar` | [Modrinth](https://modrinth.com/project/8BmcQJ2H) | required | required |
@@ -61,14 +64,17 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `Simply Quests v0.1.1.jar` | [Modrinth](https://modrinth.com/project/uwJu7Fi8) | required | required |
 | `sodium-neoforge-0.9.1+mc26.1.2.jar` | [Modrinth](https://modrinth.com/project/AANobbMI) | required | unsupported |
 | `sound-physics-remastered-neoforge-1.5.1+26.1.2.jar` | [Modrinth](https://modrinth.com/project/qyVF9oeo) | required | unsupported |
+| `structurify-neoforge-2.0.30+mc26.1.2.jar` | [Modrinth](https://modrinth.com/project/yz7AM2zx) | required | required |
 | `supermartijn642configlib-1.1.8-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/LN9BxssP) | required | required |
 | `supermartijn642corelib-1.1.22-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/rOUBggPv) | required | required |
 | `TaxFreeLevels-1.5.4-neoforge-26.1.jar` | [Modrinth](https://modrinth.com/project/jCBrrLTs) | required | required |
+| `thuns-structures-1.3.2.jar` | [Modrinth](https://modrinth.com/project/ZLL4Dkxb) | optional | required |
 | `ToastControl-26.1.2-10.0.0.jar` | [Modrinth](https://modrinth.com/project/CnOG2wlS) | required | unsupported |
 | `travelersbackpack-neoforge-26.1.2-11.2.6.jar` | [Modrinth](https://modrinth.com/project/rlloIFEV) | required | required |
 | `universaldatapack-26.1-2.1.0.jar` | [Modrinth](https://modrinth.com/project/TPKaNwWP) | required | required |
-| `xaeroworldmap-neoforge-26.1.2-1.44.2.jar` | [Modrinth](https://modrinth.com/project/NcUtCpym) | required | unsupported |
+| `xaeroworldmap-neoforge-26.1.2-1.44.2.jar` | [Modrinth](https://modrinth.com/project/NcUtCpym) | required | required |
 | `xptome-neoforge-26.1.2-2.5.1.jar` | [Modrinth](https://modrinth.com/project/AnpW69o3) | required | required |
+| `yet_another_config_lib_v3-3.9.6+26.1-neoforge.jar` | [Modrinth](https://modrinth.com/project/1eAoo2KR) | required | required |
 | `Whimscape_26.1-26.2_r1.zip` | [Modrinth](https://modrinth.com/project/4YkvO5Rp) | required | unsupported |
 | `ComplementaryReimagined_r5.8.1.zip` | [Modrinth](https://modrinth.com/project/HVnmMxH1) | required | unsupported |
 
@@ -106,6 +112,9 @@ Empty datapack recipes remove these survival crafting paths:
 ## Shipped configuration and assets
 
 - `config/chunkloaders.toml`
+- `config/defaultoptions/extra/config/xaeroworldmap.txt`
+- `config/defaultoptions/options.txt`
+- `config/defaultoptions-common.toml`
 - `config/dynamic_fps.json`
 - `config/simplemenu/icon/icon_16x16.png`
 - `config/simplemenu/icon/icon_32x32.png`
@@ -119,21 +128,23 @@ Empty datapack recipes remove these survival crafting paths:
 - `config/simplyquests/chapters/storage.json`
 - `config/simplyquests/chapters/supertech.json`
 - `config/simplyquests/groups.json`
+- `config/structurify.json`
 - `config/taxfreelevels.json`
 - `config/travelersbackpack-common.toml`
 - `config/travelersbackpack-server.toml`
 - `config/universaldatapack/pack.mcmeta`
+- `config/xaeroworldmap-common.txt`
 
 ## Quest notebook
 
 | Chapter | Milestones |
 | --- | ---: |
 | Orientation | 3 |
-| Power | 3 |
-| Industry | 4 |
-| Distributed Works | 4 |
-| Storage and Requests | 5 |
-| Supertech | 4 |
-| The Signal Core | 4 |
+| Power | 5 |
+| Industry | 9 |
+| Distributed Works | 8 |
+| Storage and Requests | 7 |
+| Supertech | 7 |
+| The Signal Core | 5 |
 
-Total: **27 milestones**.
+Total: **44 milestones**.
