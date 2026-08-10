@@ -11,9 +11,13 @@ The repository verifies that the pinned server-side artifacts and NeoForge
 it does not yet prove production deployment, upgrades, backups, permissions,
 network security, or complete multiplayer gameplay.
 
-There is no supported production server bundle yet. The repository's
-`scripts/smoke_server.py` creates disposable test state and must not be used as
-a persistent server installer.
+The repository includes a conservative
+[Docker Compose deployment](https://github.com/MartinFournier/signal-atelier/tree/main/deploy/server)
+for persistent private-server testing. It installs the locally built
+`.mrpack`, keeps RCON internal, enforces a whitelist, and coordinates retained
+world backups. This remains an experimental deployment, not a production
+support guarantee. The separate `scripts/smoke_server.py` still creates only
+disposable test state and must not be used as a persistent server installer.
 
 ## Host requirements
 

@@ -21,6 +21,13 @@ servers.dat
 usercache.json
 usernamecache.json
 
+# Local Docker server deployment
+/deploy/server/.env
+/deploy/server/server-data/
+/deploy/server/backups/
+/deploy/server/secrets/*.txt
+!/deploy/server/secrets/*.example
+
 # Local configuration generated during testing
 config/
 defaultconfigs/

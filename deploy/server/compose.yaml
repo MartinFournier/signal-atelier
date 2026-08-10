@@ -1,0 +1,90 @@
+name: signal-atelier
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:2026.8.0-java25
+    restart: unless-stopped
+    init: true
+    tty: true
+    stdin_open: true
+    stop_grace_period: 2m
+    ports:
+      - "${SERVER_BIND_ADDRESS:-0.0.0.0}:${SERVER_PORT:-25565}:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: MODRINTH
+      MODRINTH_MODPACK: /modpacks/signal-atelier.mrpack
+      MODRINTH_FORCE_SYNCHRONIZE: "true"
+      MEMORY: "${MEMORY:-6G}"
+      UID: "${SERVER_UID:-1000}"
+      GID: "${SERVER_GID:-1000}"
+      TZ: "${TZ:-UTC}"
+      ONLINE_MODE: "true"
+      ENABLE_WHITELIST: "true"
+      ENFORCE_WHITELIST: "true"
+      MAX_PLAYERS: "${MAX_PLAYERS:-8}"
+      VIEW_DISTANCE: "${VIEW_DISTANCE:-10}"
+      SIMULATION_DISTANCE: "${SIMULATION_DISTANCE:-8}"
+      RCON_PASSWORD_FILE: /run/secrets/rcon_password
+      BROADCAST_RCON_TO_OPS: "false"
+      MOTD: Signal Atelier
+      LEVEL: world
+    volumes:
+      - "${PACK_PATH:-../../dist/signal-atelier-0.3.0.mrpack}:/modpacks/signal-atelier.mrpack:ro"
+      - ./server-data:/data
+    secrets:
+      - rcon_password
+    networks:
+      - default
+      - backup
+
+  backups:
+    image: itzg/mc-backup:2026.8.0
+    restart: unless-stopped
+    init: true
+    depends_on:
+      minecraft:
+        condition: service_healthy
+    environment:
+      RCON_HOST: minecraft
+      RCON_PASSWORD_FILE: /run/secrets/rcon_password
+      SRC_DIR: /data
+      DEST_DIR: /backups
+      BACKUP_NAME: signal-atelier
+      BACKUP_METHOD: tar
+      BACKUP_INTERVAL: "6h"
+      BACKUP_ON_STARTUP: "true"
+      INITIAL_DELAY: "0"
+      PRUNE_BACKUPS_DAYS: "14"
+      LINK_LATEST: "true"
+      TAR_COMPRESS_METHOD: gzip
+      EXCLUDES: "*.jar,cache,logs,*.tmp,crash-reports"
+      TZ: "${TZ:-UTC}"
+    volumes:
+      - ./server-data:/data:ro
+      - ./backups:/backups
+    secrets:
+      - rcon_password
+    networks:
+      - backup
+
+  restore-backup:
+    image: itzg/mc-backup:2026.8.0
+    profiles:
+      - restore
+    restart: "no"
+    entrypoint: restore-tar-backup
+    environment:
+      SRC_DIR: /data
+      DEST_DIR: /backups
+    volumes:
+      - ./server-data:/data
+      - ./backups:/backups:ro
+
+networks:
+  backup:
+    internal: true
+
+secrets:
+  rcon_password:
+    file: "${RCON_PASSWORD_PATH:-./secrets/rcon-password.txt}"

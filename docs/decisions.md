@@ -85,6 +85,10 @@
   products, autocrafting, and interdimensional logistics.
 - Target solo play and small cooperative servers at 4 GiB minimum and 6 GiB
   recommended memory allocation. Shaders are never part of the minimum target.
+- Provide an optional Docker Compose deployment using release-pinned Java 25
+  server and backup images. Install the local `.mrpack`, enforce a whitelist,
+  keep RCON internal and secret-backed, back up every six hours with 14-day
+  retention, and keep live data and backup archives in separate host paths.
 - Pin every mod version and update in tested batches without grind multipliers.
 - Keep balance and server configuration pack-controlled while leaving cosmetic
   client settings user-controlled.
