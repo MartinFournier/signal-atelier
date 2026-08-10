@@ -7,7 +7,7 @@ Do not remove mods pre-emptively or begin a permanent world during this pass.
 
 Confirm all of the following before creating a world:
 
-- The window title is `Signal Atelier`.
+- The window title is `Signal Atelier 0.3 | Minecraft 26.1.2`.
 - The copper Signal Atelier logo is visible and readable.
 - Singleplayer, Multiplayer, Mods, Options, and Quit remain available.
 - Realms and hosting promotions are absent.

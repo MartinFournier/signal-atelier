@@ -47,12 +47,17 @@
   disabled by default.
 - Add LambDynamicLights with conservative update quality.
 - Add Rechiseled as the sole general-purpose decorative block expansion.
-- Bundle Whimscape as an optional, disabled-by-default visual overhaul. Keep
-  pack-owned Signal Atelier branding above it in resource-pack priority and do
-  not require its optional OptiFine-equivalent features.
+- Bundle Whimscape as the default visual overhaul while keeping it optional and
+  user-disableable. Apply it only on first install through Default Options,
+  preserve later player choices, keep pack branding above it, and do not require
+  its optional OptiFine-equivalent features.
 - Add Sound Physics Remastered as an independently disableable client feature.
-- Keep world generation, structures, food, and farming otherwise close to
-  vanilla; Oritech supplies the industrial building identity.
+- Keep terrain generation, food, and farming otherwise close to vanilla;
+  Oritech supplies the industrial building identity.
+- Add Explorify and Thun's Structures for a restrained set of discoverable
+  landmarks. Use Structurify to multiply spacing and separation for all
+  structure sets by 1.75 so the combined catalog remains uncommon and does not
+  crowd the world map.
 - Use a physical single-chunk loader from Chunk Loaders instead of map-based
   force loading. Disable the 3x3, 5x5, and 7x7 loader recipes and gate the
   single loader behind late-game Oritech materials.
@@ -60,9 +65,11 @@
   direction and documentation, not essential rewards or recipe permissions.
 - Organize quests around orientation, power, industry, distributed works,
   storage, supertech, and the optional Signal Core megaproject.
-- Ship 27 manual checklist milestones across those seven chapters. Keep the
-  notebook reward-free and independent of recipes so experimental registry
-  changes cannot block a world.
+- Ship 44 manual checklist milestones across those seven chapters. Use the
+  additional steps for meaningful system guidance rather than individual
+  recipes. Keep small, one-time vanilla utility rewards on major milestones,
+  with no machinery, ores, XP, commands, recipe permissions, or
+  progression-critical materials.
 - Give each milestone a curated vanilla item icon instead of displaying its
   identical checkbox task icon.
 - Add XP Tome with its default 1,395 XP capacity, equivalent to level 30.
@@ -86,11 +93,17 @@
 - Preserve player keybind changes across pack updates. Do not distribute a
   complete `options.txt` that resets unrelated video, audio, accessibility, or
   control preferences.
+- Use Default Options for narrow first-install defaults: enable Whimscape,
+  disable pause-on-lost-focus, and default new worlds to unlocked Normal
+  difficulty. Do not initialize hardware-dependent or accessibility settings.
+- Disable Xaero cave maps by default and prohibit cave mode through the
+  server-capable World Map common configuration. Retain surface mapping of only
+  chunks received by the client.
 - Keep backups outside the instance and Git. Prefer host or filesystem
   snapshots over the immature 26.1 backup-mod ecosystem.
 - Add Simple Menu as the lightweight client-side branding layer.
-- Set the window title to `Signal Atelier`; keep version details in the
-  manifest and launcher instance rather than crowding the title bar.
+- Set the window title to `Signal Atelier 0.3 | Minecraft 26.1.2` so screenshots
+  and support reports identify both the pack line and Minecraft version.
 - Use a custom Signal Atelier icon and title wordmark built around a pixel-art
   pickaxe emitting signal waves from its head.
 - Keep the vanilla panorama and loading screen initially.

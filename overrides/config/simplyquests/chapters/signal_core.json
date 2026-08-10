@@ -11,8 +11,8 @@
       "id": "simplyquests:signal_atelier/signal_core/project_charter",
       "chapterName": "signal_core",
       "title": "Project Charter",
-      "subTitle": "Define the megaproject",
-      "description": "Choose a visible site and define the optional Signal Core as a demonstration of renewable supply, nuclear-scale power, particle products, autocrafting, and interdimensional logistics.",
+      "subTitle": "Define the optional megaproject",
+      "description": "Only continue if a larger project sounds fun. Choose a visible site and define the optional Signal Core as a demonstration of renewable supply, nuclear-scale power, particle products, autocrafting, and interdimensional Oritech logistics.",
       "x": 0.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -41,7 +41,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/project_charter/reward_item",
+          "type": "item",
+          "item": "minecraft:writable_book",
+          "count": 1
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:writable_book"
     },
@@ -79,16 +86,23 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/production_cells/reward_item",
+          "type": "item",
+          "item": "minecraft:copper_grate",
+          "count": 8
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:copper_block"
     },
     {
-      "id": "simplyquests:signal_atelier/signal_core/interdimensional_supply",
+      "id": "simplyquests:signal_atelier/signal_core/monitor_the_core",
       "chapterName": "signal_core",
-      "title": "Interdimensional Supply",
-      "subTitle": "Tune every signal",
-      "description": "Supply the project from more than one dimension without Refined Storage wireless or remote-network devices.",
+      "title": "Monitor the Core",
+      "subTitle": "Make bottlenecks visible",
+      "description": "Create a central status view for power, input buffers, blocked outputs, and stopped production cells. A problem should be diagnosable without opening every machine.",
       "x": 256.0,
       "y": 0.0,
       "shape": "GEAR",
@@ -100,6 +114,44 @@
       },
       "dependencies": [
         "simplyquests:signal_atelier/signal_core/production_cells"
+      ],
+      "tasks": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/monitor_the_core/acknowledge",
+          "type": "checkbox",
+          "targetId": "",
+          "name": "Mark complete: Monitor the Core",
+          "requiredAmount": 1,
+          "optional": false,
+          "repeatable": false,
+          "consume": false,
+          "targetX": 0,
+          "targetY": 0,
+          "targetZ": 0,
+          "isIcon": true
+        }
+      ],
+      "rewards": [],
+      "lockedBy": "",
+      "logo": "minecraft:comparator"
+    },
+    {
+      "id": "simplyquests:signal_atelier/signal_core/interdimensional_supply",
+      "chapterName": "signal_core",
+      "title": "Interdimensional Supply",
+      "subTitle": "Tune every signal",
+      "description": "Supply the project from more than one dimension without Refined Storage wireless or remote-network devices.",
+      "x": 384.0,
+      "y": 32.0,
+      "shape": "GEAR",
+      "size": 24.0,
+      "settings": {
+        "isOptional": true,
+        "isRepeatable": false,
+        "useTaskIcon": false
+      },
+      "dependencies": [
+        "simplyquests:signal_atelier/signal_core/monitor_the_core"
       ],
       "tasks": [
         {
@@ -117,7 +169,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/interdimensional_supply/reward_item",
+          "type": "item",
+          "item": "minecraft:ender_chest",
+          "count": 1
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:ender_eye"
     },
@@ -127,8 +186,8 @@
       "title": "Continuous Run",
       "subTitle": "The atelier answers",
       "description": "Run the complete Signal Core supply chain through a full operating cycle and restart. Record bottlenecks before calling the workshop complete.",
-      "x": 384.0,
-      "y": 32.0,
+      "x": 512.0,
+      "y": 0.0,
       "shape": "GEAR",
       "size": 24.0,
       "settings": {
@@ -155,7 +214,14 @@
           "isIcon": true
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "id": "simplyquests:signal_atelier/signal_core/continuous_run/reward_item",
+          "type": "item",
+          "item": "minecraft:cake",
+          "count": 1
+        }
+      ],
       "lockedBy": "",
       "logo": "minecraft:nether_star"
     }

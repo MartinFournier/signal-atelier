@@ -4,6 +4,10 @@ Open Simply Quests to follow Signal Atelier's engineering notebook. The
 planned default key is `J`; use the Controls screen if that binding has not yet
 been applied or conflicts with a personal binding.
 
+The Orientation chapter doubles as the compact in-game field manual. Later
+milestones repeat important boundaries when they become relevant, so players do
+not need to memorize a separate guidebook.
+
 The notebook is guidance, not a gate. Each milestone is a manual checkbox with
 no item, XP, or command reward. Recipes and machines continue to work whether
 or not a quest is checked. This keeps an experimental Oritech update from
@@ -14,8 +18,8 @@ the icon is descriptive only and does not change completion requirements.
 
 ## Chapters
 
-1. **Orientation** — read the pack brief, choose an expandable workshop site,
-   and make a recoverable backup before treating the world as permanent.
+1. **Orientation** — learn the mod boundaries and map policy, choose an
+   expandable workshop site, verify the runtime, and make a recoverable backup.
 2. **Power** — establish generation, measure demand, and build a renewable
    baseline before scaling the factory.
 3. **Industry** — automate Oritech processing, principal alloys, and fluids,

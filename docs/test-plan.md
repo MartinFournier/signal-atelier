@@ -23,6 +23,10 @@ each local comparison, but do not commit unsanitized logs.
 - Confirm the vanilla recipe book is absent from supported crafting screens,
   JEI remains usable, and recipe-unlock/tutorial toasts are suppressed while
   advancement and important system toasts remain visible.
+- On a fresh instance, confirm Whimscape is selected, pause-on-lost-focus is
+  disabled, difficulty defaults to unlocked Normal, and Xaero cave maps are
+  prohibited. Change each user-adjustable choice and verify an update does not
+  restore the pack default.
 - Connect a second client or dedicated server before calling the pack
   multiplayer-capable.
 
@@ -74,6 +78,10 @@ each local comparison, but do not commit unsanitized logs.
 - Confirm Xaero's World Map reveals only explored terrain.
 - Verify entity tracking and map teleportation are disabled; test player
   markers separately if World Map supports them without the Minimap.
+- Generate multiple disposable seeds and sample new chunks for Explorify,
+  Thun's Structures, and vanilla landmarks. Confirm the 1.75 Structurify
+  multiplier produces uncommon discoveries without clusters, broken terrain,
+  excessive loot, or overlap with Oritech world generation.
 - Review the complete Controls screen for duplicate bindings. Confirm `M`
   opens the world map, `B` opens Traveler's Backpack, and `J` opens Simply
   Quests when those actions are supported, with no vanilla control displaced.
@@ -118,9 +126,11 @@ each local comparison, but do not commit unsanitized logs.
   and behaves safely while owners are offline.
 - Verify Simply Quests progress survives logout, server restart, pack update,
   team changes, and restoration from backup; quests must never gate recipes.
-- Confirm the Signal Atelier group contains seven ordered chapters and 27
+- Confirm the Signal Atelier group contains seven ordered chapters and 44
   milestones, every dependency unlocks in sequence, and manual checkboxes
-  synchronize between clients without granting items, XP, or commands.
+  synchronize between clients. Claim representative rewards and confirm they
+  grant the configured vanilla item once, never XP or commands, without loss or
+  duplication when inventory space is limited.
 - Confirm every milestone renders its curated item icon instead of the generic
   checkbox task icon.
 - Save and quit from a disposable world, confirm the Java process exits without
@@ -128,8 +138,8 @@ each local comparison, but do not commit unsanitized logs.
   preserve a sanitized Prism console and `latest.log` tail for attribution.
 - Complete the provisional Signal Core production chain without relying on
   locked Refined Storage or chunk-loader features.
-- Verify Simple Menu shows `Signal Atelier` in the window title and renders the
-  custom icon correctly at 16x16 and 32x32.
+- Verify Simple Menu shows `Signal Atelier 0.3 | Minecraft 26.1.2` in the window
+  title and renders the custom icon correctly at 16x16 and 32x32.
 - Confirm the title logo scales cleanly across GUI scales and window sizes.
 - Confirm Realms is hidden while Singleplayer, Multiplayer, Mods, Options, and
   Quit remain accessible.

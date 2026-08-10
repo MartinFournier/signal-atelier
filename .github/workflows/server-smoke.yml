@@ -9,10 +9,12 @@ on:
       - .github/workflows/server-smoke.yml
       - modrinth.index.json
       - overrides/config/chunkloaders.toml
+      - overrides/config/structurify.json
       - overrides/config/simplyquests/**
       - overrides/config/taxfreelevels.json
       - overrides/config/travelersbackpack-*.toml
       - overrides/config/universaldatapack/**
+      - overrides/config/xaeroworldmap-common.txt
       - overrides/defaultconfigs/**
       - scripts/smoke_server.py
       - tests/test_smoke_server.py

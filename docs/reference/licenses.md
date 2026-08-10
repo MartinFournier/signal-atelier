@@ -23,10 +23,13 @@ outside the normal Modrinth download flow.
 
 | Project | Version | Reported license |
 | --- | --- | --- |
+| [Balm](https://modrinth.com/mod/balm) | `26.1.2.11+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Collective](https://modrinth.com/mod/collective) | `26.1.2-8.32-fabric+forge+neo` | LicenseRef-All-Rights-Reserved |
 | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) | `r5.8.1` | [LicenseRef-Custom](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt) |
+| [Default Options](https://modrinth.com/mod/default-options) | `26.1.2.2+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
+| [Explorify](https://modrinth.com/mod/explorify) | `v1.6.5` | LicenseRef-All-Rights-Reserved |
 | [Fusion (Connected Textures)](https://modrinth.com/mod/fusion-connected-textures) | `1.3.12-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [GraveStone Mod](https://modrinth.com/mod/gravestone-mod) | `neoforge-1.0.38+26.1.2` | LicenseRef-All-Rights-Reserved |
 | [LambDynamicLights - Dynamic Lights](https://modrinth.com/mod/lambdynamiclights) | `4.11.0+26.1.2` | [LicenseRef-Lambda-License](https://github.com/LambdAurora/LambDynamicLights/blob/1.21.5/LICENSE) |
@@ -35,6 +38,7 @@ outside the normal Modrinth download flow.
 | [ShatterLib \| OctoLib](https://modrinth.com/mod/shatterbyte-lib) | `0.7.0+26.1.2` | LicenseRef-All-Rights-Reserved |
 | [Simple Menu](https://modrinth.com/mod/simple-menu) | `26.1.2-2.1-fabric+forge+neo` | LicenseRef-All-Rights-Reserved |
 | [Sodium](https://modrinth.com/mod/sodium) | `mc26.1.2-0.9.1-neoforge` | [LicenseRef-Polyform-Shield-1.0.0](https://github.com/CaffeineMC/sodium/blob/dev/LICENSE.md) |
+| [Structurify - Structure Control](https://modrinth.com/mod/structurify) | `neoforge-2.0.30+mc26.1.2` | [LicenseRef-CC-BY-NC-ND-4.0](https://github.com/Faboslav/structurify/blob/master/LICENSE.txt) |
 | [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib) | `1.1.8-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib) | `1.1.22-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Whimscape](https://modrinth.com/resourcepack/whimscape) | `26.1-26.2_r1` | LicenseRef-All-Rights-Reserved |
@@ -50,13 +54,16 @@ files embedded in the Signal Atelier archive.
 | [AppleSkin](https://modrinth.com/mod/appleskin) | `3.0.9+mc26.1` | The Unlicense | Modrinth download |
 | [Architectury API](https://modrinth.com/mod/architectury-api) | `20.0.12+neoforge` | GNU Lesser General Public License v3.0 only | Modrinth download |
 | [Athena](https://modrinth.com/mod/athena-ctm) | `4.7.3` | MIT License | Modrinth download |
+| [Balm](https://modrinth.com/mod/balm) | `26.1.2.11+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) | Modrinth download |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) | Modrinth download |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) | `26.1.154+neoforge` | GNU Lesser General Public License v3.0 only | Modrinth download |
 | [Collective](https://modrinth.com/mod/collective) | `26.1.2-8.32-fabric+forge+neo` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) | `r5.8.1` | [LicenseRef-Custom](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt) | Modrinth download |
+| [Default Options](https://modrinth.com/mod/default-options) | `26.1.2.2+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) | Modrinth download |
 | [Dynamic FPS](https://modrinth.com/mod/dynamic-fps) | `3.11.7` | MIT License | Modrinth download |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) | `26.1.2.5` | GNU Lesser General Public License v2.1 only | Modrinth download |
+| [Explorify](https://modrinth.com/mod/explorify) | `v1.6.5` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [FerriteCore](https://modrinth.com/mod/ferrite-core) | `9.0.0-neoforge` | MIT License | Modrinth download |
 | [Fusion (Connected Textures)](https://modrinth.com/mod/fusion-connected-textures) | `1.3.12-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Geckolib](https://modrinth.com/mod/geckolib) | `5.5.2` | MIT License | Modrinth download |
@@ -82,14 +89,17 @@ files embedded in the Signal Atelier archive.
 | [Simply Quests](https://modrinth.com/mod/simply-quests) | `0.1.1` | MIT License | Modrinth download |
 | [Sodium](https://modrinth.com/mod/sodium) | `mc26.1.2-0.9.1-neoforge` | [LicenseRef-Polyform-Shield-1.0.0](https://github.com/CaffeineMC/sodium/blob/dev/LICENSE.md) | Modrinth download |
 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | `neoforge-1.5.1+26.1.2` | GNU General Public License v3.0 only | Modrinth download |
+| [Structurify - Structure Control](https://modrinth.com/mod/structurify) | `neoforge-2.0.30+mc26.1.2` | [LicenseRef-CC-BY-NC-ND-4.0](https://github.com/Faboslav/structurify/blob/master/LICENSE.txt) | Modrinth download |
 | [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib) | `1.1.8-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib) | `1.1.22-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Tax Free Levels](https://modrinth.com/mod/tax-free-levels) | `1.5.4` | MIT License | Modrinth download |
+| [Thun's Structures](https://modrinth.com/mod/thuns-structures) | `1.3.2` | MIT License | Modrinth download |
 | [Toast Control](https://modrinth.com/mod/toast-control) | `26.1.2-10.0.0` | MIT License | Modrinth download |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | `26.1.2-11.2.6` | GNU Lesser General Public License v3.0 only | Modrinth download |
 | [Universal Data Pack](https://modrinth.com/mod/universal-data-pack) | `26.1-2.1.0` | GNU General Public License v3.0 or later | Modrinth download |
 | [Whimscape](https://modrinth.com/resourcepack/whimscape) | `26.1-26.2_r1` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | `neoforge-26.1.2-1.44.2` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [XP Tome](https://modrinth.com/mod/xp-tome) | `v2.5.1` | MIT License | Modrinth download |
+| [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | `3.9.6+26.1-neoforge` | GNU Lesser General Public License v3.0 or later | Modrinth download |
 
-Total: **44 external artifacts**.
+Total: **50 external artifacts**.

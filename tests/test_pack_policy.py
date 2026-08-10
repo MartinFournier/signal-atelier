@@ -89,9 +89,36 @@ class PackPolicyTests(unittest.TestCase):
         self.assertTrue(config["enabled"])
         self.assertFalse(config["battery_tracker"]["enabled"])
 
+    def test_structure_spacing_is_sparse(self):
+        config = load_json("structurify.json")
+        general = config["general"]
+        self.assertFalse(general["disabled_all_structures"])
+        self.assertTrue(general["enable_global_spacing_and_separation_modifier"])
+        self.assertEqual(1.75, general["global_spacing_and_separation_modifier"])
+        self.assertEqual([], config["structures"])
+        self.assertEqual([], config["structure_sets"])
+
+    def test_first_install_defaults_are_narrow(self):
+        config = tomllib.loads((CONFIG / "defaultoptions-common.toml").read_text())
+        self.assertEqual("NORMAL", config["defaultDifficulty"])
+        self.assertFalse(config["lockDifficulty"])
+        self.assertEqual(
+            ["Whimscape_26.1-26.2_r1.zip"],
+            config["defaultResourcePacks"],
+        )
+        options = (CONFIG / "defaultoptions/options.txt").read_text().splitlines()
+        self.assertEqual(["pauseOnLostFocus:false"], options)
+        xaero = (CONFIG / "defaultoptions/extra/config/xaeroworldmap.txt").read_text()
+        self.assertEqual("caveMapsAllowed:false\n", xaero)
+        common = (CONFIG / "xaeroworldmap-common.txt").read_text()
+        self.assertEqual("allowCaveModeOnServer:false\n", common)
+
     def test_menu_keeps_required_controls_and_warning(self):
         config = load_json("simplemenu.json5")
-        self.assertEqual("Signal Atelier", config["customWindowTitle"])
+        self.assertEqual(
+            "Signal Atelier 0.3 | Minecraft 26.1.2",
+            config["customWindowTitle"],
+        )
         self.assertTrue(config["setCustomWindowTitle"])
         self.assertTrue(config["setCustomWindowIcon"])
         self.assertTrue(config["replaceMainMenuLogo"])

@@ -1,6 +1,21 @@
 {
   "schema": 1,
   "projects": {
+    "1eAoo2KR": {
+      "title": "YetAnotherConfigLib (YACL)",
+      "slug": "yacl",
+      "project_type": "mod",
+      "categories": [
+        "library",
+        "management",
+        "utility"
+      ],
+      "license": {
+        "id": "LGPL-3.0-or-later",
+        "name": "GNU Lesser General Public License v3.0 or later",
+        "url": ""
+      }
+    },
     "4YkvO5Rp": {
       "title": "Whimscape",
       "slug": "whimscape",
@@ -167,6 +182,20 @@
         "url": ""
       }
     },
+    "HSfsxuTo": {
+      "title": "Explorify",
+      "slug": "explorify",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "worldgen"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
     "HVnmMxH1": {
       "title": "Complementary Shaders - Reimagined",
       "slug": "complementary-reimagined",
@@ -236,6 +265,19 @@
         "id": "MIT",
         "name": "MIT License",
         "url": ""
+      }
+    },
+    "MBAkmtvl": {
+      "title": "Balm",
+      "slug": "balm",
+      "project_type": "mod",
+      "categories": [
+        "library"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": "https://mods.twelveiterations.com/permissions"
       }
     },
     "NcUtCpym": {
@@ -323,6 +365,20 @@
         "url": ""
       }
     },
+    "WEg59z5b": {
+      "title": "Default Options",
+      "slug": "default-options",
+      "project_type": "mod",
+      "categories": [
+        "management",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": "https://mods.twelveiterations.com/permissions"
+      }
+    },
     "YL57xq9U": {
       "title": "Iris Shaders",
       "slug": "iris",
@@ -334,6 +390,21 @@
       "license": {
         "id": "LGPL-3.0-only",
         "name": "GNU Lesser General Public License v3.0 only",
+        "url": ""
+      }
+    },
+    "ZLL4Dkxb": {
+      "title": "Thun's Structures",
+      "slug": "thuns-structures",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "decoration",
+        "worldgen"
+      ],
+      "license": {
+        "id": "MIT",
+        "name": "MIT License",
         "url": ""
       }
     },
@@ -610,6 +681,21 @@
         "name": "",
         "url": "https://github.com/LambdAurora/LambDynamicLights/blob/1.21.5/LICENSE"
       }
+    },
+    "yz7AM2zx": {
+      "title": "Structurify - Structure Control",
+      "slug": "structurify",
+      "project_type": "mod",
+      "categories": [
+        "management",
+        "utility",
+        "worldgen"
+      ],
+      "license": {
+        "id": "LicenseRef-CC-BY-NC-ND-4.0",
+        "name": "",
+        "url": "https://github.com/Faboslav/structurify/blob/master/LICENSE.txt"
+      }
     }
   },
   "versions": {
@@ -640,14 +726,14 @@
       "date_published": "2026-08-03T18:29:24.706416Z",
       "dependencies": [
         {
-          "project_id": "8BmcQJ2H",
-          "version_id": null,
-          "dependency_type": "required"
-        },
-        {
           "project_id": "J8MMsNrL",
           "version_id": null,
           "dependency_type": "optional"
+        },
+        {
+          "project_id": "8BmcQJ2H",
+          "version_id": null,
+          "dependency_type": "required"
         },
         {
           "project_id": "b1ZV3DIJ",
@@ -677,11 +763,25 @@
       "date_published": "2026-07-31T17:00:28.875014Z",
       "dependencies": []
     },
+    "9O7Gqu4j": {
+      "project_id": "ZLL4Dkxb",
+      "version_number": "1.3.2",
+      "version_type": "release",
+      "date_published": "2026-06-27T13:39:26.641275Z",
+      "dependencies": []
+    },
     "Albqzwfg": {
       "project_id": "p19vrgc2",
       "version_number": "1.3.12-neoforge-mc26.1",
       "version_type": "release",
       "date_published": "2026-07-29T22:03:25.224924Z",
+      "dependencies": []
+    },
+    "CuBdAr31": {
+      "project_id": "HSfsxuTo",
+      "version_number": "v1.6.5",
+      "version_type": "release",
+      "date_published": "2026-05-13T14:00:26.385835Z",
       "dependencies": []
     },
     "FzfKD3xX": {
@@ -773,6 +873,13 @@
       "date_published": "2026-06-14T18:21:26.495750Z",
       "dependencies": []
     },
+    "StuyKSnK": {
+      "project_id": "1eAoo2KR",
+      "version_number": "3.9.6+26.1-neoforge",
+      "version_type": "release",
+      "date_published": "2026-07-19T12:41:24.590664Z",
+      "dependencies": []
+    },
     "T1BCIEn8": {
       "project_id": "rlloIFEV",
       "version_number": "26.1.2-11.2.6",
@@ -785,12 +892,12 @@
           "dependency_type": "optional"
         },
         {
-          "project_id": "u6dRKJwZ",
+          "project_id": "nfn13YXA",
           "version_id": null,
           "dependency_type": "optional"
         },
         {
-          "project_id": "jtmvUHXj",
+          "project_id": "u6dRKJwZ",
           "version_id": null,
           "dependency_type": "optional"
         },
@@ -805,17 +912,7 @@
           "dependency_type": "optional"
         },
         {
-          "project_id": "SaCpeal4",
-          "version_id": null,
-          "dependency_type": "optional"
-        },
-        {
           "project_id": "tagwiZkJ",
-          "version_id": null,
-          "dependency_type": "optional"
-        },
-        {
-          "project_id": "nfn13YXA",
           "version_id": null,
           "dependency_type": "optional"
         },
@@ -826,6 +923,16 @@
         },
         {
           "project_id": "DMu0oBKf",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "jtmvUHXj",
+          "version_id": null,
+          "dependency_type": "optional"
+        },
+        {
+          "project_id": "SaCpeal4",
           "version_id": null,
           "dependency_type": "optional"
         }
@@ -883,6 +990,13 @@
       "version_number": "1.11.3+26.1-neoforge",
       "version_type": "release",
       "date_published": "2026-08-03T20:53:13.090140Z",
+      "dependencies": []
+    },
+    "aL65cBEV": {
+      "project_id": "MBAkmtvl",
+      "version_number": "26.1.2.11+neoforge-26.1.2",
+      "version_type": "release",
+      "date_published": "2026-07-31T06:12:11.047372Z",
       "dependencies": []
     },
     "adbrNJLm": {
@@ -971,6 +1085,19 @@
           "project_id": "u6dRKJwZ",
           "version_id": null,
           "dependency_type": "optional"
+        }
+      ]
+    },
+    "hakaEFny": {
+      "project_id": "WEg59z5b",
+      "version_number": "26.1.2.2+neoforge-26.1.2",
+      "version_type": "release",
+      "date_published": "2026-07-24T06:55:17.741407Z",
+      "dependencies": [
+        {
+          "project_id": "MBAkmtvl",
+          "version_id": null,
+          "dependency_type": "required"
         }
       ]
     },
@@ -1097,6 +1224,19 @@
       "dependencies": [
         {
           "project_id": "RH2KUdKJ",
+          "version_id": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    "zmjp9Hlc": {
+      "project_id": "yz7AM2zx",
+      "version_number": "neoforge-2.0.30+mc26.1.2",
+      "version_type": "release",
+      "date_published": "2026-07-31T12:33:28.659148Z",
+      "dependencies": [
+        {
+          "project_id": "1eAoo2KR",
           "version_id": null,
           "dependency_type": "required"
         }
