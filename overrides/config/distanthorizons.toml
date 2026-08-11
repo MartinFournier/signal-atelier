@@ -1,0 +1,7 @@
+_version = 4
+
+[client.advanced.graphics.quality]
+lodChunkRenderDistanceRadius = 128
+
+[common.worldGenerator]
+enableDistantGeneration = false

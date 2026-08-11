@@ -56,11 +56,13 @@ files embedded in the Signal Atelier archive.
 | [Athena](https://modrinth.com/mod/athena-ctm) | `4.7.3` | MIT License | Modrinth download |
 | [Balm](https://modrinth.com/mod/balm) | `26.1.2.10+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) | Modrinth download |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) | Modrinth download |
+| [BetterF3](https://modrinth.com/mod/betterf3) | `18.0.2` | MIT License | Modrinth download |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) | `26.1.154+neoforge` | GNU Lesser General Public License v3.0 only | Modrinth download |
 | [Collective](https://modrinth.com/mod/collective) | `26.1.2-8.32-fabric+forge+neo` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) | `r5.8.1` | [LicenseRef-Custom](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt) | Modrinth download |
 | [Default Options](https://modrinth.com/mod/default-options) | `26.1.2.2+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) | Modrinth download |
+| [Distant Horizons](https://modrinth.com/mod/distanthorizons) | `3.1.2-b-26.1.2` | GNU Lesser General Public License v3.0 only | Modrinth download |
 | [Dynamic FPS](https://modrinth.com/mod/dynamic-fps) | `3.11.7` | MIT License | Modrinth download |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) | `26.1.2.5` | GNU Lesser General Public License v2.1 only | Modrinth download |
 | [Explorify](https://modrinth.com/mod/explorify) | `v1.6.5` | LicenseRef-All-Rights-Reserved | Modrinth download |
@@ -102,4 +104,4 @@ files embedded in the Signal Atelier archive.
 | [XP Tome](https://modrinth.com/mod/xp-tome) | `v2.5.1` | MIT License | Modrinth download |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | `3.9.6+26.1-neoforge` | GNU Lesser General Public License v3.0 or later | Modrinth download |
 
-Total: **50 external artifacts**.
+Total: **52 external artifacts**.

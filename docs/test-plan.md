@@ -76,6 +76,11 @@ each local comparison, but do not commit unsanitized logs.
   stacks causes no loss, duplication, locked-slot violation, or unsolicited
   hotbar replacement.
 - Confirm Xaero's World Map reveals only explored terrain.
+- Confirm Distant Horizons renders retained LODs to 128 chunks, does not
+  generate or reveal unexplored terrain, and transitions cleanly between
+  vanilla chunks and LODs above and below ground.
+- Confirm BetterF3 replaces the debug overlay, remains legible with Whimscape,
+  and preserves the vanilla debug shortcuts used during testing.
 - Verify entity tracking and map teleportation are disabled; test player
   markers separately if World Map supports them without the Minimap.
 - Generate multiple disposable seeds and sample new chunks for Explorify,

@@ -105,6 +105,11 @@
 - Disable Xaero cave maps by default and prohibit cave mode through the
   server-capable World Map common configuration. Retain surface mapping of only
   chunks received by the client.
+- Add Distant Horizons client-side for long landscape views. Default its LOD
+  radius to 128 chunks and disable distant generation so it builds detail from
+  terrain the client actually receives instead of revealing unexplored land.
+- Use BetterF3 to make the debug overlay easier to scan and customize without
+  changing server behavior or progression.
 - Keep backups outside the instance and Git. Prefer host or filesystem
   snapshots over the immature 26.1 backup-mod ecosystem.
 - Add Simple Menu as the lightweight client-side branding layer.
