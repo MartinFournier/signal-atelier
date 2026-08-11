@@ -12,13 +12,13 @@ Run `scripts/generate_reference.py` after changing those sources.
 | Pack | Signal Atelier 0.3.0 |
 | Minecraft | 26.1.2 |
 | NeoForge | 26.1.2.81 |
-| Artifacts | 50 |
-| Client required | 48 |
+| Artifacts | 52 |
+| Client required | 50 |
 | Client optional | 2 |
 | Client unsupported | 0 |
 | Server required | 29 |
 | Server optional | 1 |
-| Server unsupported | 20 |
+| Server unsupported | 22 |
 | Recipe locks | 26 |
 | Quest chapters | 7 |
 | Quest milestones | 44 |
@@ -32,10 +32,12 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `athena-4.7.3.jar` | [Modrinth](https://modrinth.com/project/b1ZV3DIJ) | required | required |
 | `balm-neoforge-26.1.2-26.1.2.10.jar` | [Modrinth](https://modrinth.com/project/MBAkmtvl) | required | unsupported |
 | `BetterAdvancements-NeoForge-26.1.2-0.6.0.76.jar` | [Modrinth](https://modrinth.com/project/Q2OqKxDG) | required | unsupported |
+| `BetterF3-18.0.2-NeoForge-26.1.jar` | [Modrinth](https://modrinth.com/project/8shC1gFX) | required | unsupported |
 | `chunkloaders-1.2.9-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/t1VgucWo) | required | required |
 | `cloth-config-26.1.154.jar` | [Modrinth](https://modrinth.com/project/9s6osm5g) | required | required |
 | `collective-26.1.2-8.32.jar` | [Modrinth](https://modrinth.com/project/e0M1UDsY) | required | required |
 | `defaultoptions-neoforge-26.1.2-26.1.2.2.jar` | [Modrinth](https://modrinth.com/project/WEg59z5b) | required | unsupported |
+| `DistantHorizons-3.1.2-b-26.1.2-fabric-neoforge.jar` | [Modrinth](https://modrinth.com/project/uCdwusMi) | required | unsupported |
 | `dynamic-fps-3.11.7+minecraft-26.1.0-neoforge.jar` | [Modrinth](https://modrinth.com/project/LQ3K71Q1) | required | unsupported |
 | `EnchantmentDescriptions-neoforge-MC26.1.2-26.1.2.5.jar` | [Modrinth](https://modrinth.com/project/UVtY3ZAC) | required | unsupported |
 | `Explorify v1.6.5.mod.jar` | [Modrinth](https://modrinth.com/project/HSfsxuTo) | optional | required |
@@ -115,6 +117,7 @@ Empty datapack recipes remove these survival crafting paths:
 - `config/defaultoptions/extra/config/xaeroworldmap.txt`
 - `config/defaultoptions/options.txt`
 - `config/defaultoptions-common.toml`
+- `config/distanthorizons.toml`
 - `config/dynamic_fps.json`
 - `config/simplemenu/icon/icon_16x16.png`
 - `config/simplemenu/icon/icon_32x32.png`

@@ -661,6 +661,36 @@
       "fileSize": 1070504
     },
     {
+      "path": "mods/DistantHorizons-3.1.2-b-26.1.2-fabric-neoforge.jar",
+      "hashes": {
+        "sha1": "21298a8049ecc5efd6df6eeb92c2b3737bed3afe",
+        "sha512": "c3563d7ba3101ae577d46a3b418bca6f8a8c233130153dfe2ba58d62d72c4b99bb5137f26ba80fe0aaf39a4614e09ed32de40e287208ab873df0f0f984335342"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/uCdwusMi/versions/SLJu35DT/DistantHorizons-3.1.2-b-26.1.2-fabric-neoforge.jar"
+      ],
+      "fileSize": 30169200
+    },
+    {
+      "path": "mods/BetterF3-18.0.2-NeoForge-26.1.jar",
+      "hashes": {
+        "sha1": "279aa10f2b59769f4b329d11d599c416934b0f25",
+        "sha512": "0118401bd8c764545f7c03f6c251109369950acc251a0a8cc481b671466fc1866ef72d2b5492e0b65817fe5e30fe5e3fee05ef4e6aaba8ec5e3dde309a084a30"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/8shC1gFX/versions/qX8kcwKf/BetterF3-18.0.2-NeoForge-26.1.jar"
+      ],
+      "fileSize": 494981
+    },
+    {
       "path": "mods/Explorify v1.6.5.mod.jar",
       "hashes": {
         "sha1": "5fb28be29200a41b034e423d87823eb19ad651cd",

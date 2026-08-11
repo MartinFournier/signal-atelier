@@ -14,11 +14,13 @@ relationships. Select a column heading to sort the table.
 | [Athena](https://modrinth.com/mod/athena-ctm) | decoration; library | `4.7.3` | MIT License |
 | [Balm](https://modrinth.com/mod/balm) | library | `26.1.2.10+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | utility | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) |
+| [BetterF3](https://modrinth.com/mod/betterf3) | decoration; game-mechanics; utility | `18.0.2` | MIT License |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | technology; utility | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) | library | `26.1.154+neoforge` | GNU Lesser General Public License v3.0 only |
 | [Collective](https://modrinth.com/mod/collective) | library | `26.1.2-8.32-fabric+forge+neo` | LicenseRef-All-Rights-Reserved |
 | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) | colored-lighting; vanilla-like | `r5.8.1` | [LicenseRef-Custom](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt) |
 | [Default Options](https://modrinth.com/mod/default-options) | management; utility | `26.1.2.2+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
+| [Distant Horizons](https://modrinth.com/mod/distanthorizons) | optimization; utility | `3.1.2-b-26.1.2` | GNU Lesser General Public License v3.0 only |
 | [Dynamic FPS](https://modrinth.com/mod/dynamic-fps) | management; optimization; utility | `3.11.7` | MIT License |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) | magic; utility | `26.1.2.5` | GNU Lesser General Public License v2.1 only |
 | [Explorify](https://modrinth.com/mod/explorify) | adventure; worldgen | `v1.6.5` | LicenseRef-All-Rights-Reserved |
@@ -60,4 +62,4 @@ relationships. Select a column heading to sort the table.
 | [XP Tome](https://modrinth.com/mod/xp-tome) | adventure; storage; utility | `v2.5.1` | MIT License |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | library; management; utility | `3.9.6+26.1-neoforge` | GNU Lesser General Public License v3.0 or later |
 
-Total: **50 artifacts**.
+Total: **52 artifacts**.
