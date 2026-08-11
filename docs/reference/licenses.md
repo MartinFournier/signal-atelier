@@ -42,6 +42,7 @@ outside the normal Modrinth download flow.
 | [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib) | `1.1.8-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib) | `1.1.22-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Whimscape](https://modrinth.com/resourcepack/whimscape) | `26.1-26.2_r1` | LicenseRef-All-Rights-Reserved |
+| [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | `neoforge-26.1.2-26.4.2` | LicenseRef-All-Rights-Reserved |
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | `neoforge-26.1.2-1.44.2` | LicenseRef-All-Rights-Reserved |
 
 ## Complete upstream attribution
@@ -100,8 +101,9 @@ files embedded in the Signal Atelier archive.
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | `26.1.2-11.2.6` | GNU Lesser General Public License v3.0 only | Modrinth download |
 | [Universal Data Pack](https://modrinth.com/mod/universal-data-pack) | `26.1-2.1.0` | GNU General Public License v3.0 or later | Modrinth download |
 | [Whimscape](https://modrinth.com/resourcepack/whimscape) | `26.1-26.2_r1` | LicenseRef-All-Rights-Reserved | Modrinth download |
+| [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | `neoforge-26.1.2-26.4.2` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | `neoforge-26.1.2-1.44.2` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [XP Tome](https://modrinth.com/mod/xp-tome) | `v2.5.1` | MIT License | Modrinth download |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | `3.9.6+26.1-neoforge` | GNU Lesser General Public License v3.0 or later | Modrinth download |
 
-Total: **52 external artifacts**.
+Total: **53 external artifacts**.

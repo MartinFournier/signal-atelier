@@ -12,13 +12,13 @@ Run `scripts/generate_reference.py` after changing those sources.
 | Pack | Signal Atelier 0.3.0 |
 | Minecraft | 26.1.2 |
 | NeoForge | 26.1.2.81 |
-| Artifacts | 52 |
-| Client required | 50 |
+| Artifacts | 53 |
+| Client required | 51 |
 | Client optional | 2 |
 | Client unsupported | 0 |
 | Server required | 29 |
 | Server optional | 1 |
-| Server unsupported | 22 |
+| Server unsupported | 23 |
 | Recipe locks | 26 |
 | Quest chapters | 7 |
 | Quest milestones | 44 |
@@ -74,6 +74,7 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `ToastControl-26.1.2-10.0.0.jar` | [Modrinth](https://modrinth.com/project/CnOG2wlS) | required | unsupported |
 | `travelersbackpack-neoforge-26.1.2-11.2.6.jar` | [Modrinth](https://modrinth.com/project/rlloIFEV) | required | required |
 | `universaldatapack-26.1-2.1.0.jar` | [Modrinth](https://modrinth.com/project/TPKaNwWP) | required | required |
+| `xaerominimap-neoforge-26.1.2-26.4.2.jar` | [Modrinth](https://modrinth.com/project/1bokaNcj) | required | unsupported |
 | `xaeroworldmap-neoforge-26.1.2-1.44.2.jar` | [Modrinth](https://modrinth.com/project/NcUtCpym) | required | required |
 | `xptome-neoforge-26.1.2-2.5.1.jar` | [Modrinth](https://modrinth.com/project/AnpW69o3) | required | required |
 | `yet_another_config_lib_v3-3.9.6+26.1-neoforge.jar` | [Modrinth](https://modrinth.com/project/1eAoo2KR) | required | required |
@@ -114,6 +115,7 @@ Empty datapack recipes remove these survival crafting paths:
 ## Shipped configuration and assets
 
 - `config/chunkloaders.toml`
+- `config/defaultoptions/extra/config/xaerominimap.txt`
 - `config/defaultoptions/extra/config/xaeroworldmap.txt`
 - `config/defaultoptions/options.txt`
 - `config/defaultoptions-common.toml`

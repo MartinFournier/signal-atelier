@@ -38,9 +38,10 @@ the Prism console and `latest.log` before using Prism's Kill action.
 - [ ] Open Simply Quests. Confirm seven chapters, 44 milestones, descriptive
       item icons, and manual checkboxes. Complete and claim one milestone;
       confirm its small item reward arrives once and does not auto-repeat.
-- [ ] Open Xaero's World Map above ground and underground. Confirm unexplored
-      terrain and caves are not revealed, and teleportation/entity radar are
-      unavailable.
+- [ ] Open Xaero's World Map and Minimap above ground and underground. Create
+      one waypoint and confirm it appears on both maps and in-world, while
+      unexplored terrain and caves stay hidden and teleportation/entity radar
+      remain unavailable.
 - [ ] Move focus to another window. Confirm Minecraft keeps running without
       opening the pause menu, then verify the player can change this preference.
 - [ ] Explore new terrain briefly. Added landmarks should feel occasional, not

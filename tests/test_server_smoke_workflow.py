@@ -8,6 +8,7 @@ WORKFLOW = ROOT / ".github/workflows/server-smoke.yml"
 CLIENT_ONLY_OVERRIDES = {
     "overrides/config/defaultoptions-common.toml",
     "overrides/config/defaultoptions/extra/config/xaeroworldmap.txt",
+    "overrides/config/defaultoptions/extra/config/xaerominimap.txt",
     "overrides/config/defaultoptions/options.txt",
     "overrides/config/distanthorizons.toml",
     "overrides/config/dynamic_fps.json",

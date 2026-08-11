@@ -30,8 +30,8 @@ Create a new survival world that you are willing to delete. Verify that:
 - Traveler's Backpack opens, places, and deploys its sleeping bag without
   changing the player's respawn point.
 - A death creates an owner-restricted grave and returns all inventory safely.
-- Xaero's World Map reveals explored terrain without teleportation or entity
-  radar.
+- Xaero's World Map and Minimap reveal explored terrain and ordinary waypoints
+  without cave mapping, teleportation, or entity radar.
 
 Backpack limits are configured but still require runtime verification. Map
 privacy, quest content, and optional client defaults may require sanitized

@@ -38,10 +38,10 @@
   runtime configuration is captured and validated. Treat it as client-only:
   despite its published server environment, version 2.0.0 loads client GUI
   classes during construction and crashes a dedicated server.
-- Add Xaero's World Map without Xaero's Minimap.
+- Pair Xaero's World Map with Xaero's Minimap for local navigation and visible
+  waypoint guidance.
 - Limit mapping to explored terrain and ordinary waypoints. Disable entity
-  tracking and map teleportation; allow player markers only if World Map
-  supports them independently.
+  radar, cave mapping, and waypoint teleportation.
 - Use Lithium on both client and server, and ImmediatelyFast on the client.
 - Add Dynamic FPS for background resource savings with optional runtime
   battery-library downloads disabled.
@@ -132,7 +132,7 @@
 ## Deferred
 
 - Voice chat, land claims, and public-server administration.
-- Xaero's Minimap and live entity radar.
+- Live entity radar.
 - Polymorph unless an actual recipe conflict is found.
 - Entity Culling unless profiling finds a remaining entity-render bottleneck
   after Sodium's asynchronous occlusion culling.
