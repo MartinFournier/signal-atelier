@@ -646,19 +646,19 @@
       "fileSize": 110211
     },
     {
-      "path": "mods/balm-neoforge-26.1.2-26.1.2.11.jar",
+      "path": "mods/balm-neoforge-26.1.2-26.1.2.10.jar",
       "hashes": {
-        "sha1": "dcccc9fb517898baf82fed43b702632b4412f6ff",
-        "sha512": "11b7b43102127af4e1d5529fa808da5caa33b27dea6379c2a71a8d8ce64b95c5bcd155a64555abc70f522ce8ce723a0106776977ae062887eb0ed04ae41c5717"
+        "sha1": "29088bfb8556a85bee2abfec0886d2ef722a249d",
+        "sha512": "09f1313208bbb75e3a19e8986a079f0b16be92064590e580629be1700a5c053e52e6bbd0b05fd9d4e9bd5abdc8800b77204d03e9811826f1c5d348129bfc548d"
       },
       "env": {
         "client": "required",
         "server": "unsupported"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/MBAkmtvl/versions/aL65cBEV/balm-neoforge-26.1.2-26.1.2.11.jar"
+        "https://cdn.modrinth.com/data/MBAkmtvl/versions/FAvYxD39/balm-neoforge-26.1.2-26.1.2.10.jar"
       ],
-      "fileSize": 1070572
+      "fileSize": 1070504
     },
     {
       "path": "mods/Explorify v1.6.5.mod.jar",

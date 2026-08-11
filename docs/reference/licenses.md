@@ -23,7 +23,7 @@ outside the normal Modrinth download flow.
 
 | Project | Version | Reported license |
 | --- | --- | --- |
-| [Balm](https://modrinth.com/mod/balm) | `26.1.2.11+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
+| [Balm](https://modrinth.com/mod/balm) | `26.1.2.10+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Collective](https://modrinth.com/mod/collective) | `26.1.2-8.32-fabric+forge+neo` | LicenseRef-All-Rights-Reserved |
@@ -54,7 +54,7 @@ files embedded in the Signal Atelier archive.
 | [AppleSkin](https://modrinth.com/mod/appleskin) | `3.0.9+mc26.1` | The Unlicense | Modrinth download |
 | [Architectury API](https://modrinth.com/mod/architectury-api) | `20.0.12+neoforge` | GNU Lesser General Public License v3.0 only | Modrinth download |
 | [Athena](https://modrinth.com/mod/athena-ctm) | `4.7.3` | MIT License | Modrinth download |
-| [Balm](https://modrinth.com/mod/balm) | `26.1.2.11+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) | Modrinth download |
+| [Balm](https://modrinth.com/mod/balm) | `26.1.2.10+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) | Modrinth download |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) | Modrinth download |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved | Modrinth download |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) | `26.1.154+neoforge` | GNU Lesser General Public License v3.0 only | Modrinth download |
