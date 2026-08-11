@@ -726,14 +726,14 @@
       "date_published": "2026-08-03T18:29:24.706416Z",
       "dependencies": [
         {
-          "project_id": "J8MMsNrL",
-          "version_id": null,
-          "dependency_type": "optional"
-        },
-        {
           "project_id": "8BmcQJ2H",
           "version_id": null,
           "dependency_type": "required"
+        },
+        {
+          "project_id": "J8MMsNrL",
+          "version_id": null,
+          "dependency_type": "optional"
         },
         {
           "project_id": "b1ZV3DIJ",
@@ -782,6 +782,13 @@
       "version_number": "v1.6.5",
       "version_type": "release",
       "date_published": "2026-05-13T14:00:26.385835Z",
+      "dependencies": []
+    },
+    "FAvYxD39": {
+      "project_id": "MBAkmtvl",
+      "version_number": "26.1.2.10+neoforge-26.1.2",
+      "version_type": "release",
+      "date_published": "2026-07-19T06:32:37.385842Z",
       "dependencies": []
     },
     "FzfKD3xX": {
@@ -843,9 +850,9 @@
       "date_published": "2026-06-16T09:19:22.824883Z",
       "dependencies": [
         {
-          "project_id": "reCfnRvJ",
+          "project_id": "P7dR8mSH",
           "version_id": null,
-          "dependency_type": "incompatible"
+          "dependency_type": "required"
         },
         {
           "project_id": "PxQSWIcD",
@@ -853,9 +860,9 @@
           "dependency_type": "incompatible"
         },
         {
-          "project_id": "P7dR8mSH",
+          "project_id": "reCfnRvJ",
           "version_id": null,
-          "dependency_type": "required"
+          "dependency_type": "incompatible"
         }
       ]
     },
@@ -990,13 +997,6 @@
       "version_number": "1.11.3+26.1-neoforge",
       "version_type": "release",
       "date_published": "2026-08-03T20:53:13.090140Z",
-      "dependencies": []
-    },
-    "aL65cBEV": {
-      "project_id": "MBAkmtvl",
-      "version_number": "26.1.2.11+neoforge-26.1.2",
-      "version_type": "release",
-      "date_published": "2026-07-31T06:12:11.047372Z",
       "dependencies": []
     },
     "adbrNJLm": {

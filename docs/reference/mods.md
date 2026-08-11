@@ -12,7 +12,7 @@ relationships. Select a column heading to sort the table.
 | [AppleSkin](https://modrinth.com/mod/appleskin) | food; utility | `3.0.9+mc26.1` | The Unlicense |
 | [Architectury API](https://modrinth.com/mod/architectury-api) | library | `20.0.12+neoforge` | GNU Lesser General Public License v3.0 only |
 | [Athena](https://modrinth.com/mod/athena-ctm) | decoration; library | `4.7.3` | MIT License |
-| [Balm](https://modrinth.com/mod/balm) | library | `26.1.2.11+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
+| [Balm](https://modrinth.com/mod/balm) | library | `26.1.2.10+neoforge-26.1.2` | [LicenseRef-All-Rights-Reserved](https://mods.twelveiterations.com/permissions) |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) | utility | `0.6.0.76` | [LicenseRef-Dont-Be-a-Jerk](https://github.com/way2muchnoise/BetterAdvancements/blob/master/LICENSE.md) |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | technology; utility | `1.2.9-neoforge-mc26.1` | LicenseRef-All-Rights-Reserved |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) | library | `26.1.154+neoforge` | GNU Lesser General Public License v3.0 only |

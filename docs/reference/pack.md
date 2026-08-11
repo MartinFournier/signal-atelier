@@ -30,7 +30,7 @@ Run `scripts/generate_reference.py` after changing those sources.
 | `appleskin-neoforge-mc26.1-3.0.9.jar` | [Modrinth](https://modrinth.com/project/EsAfCjCV) | required | unsupported |
 | `architectury-neoforge-20.0.12.jar` | [Modrinth](https://modrinth.com/project/lhGA9TYQ) | required | required |
 | `athena-4.7.3.jar` | [Modrinth](https://modrinth.com/project/b1ZV3DIJ) | required | required |
-| `balm-neoforge-26.1.2-26.1.2.11.jar` | [Modrinth](https://modrinth.com/project/MBAkmtvl) | required | unsupported |
+| `balm-neoforge-26.1.2-26.1.2.10.jar` | [Modrinth](https://modrinth.com/project/MBAkmtvl) | required | unsupported |
 | `BetterAdvancements-NeoForge-26.1.2-0.6.0.76.jar` | [Modrinth](https://modrinth.com/project/Q2OqKxDG) | required | unsupported |
 | `chunkloaders-1.2.9-neoforge-mc26.1.jar` | [Modrinth](https://modrinth.com/project/t1VgucWo) | required | required |
 | `cloth-config-26.1.154.jar` | [Modrinth](https://modrinth.com/project/9s6osm5g) | required | required |
