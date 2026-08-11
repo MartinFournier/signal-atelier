@@ -1,6 +1,21 @@
 {
   "schema": 1,
   "projects": {
+    "1bokaNcj": {
+      "title": "Xaero's Minimap",
+      "slug": "xaeros-minimap",
+      "project_type": "mod",
+      "categories": [
+        "adventure",
+        "transportation",
+        "utility"
+      ],
+      "license": {
+        "id": "LicenseRef-All-Rights-Reserved",
+        "name": "",
+        "url": ""
+      }
+    },
     "1eAoo2KR": {
       "title": "YetAnotherConfigLib (YACL)",
       "slug": "yacl",
@@ -884,12 +899,12 @@
           "dependency_type": "required"
         },
         {
-          "project_id": "PxQSWIcD",
+          "project_id": "reCfnRvJ",
           "version_id": null,
           "dependency_type": "incompatible"
         },
         {
-          "project_id": "reCfnRvJ",
+          "project_id": "PxQSWIcD",
           "version_id": null,
           "dependency_type": "incompatible"
         }
@@ -1163,6 +1178,19 @@
       "version_type": "release",
       "date_published": "2026-06-25T11:38:51.753761Z",
       "dependencies": []
+    },
+    "j8fQFbeU": {
+      "project_id": "1bokaNcj",
+      "version_number": "neoforge-26.1.2-26.4.2",
+      "version_type": "release",
+      "date_published": "2026-07-17T08:57:36.744765Z",
+      "dependencies": [
+        {
+          "project_id": "gF3BGWvG",
+          "version_id": null,
+          "dependency_type": "optional"
+        }
+      ]
     },
     "jNWL0rAJ": {
       "project_id": "J8MMsNrL",

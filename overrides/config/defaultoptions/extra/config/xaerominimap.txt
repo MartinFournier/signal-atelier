@@ -1,0 +1,6 @@
+allowWrongWorldTeleportation:false
+minimap:true
+caveMaps:0
+showWaypoints:true
+showIngameWaypoints:true
+entityRadar:false

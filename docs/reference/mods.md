@@ -58,8 +58,9 @@ relationships. Select a column heading to sort the table.
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | adventure; equipment; storage | `26.1.2-11.2.6` | GNU Lesser General Public License v3.0 only |
 | [Universal Data Pack](https://modrinth.com/mod/universal-data-pack) | game-mechanics; management; utility | `26.1-2.1.0` | GNU General Public License v3.0 or later |
 | [Whimscape](https://modrinth.com/resourcepack/whimscape) | 16x; entities; models | `26.1-26.2_r1` | LicenseRef-All-Rights-Reserved |
+| [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | adventure; transportation; utility | `neoforge-26.1.2-26.4.2` | LicenseRef-All-Rights-Reserved |
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | adventure; transportation; utility | `neoforge-26.1.2-1.44.2` | LicenseRef-All-Rights-Reserved |
 | [XP Tome](https://modrinth.com/mod/xp-tome) | adventure; storage; utility | `v2.5.1` | MIT License |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | library; management; utility | `3.9.6+26.1-neoforge` | GNU Lesser General Public License v3.0 or later |
 
-Total: **52 artifacts**.
+Total: **53 artifacts**.

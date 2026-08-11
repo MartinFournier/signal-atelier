@@ -76,6 +76,8 @@ each local comparison, but do not commit unsanitized logs.
   stacks causes no loss, duplication, locked-slot violation, or unsolicited
   hotbar replacement.
 - Confirm Xaero's World Map reveals only explored terrain.
+- Confirm Xaero's Minimap shows the same ordinary waypoints above ground and
+  in-world while cave mapping, entity radar, and teleportation remain disabled.
 - Confirm Distant Horizons renders retained LODs to 128 chunks, does not
   generate or reveal unexplored terrain, and transitions cleanly between
   vanilla chunks and LODs above and below ground.

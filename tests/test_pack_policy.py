@@ -110,6 +110,18 @@ class PackPolicyTests(unittest.TestCase):
         self.assertEqual(["pauseOnLostFocus:false"], options)
         xaero = (CONFIG / "defaultoptions/extra/config/xaeroworldmap.txt").read_text()
         self.assertEqual("caveMapsAllowed:false\n", xaero)
+        minimap = dict(
+            line.split(":", 1)
+            for line in (
+                CONFIG / "defaultoptions/extra/config/xaerominimap.txt"
+            ).read_text().splitlines()
+        )
+        self.assertEqual("true", minimap["minimap"])
+        self.assertEqual("true", minimap["showWaypoints"])
+        self.assertEqual("true", minimap["showIngameWaypoints"])
+        self.assertEqual("0", minimap["caveMaps"])
+        self.assertEqual("false", minimap["entityRadar"])
+        self.assertEqual("false", minimap["allowWrongWorldTeleportation"])
         common = (CONFIG / "xaeroworldmap-common.txt").read_text()
         self.assertEqual("allowCaveModeOnServer:false\n", common)
 

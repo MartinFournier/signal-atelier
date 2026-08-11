@@ -25,8 +25,8 @@ validation** may change after the first graphical gameplay pass.
   slots; higher tiers and most automation-style upgrades are locked.
 - Its sleeping bag is temporary and should not change the player's respawn
   point.
-- **Xaero's World Map** records explored terrain without teleportation or
-  entity radar. Player-marker behavior is pending runtime validation.
+- **Xaero's World Map and Minimap** record explored terrain and keep ordinary
+  waypoints visible without cave mapping, teleportation, or entity radar.
 - Oritech's late-game transport is the intended alternative to a general
   Waystones network.
 - Explorify and Thun's Structures add occasional landmarks in new chunks. A

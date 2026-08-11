@@ -691,6 +691,21 @@
       "fileSize": 494981
     },
     {
+      "path": "mods/xaerominimap-neoforge-26.1.2-26.4.2.jar",
+      "hashes": {
+        "sha1": "2ba8a5fb2b89b1214dab270a94b804aa6852f997",
+        "sha512": "01d6ddc5fda52de14b75e33331295e925a4c1dc0ef2023350d761f74374ef3e20cccaecc3829d6334ce8ee73bec38e7a49a56222e61775f980b90e329993863f"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/1bokaNcj/versions/j8fQFbeU/xaerominimap-neoforge-26.1.2-26.4.2.jar"
+      ],
+      "fileSize": 2166116
+    },
+    {
       "path": "mods/Explorify v1.6.5.mod.jar",
       "hashes": {
         "sha1": "5fb28be29200a41b034e423d87823eb19ad651cd",
