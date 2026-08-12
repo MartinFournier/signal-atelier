@@ -3,7 +3,7 @@
   "customWindowTitle": "Signal Atelier 0.3 | Minecraft 26.1.2",
   "setCustomWindowIcon": true,
   "replaceMainMenuLogo": true,
-  "replaceMainMenuEditionLogo": false,
+  "replaceMainMenuEditionLogo": true,
   "setCustomBackground": false,
   "hideMinecraftRealmsButton": true,
   "expandModsButton": true,
@@ -11,7 +11,7 @@
   "serverPromoButtonTextDefault": "",
   "serverPromoButtonTextOnHover": "",
   "serverPromoButtonClickURL": "",
-  "hideSplashText": false,
+  "hideSplashText": true,
   "removeExperimentalModLoaderText": false,
   "removeTextBottomLeft": false
 }

@@ -126,6 +126,7 @@ Empty datapack recipes remove these survival crafting paths:
 - `config/dynamic_fps.json`
 - `config/simplemenu/icon/icon_16x16.png`
 - `config/simplemenu/icon/icon_32x32.png`
+- `config/simplemenu/logo/edition.png`
 - `config/simplemenu/logo/logo.png`
 - `config/simplemenu.json5`
 - `config/simplyquests/chapters/distributed_works.json`
