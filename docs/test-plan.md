@@ -55,6 +55,8 @@ each local comparison, but do not commit unsanitized logs.
   remote sites.
 - Verify Traveler's Backpack capacities stop at the accepted 9, 18, and 27
   slots and that higher tiers and disallowed upgrades have no survival path.
+- Craft the standard backpack through its tank-based recipe, fill and empty
+  both 1,000 mB tanks, and confirm the separate tanks upgrade remains locked.
 - Confirm backpacks cannot contain backpacks or filled shulker boxes.
 - Test backpack contents across death, logout, server restart, placement, and
   break-and-pickup cycles.

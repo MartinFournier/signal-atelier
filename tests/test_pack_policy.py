@@ -57,8 +57,12 @@ class PackPolicyTests(unittest.TestCase):
 
         upgrades = server["backpackUpgrades"]
         self.assertTrue(upgrades["enableSleepingBag"])
+        self.assertTrue(upgrades["enableTanksUpgrade"])
         for key, value in upgrades.items():
-            if key.startswith("enable") and key != "enableSleepingBag":
+            if key.startswith("enable") and key not in {
+                "enableSleepingBag",
+                "enableTanksUpgrade",
+            }:
                 self.assertFalse(value, key)
         for section, values in upgrades.items():
             if section.endswith("UpgradeSettings"):

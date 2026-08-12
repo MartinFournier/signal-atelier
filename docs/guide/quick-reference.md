@@ -22,7 +22,8 @@ validation** may change after the first graphical gameplay pass.
   pending runtime configuration and validation.
 
 - **Traveler's Backpack** is limited to restrained capacities of 9, 18, and 27
-  slots; higher tiers and most automation-style upgrades are locked.
+  slots with its two built-in 1,000 mB tanks; higher tiers and most
+  automation-style upgrades are locked.
 - Its sleeping bag is temporary and should not change the player's respawn
   point.
 - **Xaero's World Map and Minimap** record explored terrain and keep ordinary

@@ -21,8 +21,10 @@
 - Add Traveler's Backpack for modest expedition storage. Retain its sleeping
   bag because it skips the night without changing the player's spawn point.
 - Target 9, 18, and 27 storage slots across the first three tiers. Disable
-  higher tiers, backpack nesting, tanks, crafting, furnace, feeding, magnet,
-  pickup, void, lantern, special abilities, and generated backpack loot.
+  higher tiers, backpack nesting, crafting, furnace, feeding, magnet, pickup,
+  void, lantern, special abilities, and generated backpack loot. Retain the
+  two built-in 1,000 mB tanks because the standard backpack recipe requires
+  tank items; keep the separate tanks-upgrade recipe locked.
 - Add GraveStone Mod as the sole death-recovery system with no grave expiry or
   teleport-to-grave feature.
 - Keep graves owner-restricted initially and verify multiplayer ownership and
