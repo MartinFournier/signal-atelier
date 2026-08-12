@@ -134,6 +134,51 @@ class PackPolicyTests(unittest.TestCase):
         common = (CONFIG / "xaeroworldmap-common.txt").read_text()
         self.assertEqual("allowCaveModeOnServer:false\n", common)
 
+    def test_betterf3_first_install_layout_is_compact(self):
+        config = tomllib.loads(
+            (
+                CONFIG / "defaultoptions/extra/config/betterf3.toml"
+            ).read_text()
+        )
+        self.assertEqual(0.8, config["general"]["fontScale"])
+        self.assertTrue(config["general"]["performance_optimizations"])
+        self.assertTrue(config["general"]["hide_bossbar"])
+        self.assertEqual(
+            ["minecraft", "fps", "coords", "graphics", "empty"],
+            [module["name"] for module in config["modules_left"]],
+        )
+        self.assertEqual(
+            ["system"],
+            [module["name"] for module in config["modules_right"]],
+        )
+
+    def test_distant_horizons_uses_effective_client_defaults(self):
+        config = tomllib.loads((CONFIG / "DistantHorizons.toml").read_text())
+        self.assertFalse(config["client"]["advanced"]["autoUpdater"]["enableAutoUpdater"])
+        self.assertEqual(
+            "OPEN_GL",
+            config["client"]["advanced"]["graphics"]["experimental"][
+                "renderingEngine"
+            ],
+        )
+        self.assertEqual(
+            128,
+            config["client"]["advanced"]["graphics"]["quality"][
+                "lodChunkRenderDistanceRadius"
+            ],
+        )
+        self.assertFalse(config["common"]["worldGenerator"]["enableDistantGeneration"])
+
+    def test_minimap_starts_on_right(self):
+        hud = (CONFIG / "defaultoptions/extra/config/xaerohud.txt").read_text()
+        self.assertIn("id=xaerominimap:minimap", hud)
+        self.assertIn("fromRight=true", hud)
+
+    def test_jade_does_not_duplicate_item_provenance(self):
+        jade = load_json("defaultoptions/extra/config/jade/jade.json")
+        self.assertFalse(jade["general"]["itemModNameTooltip"])
+        self.assertEqual("ON", jade["plugin"]["jade"]["mod_name"])
+
     def test_menu_keeps_required_controls_and_warning(self):
         config = load_json("simplemenu.json5")
         manifest = json.loads((ROOT / "modrinth.index.json").read_text())

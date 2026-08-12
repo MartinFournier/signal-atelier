@@ -1,5 +1,8 @@
 _version = 4
 
+[client.advanced.autoUpdater]
+enableAutoUpdater = false
+
 [client.advanced.graphics.quality]
 lodChunkRenderDistanceRadius = 128
 

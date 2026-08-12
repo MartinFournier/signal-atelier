@@ -6,11 +6,14 @@ from pathlib import Path
 ROOT = Path(__file__).parents[1]
 WORKFLOW = ROOT / ".github/workflows/server-smoke.yml"
 CLIENT_ONLY_OVERRIDES = {
+    "overrides/config/defaultoptions/extra/config/betterf3.toml",
+    "overrides/config/defaultoptions/extra/config/jade/jade.json",
+    "overrides/config/defaultoptions/extra/config/xaerohud.txt",
     "overrides/config/defaultoptions-common.toml",
     "overrides/config/defaultoptions/extra/config/xaeroworldmap.txt",
     "overrides/config/defaultoptions/extra/config/xaerominimap.txt",
     "overrides/config/defaultoptions/options.txt",
-    "overrides/config/distanthorizons.toml",
+    "overrides/config/DistantHorizons.toml",
     "overrides/config/dynamic_fps.json",
     "overrides/config/simplemenu.json5",
     "overrides/config/simplemenu/icon/icon_16x16.png",
