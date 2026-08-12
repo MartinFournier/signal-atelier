@@ -135,6 +135,8 @@
   and support reports identify both the pack line and Minecraft version.
 - Use a custom Signal Atelier icon and title wordmark built around a pixel-art
   pickaxe emitting signal waves from its head.
+- Keep the title wordmark inside Minecraft's conservative logo safe area so
+  the title widget does not clip its lower edge at common GUI scales.
 - Hide the vanilla edition plaque and splash text so they do not overlap the
   wider custom title wordmark.
 - Keep the vanilla panorama and loading screen initially.
