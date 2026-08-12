@@ -108,6 +108,9 @@
 - Add Distant Horizons client-side for long landscape views. Default its LOD
   radius to 128 chunks and disable distant generation so it builds detail from
   terrain the client actually receives instead of revealing unexplored land.
+- Force Distant Horizons to use its OpenGL renderer while Iris does not support
+  the Blaze3D renderer; revisit this compatibility override after Iris adds
+  Blaze3D support.
 - Use BetterF3 to make the debug overlay easier to scan and customize without
   changing server behavior or progression.
 - Keep backups outside the instance and Git. Prefer host or filesystem

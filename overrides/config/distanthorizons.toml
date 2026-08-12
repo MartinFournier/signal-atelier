@@ -3,5 +3,8 @@ _version = 4
 [client.advanced.graphics.quality]
 lodChunkRenderDistanceRadius = 128
 
+[client.advanced.graphics.experimental]
+renderingEngine = "OPEN_GL"
+
 [common.worldGenerator]
 enableDistantGeneration = false

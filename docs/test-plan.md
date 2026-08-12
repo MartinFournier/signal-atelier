@@ -81,6 +81,9 @@ each local comparison, but do not commit unsanitized logs.
 - Confirm Distant Horizons renders retained LODs to 128 chunks, does not
   generate or reveal unexplored terrain, and transitions cleanly between
   vanilla chunks and LODs above and below ground.
+- Confirm Distant Horizons reports the OpenGL renderer and remains visible
+  when Iris is enabled; shaders must still be tested only with DH-compatible
+  shader packs.
 - Confirm BetterF3 replaces the debug overlay, remains legible with Whimscape,
   and preserves the vanilla debug shortcuts used during testing.
 - Verify entity tracking and map teleportation are disabled; test player
