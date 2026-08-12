@@ -113,8 +113,16 @@
 - Force Distant Horizons to use its OpenGL renderer while Iris does not support
   the Blaze3D renderer; revisit this compatibility override after Iris adds
   Blaze3D support.
+- Disable Distant Horizons' launch-time update check because pack updates own
+  mod version selection and compatibility testing.
 - Use BetterF3 to make the debug overlay easier to scan and customize without
   changing server behavior or progression.
+- Ship the tested compact BetterF3 layout as a first-install default through
+  Default Options: Minecraft, FPS, coordinates, and graphics on the left;
+  system diagnostics on the right. Preserve subsequent player customization.
+- Place Xaero's minimap at the upper right by default, and avoid duplicate item
+  provenance lines by leaving Jade's world-overlay attribution enabled while
+  disabling its additional item-tooltip attribution.
 - Keep backups outside the instance and Git. Prefer host or filesystem
   snapshots over the immature 26.1 backup-mod ecosystem.
 - Add Simple Menu as the lightweight client-side branding layer.

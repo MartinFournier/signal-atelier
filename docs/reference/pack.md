@@ -114,12 +114,15 @@ Empty datapack recipes remove these survival crafting paths:
 
 ## Shipped configuration and assets
 
+- `config/DistantHorizons.toml`
 - `config/chunkloaders.toml`
+- `config/defaultoptions/extra/config/betterf3.toml`
+- `config/defaultoptions/extra/config/jade/jade.json`
+- `config/defaultoptions/extra/config/xaerohud.txt`
 - `config/defaultoptions/extra/config/xaerominimap.txt`
 - `config/defaultoptions/extra/config/xaeroworldmap.txt`
 - `config/defaultoptions/options.txt`
 - `config/defaultoptions-common.toml`
-- `config/distanthorizons.toml`
 - `config/dynamic_fps.json`
 - `config/simplemenu/icon/icon_16x16.png`
 - `config/simplemenu/icon/icon_32x32.png`
