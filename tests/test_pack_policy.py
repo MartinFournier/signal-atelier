@@ -74,6 +74,56 @@ class PackPolicyTests(unittest.TestCase):
         self.assertEqual(0.0, world["chance"])
         self.assertFalse(server["backpackAbilities"]["enableBackpackAbilities"])
 
+    def test_backpack_progression_and_jei_visibility_match_policy(self):
+        recipes = CONFIG / "universaldatapack/data/travelersbackpack/recipe"
+        self.assertFalse((recipes / "blank_upgrade.json").exists())
+        for recipe in (
+            "diamond_tier_upgrade.json",
+            "netherite_tier_upgrade.json",
+            "tanks_upgrade.json",
+            "crafting_upgrade.json",
+            "furnace_upgrade.json",
+            "smoker_upgrade.json",
+            "blast_furnace_upgrade.json",
+            "pickup_upgrade.json",
+            "magnet_upgrade.json",
+            "feeding_upgrade.json",
+            "refill_upgrade.json",
+            "void_upgrade.json",
+            "jukebox_upgrade.json",
+            "lantern_upgrade.json",
+        ):
+            self.assertEqual({}, json.loads((recipes / recipe).read_text()))
+
+        blacklist = load_json("defaultoptions/extra/config/jei/blacklist.json")
+        self.assertEqual({"version": 2}, blacklist[0])
+        hidden = {
+            entry["ingredient"]["ingredient"]["id"] for entry in blacklist[1:]
+        }
+        self.assertNotIn("travelersbackpack:blank_upgrade", hidden)
+        self.assertNotIn("travelersbackpack:iron_tier_upgrade", hidden)
+        self.assertNotIn("travelersbackpack:gold_tier_upgrade", hidden)
+        self.assertNotIn("travelersbackpack:backpack_tank", hidden)
+        self.assertIn("travelersbackpack:diamond", hidden)
+        self.assertIn("travelersbackpack:netherite", hidden)
+        self.assertIn("travelersbackpack:diamond_tier_upgrade", hidden)
+        self.assertIn("travelersbackpack:netherite_tier_upgrade", hidden)
+        self.assertNotIn("chunkloaders:single_chunk_loader", hidden)
+        self.assertTrue(
+            {
+                "chunkloaders:basic_chunk_loader",
+                "chunkloaders:advanced_chunk_loader",
+                "chunkloaders:ultimate_chunk_loader",
+                "refinedstorage:constructor",
+                "refinedstorage:destructor",
+                "refinedstorage:network_receiver",
+                "refinedstorage:network_transmitter",
+                "refinedstorage:wireless_autocrafting_monitor",
+                "refinedstorage:wireless_grid",
+                "refinedstorage:wireless_transmitter",
+            }.issubset(hidden)
+        )
+
     def test_graves_remain_owner_restricted(self):
         config = tomllib.loads(
             (ROOT / "overrides/defaultconfigs/gravestone-server.toml").read_text()
