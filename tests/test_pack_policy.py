@@ -98,6 +98,11 @@ class PackPolicyTests(unittest.TestCase):
         self.assertEqual([], config["structures"])
         self.assertEqual([], config["structure_sets"])
 
+    def test_distant_horizons_uses_iris_compatible_renderer(self):
+        config = tomllib.loads((CONFIG / "distanthorizons.toml").read_text())
+        graphics = config["client"]["advanced"]["graphics"]
+        self.assertEqual("OPEN_GL", graphics["experimental"]["renderingEngine"])
+
     def test_first_install_defaults_are_narrow(self):
         config = tomllib.loads((CONFIG / "defaultoptions-common.toml").read_text())
         self.assertEqual("NORMAL", config["defaultDifficulty"])
