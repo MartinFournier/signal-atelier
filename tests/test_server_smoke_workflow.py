@@ -18,6 +18,7 @@ CLIENT_ONLY_OVERRIDES = {
     "overrides/config/simplemenu.json5",
     "overrides/config/simplemenu/icon/icon_16x16.png",
     "overrides/config/simplemenu/icon/icon_32x32.png",
+    "overrides/config/simplemenu/logo/edition.png",
     "overrides/config/simplemenu/logo/logo.png",
 }
 
