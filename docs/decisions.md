@@ -14,7 +14,7 @@
   world interaction and remote logistics in Oritech.
 - Recipe lock Refined Storage wireless access, Constructors, Destructors,
   Network Transmitters and Receivers, and equivalent remote or direct-world
-  features.
+  features. Hide these intentionally unreachable devices from JEI.
 - Keep Refined Storage Controllers, cables, disks, drives, Grids, Pattern
   Grids, Autocrafters, Monitors, Importers, Exporters, Interfaces, External
   Storage, Detectors, and required upgrades.
@@ -24,7 +24,9 @@
   higher tiers, backpack nesting, crafting, furnace, feeding, magnet, pickup,
   void, lantern, special abilities, and generated backpack loot. Retain the
   two built-in 1,000 mB tanks because the standard backpack recipe requires
-  tank items; keep the separate tanks-upgrade recipe locked.
+  tank items and the blank upgrade needed for the iron and gold tier path;
+  keep the separate tanks-upgrade recipe locked. Hide intentionally disabled
+  backpack tiers and upgrades from JEI's ingredient list.
 - Add GraveStone Mod as the sole death-recovery system with no grave expiry or
   teleport-to-grave feature.
 - Keep graves owner-restricted initially and verify multiplayer ownership and
@@ -64,7 +66,8 @@
   crowd the world map.
 - Use a physical single-chunk loader from Chunk Loaders instead of map-based
   force loading. Disable the 3x3, 5x5, and 7x7 loader recipes and gate the
-  single loader behind late-game Oritech materials.
+  single loader behind late-game Oritech materials. Hide the disabled larger
+  loaders from JEI.
 - Use Simply Quests as a non-gating engineering notebook. Quests provide
   direction and documentation, not essential rewards or recipe permissions.
 - Organize quests around orientation, power, industry, distributed works,

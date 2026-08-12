@@ -16,7 +16,6 @@ expected_locks=(
   chunkloaders/recipe/basic_chunk_loader.json
   chunkloaders/recipe/advanced_chunk_loader.json
   chunkloaders/recipe/ultimate_chunk_loader.json
-  travelersbackpack/recipe/blank_upgrade.json
   travelersbackpack/recipe/blast_furnace_upgrade.json
   travelersbackpack/recipe/crafting_upgrade.json
   travelersbackpack/recipe/diamond_tier_upgrade.json

@@ -19,7 +19,7 @@ Run `scripts/generate_reference.py` after changing those sources.
 | Server required | 29 |
 | Server optional | 1 |
 | Server unsupported | 23 |
-| Recipe locks | 26 |
+| Recipe locks | 25 |
 | Quest chapters | 7 |
 | Quest milestones | 44 |
 
@@ -96,7 +96,6 @@ Empty datapack recipes remove these survival crafting paths:
 - `refinedstorage/recipe/wireless_autocrafting_monitor.json`
 - `refinedstorage/recipe/wireless_grid.json`
 - `refinedstorage/recipe/wireless_transmitter.json`
-- `travelersbackpack/recipe/blank_upgrade.json`
 - `travelersbackpack/recipe/blast_furnace_upgrade.json`
 - `travelersbackpack/recipe/crafting_upgrade.json`
 - `travelersbackpack/recipe/diamond_tier_upgrade.json`
@@ -118,6 +117,7 @@ Empty datapack recipes remove these survival crafting paths:
 - `config/chunkloaders.toml`
 - `config/defaultoptions/extra/config/betterf3.toml`
 - `config/defaultoptions/extra/config/jade/jade.json`
+- `config/defaultoptions/extra/config/jei/blacklist.json`
 - `config/defaultoptions/extra/config/xaerohud.txt`
 - `config/defaultoptions/extra/config/xaerominimap.txt`
 - `config/defaultoptions/extra/config/xaeroworldmap.txt`
