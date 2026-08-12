@@ -137,8 +137,9 @@
   pickaxe emitting signal waves from its head.
 - Keep the title wordmark inside Minecraft's conservative logo safe area so
   the title widget does not clip its lower edge at common GUI scales.
-- Hide the vanilla edition plaque and splash text so they do not overlap the
-  wider custom title wordmark.
+- Retain the vanilla edition plaque and rotating splash text around the padded
+  custom wordmark; remove them only if graphical validation finds overlap at a
+  supported GUI scale.
 - Keep the vanilla panorama and loading screen initially.
 - Hide Realms, but retain the standard Singleplayer, Multiplayer, Mods,
   Options, and Quit controls.
