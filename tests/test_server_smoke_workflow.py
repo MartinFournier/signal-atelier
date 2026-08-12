@@ -7,6 +7,7 @@ ROOT = Path(__file__).parents[1]
 WORKFLOW = ROOT / ".github/workflows/server-smoke.yml"
 CLIENT_ONLY_OVERRIDES = {
     "overrides/config/defaultoptions/extra/config/jei/blacklist.json",
+    "overrides/config/defaultoptions/keybindings.txt",
     "overrides/config/defaultoptions/extra/config/betterf3.toml",
     "overrides/config/defaultoptions/extra/config/jade/jade.json",
     "overrides/config/defaultoptions/extra/config/xaerohud.txt",

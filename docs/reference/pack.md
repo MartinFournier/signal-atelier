@@ -121,6 +121,7 @@ Empty datapack recipes remove these survival crafting paths:
 - `config/defaultoptions/extra/config/xaerohud.txt`
 - `config/defaultoptions/extra/config/xaerominimap.txt`
 - `config/defaultoptions/extra/config/xaeroworldmap.txt`
+- `config/defaultoptions/keybindings.txt`
 - `config/defaultoptions/options.txt`
 - `config/defaultoptions-common.toml`
 - `config/dynamic_fps.json`

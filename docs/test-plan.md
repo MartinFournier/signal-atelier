@@ -96,7 +96,8 @@ each local comparison, but do not commit unsanitized logs.
   excessive loot, or overlap with Oritech world generation.
 - Review the complete Controls screen for duplicate bindings. Confirm `M`
   opens the world map, `B` opens Traveler's Backpack, and `J` opens Simply
-  Quests when those actions are supported, with no vanilla control displaced.
+  Quests; confirm `V` opens Oritech's augment screen and Minecraft retains its
+  `G` quick-action binding, with no vanilla control displaced.
 - Change one curated binding, restart, and update the test instance to verify
   that player customization is preserved.
 
