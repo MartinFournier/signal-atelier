@@ -60,16 +60,17 @@ validation** may change after the first graphical gameplay pass.
 
 ## Controls
 
-The planned bindings are:
+The first-install bindings are:
 
 | Action | Planned key | Status |
 | --- | --- | --- |
-| World map | `M` | Pending runtime validation |
-| Equipped backpack | `B` | Pending runtime validation |
-| Engineering notebook | `J` | Pending runtime validation |
+| World map | `M` | Packaged default |
+| Equipped backpack | `B` | Packaged default |
+| Engineering notebook | `J` | Packaged default |
+| Oritech augment screen | `V` | Packaged default |
 
-These defaults are not packaged yet. Use **Options → Controls → Key Binds** to
-find each action and resolve conflicts without displacing a vanilla control.
+Default Options applies these only on first install. Later player changes are
+preserved. Use **Options → Controls → Key Binds** to customize them.
 
 Fresh installs also default to unlocked Normal difficulty, keep running when
 the window loses focus, and disable Xaero cave mapping. Later player choices are

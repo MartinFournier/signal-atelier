@@ -100,7 +100,9 @@
 - Ship a small, conflict-free default keybind layout for major pack interfaces
   without replacing movement, inventory, combat, hotbar, screenshot, or debug
   controls. Target `M` for the world map, `B` for the equipped backpack, and
-  `J` for the engineering notebook if those exact actions exist.
+  `J` for the engineering notebook. Use `V` for Oritech's augment screen to
+  avoid Minecraft's global `G` quick-action binding, and leave Toast Control's
+  optional clear action unbound.
 - Preserve player keybind changes across pack updates. Do not distribute a
   complete `options.txt` that resets unrelated video, audio, accessibility, or
   control preferences.

@@ -17,6 +17,27 @@ def load_toml(relative: str) -> dict:
 
 
 class PackPolicyTests(unittest.TestCase):
+    def test_first_install_keybinds_are_conflict_free(self):
+        lines = (
+            CONFIG / "defaultoptions/keybindings.txt"
+        ).read_text().splitlines()
+        bindings = dict(line.split(":", 1) for line in lines)
+        self.assertEqual("key.keyboard.m", bindings["key_gui.xaero_open_map"])
+        self.assertEqual(
+            "key.keyboard.b", bindings["key_key.travelersbackpack.inventory"]
+        )
+        self.assertEqual(
+            "key.keyboard.j", bindings["key_key.simplyquests.open"]
+        )
+        self.assertEqual(
+            "key.keyboard.v", bindings["key_key.oritech.augment_screen"]
+        )
+        self.assertEqual(
+            "key.keyboard.unknown", bindings["key_key.toastcontrol.clear"]
+        )
+        assigned = [value for value in bindings.values() if not value.endswith("unknown")]
+        self.assertEqual(len(assigned), len(set(assigned)))
+
     def test_chunk_loading_is_physically_limited(self):
         config = load_toml("chunkloaders.toml")
         limits = config["Limitations"]
