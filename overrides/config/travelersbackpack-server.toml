@@ -51,7 +51,7 @@ tankCapacity = 1000
 
 [server.backpackUpgrades]
 enableSleepingBag = true
-enableTanksUpgrade = false
+enableTanksUpgrade = true
 enableCraftingUpgrade = false
 enableFurnaceUpgrade = false
 enableSmokerUpgrade = false
